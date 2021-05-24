@@ -22,6 +22,7 @@ We run droopescan to find out more
 droopescan scan drupal -u http://10.10.10.233
 ```
 ![](images/droope.png)
+
 We use searchsploit to find any exploits
 ```bash
 searchsploit drupal 7.56
