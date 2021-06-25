@@ -4,15 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "59ee04ff6760f04e",
-        "type": "leaf",
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "Machines/Armageddon/README.md",
-            "mode": "source"
+        "id": "3d07424e155ff5bc",
+        "type": "split",
+        "children": [
+          {
+            "id": "769df90077da6983",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Challenges/OSINT/Money Flowz/MoneyFlowz.md",
+                "mode": "source"
+              }
+            },
+            "group": "16ac4affd61ccb41"
+          },
+          {
+            "id": "59ee04ff6760f04e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Challenges/OSINT/Money Flowz/MoneyFlowz.md",
+                "mode": "preview"
+              }
+            },
+            "group": "16ac4affd61ccb41"
           }
-        }
+        ],
+        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -39,7 +59,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#schoolproj",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -68,7 +88,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 329
+    "width": 273
   },
   "right": {
     "id": "604ffc87a1e8634a",
@@ -84,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Machines/Armageddon/README.md",
+                "file": "Challenges/OSINT/Money Flowz/MoneyFlowz.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Machines/Armageddon/README.md",
+                "file": "Challenges/OSINT/Money Flowz/MoneyFlowz.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,17 +185,17 @@
     "width": 336,
     "collapsed": true
   },
-  "active": "59ee04ff6760f04e",
+  "active": "769df90077da6983",
   "lastOpenFiles": [
+    "Challenges/OSINT/Money Flowz/MoneyFlowz.md",
+    "README.md",
+    "Dump/README.md",
+    "Machines/README.md",
+    "Challenges/OSINT/Money Flowz/README.md",
+    "Challenges/OSINT/Easy Phish/README.md",
+    "Challenges/OSINT/Easy Phish/Untitled.md",
     "Machines/Armageddon/README.md",
     "Fortresses/Jet/README.md",
-    "Challenges/Web/Templated/README.md",
-    "Challenges/Web/Emdee_5_for_life/README.md",
-    "Challenges/OSINT/Easy Phish/README.md",
-    "Challenges/Stego/Forest/README.md",
-    "Challenges/Forensics/MarketDump/README.md",
-    "Challenges/Forensics/Illumination/README.md",
-    "Dump/Untitled.md",
-    "Dump/README.md"
+    "Challenges/Web/Templated/README.md"
   ]
 }
