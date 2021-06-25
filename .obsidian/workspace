@@ -1,0 +1,176 @@
+{
+  "main": {
+    "id": "51acac5606de6d87",
+    "type": "split",
+    "children": [
+      {
+        "id": "59ee04ff6760f04e",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "af9aa3137686e394",
+    "type": "split",
+    "children": [
+      {
+        "id": "4851f81767269df5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9660c52fb614536c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "1d52edc31b1729c5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:#schoolproj",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "bffb979555f11368",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "98da92f9e8435edb",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 329
+  },
+  "right": {
+    "id": "604ffc87a1e8634a",
+    "type": "split",
+    "children": [
+      {
+        "id": "68d1f45252399e38",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5a9c16b86b0a104e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "48b384a361f42ae6",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "5c53660ebad798fc",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "ab09314e7438c6f3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "5353b420bc0bf361",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "d113551e7ba419a2",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "f8c9cbb307c7051c",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          },
+          {
+            "id": "bcb7e8af900e01df",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 336,
+    "collapsed": true
+  },
+  "active": "59ee04ff6760f04e",
+  "lastOpenFiles": [
+    "Dump/Untitled.md",
+    "School Projects/Network Projects.md",
+    "Untitled.md",
+    "Uni Internship list.md",
+    "NUS.md",
+    "Company Internship list.md",
+    "Years/2021.md",
+    "Education/Potential Phd.md",
+    "Education/Potential Master.md",
+    "Education/Internships.md"
+  ]
+}
