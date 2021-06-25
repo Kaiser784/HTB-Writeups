@@ -1,36 +1,10 @@
-![](assets/images/banner.png)
+# Templated
+#web 
 
+### Challenge Author(s): clubby789
 
-
-<img src="assets/images/htb.png" style="margin-left: 20px; zoom: 60%;" align=left />    	<font size="10">Templated</font>
-
-​		2<sup>nd</sup> Febraury 2021
-
-​		Challenge Author(s):clubby789
-
-​		
-
- 
-
-
-
-### Description:
-
-Can you exploit this simple mistake? 
-
-### Objective
-
-Finding the flag by exploiting the application. This application is vulnerable to **Server side template injection (SSTI).**
-
-### Difficulty:
-
-`easy`
-
-### Flag:
-
-`HTB{t3mpl4t3s_4r3_m0r3_p0w3rfu1_th4n_u_th1nk!}`
-
-
+#### Description: Can you exploit this simple mistake? 
+#### Difficulty: Easy
 
 # Challenge
 

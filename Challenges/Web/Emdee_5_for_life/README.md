@@ -1,4 +1,5 @@
 # Emdee five for life
+#web 
 
 ### Challenge Author(s): [L4mpje](https://www.hackthebox.eu/home/users/profile/29267)
 
@@ -17,7 +18,7 @@ Then I realized we have to use a script with which we can read the string encryp
 
 I googled for some time on what to use and found that BeautifulSoup library was the best and easiest to strip html.      
 
-We understood how to get string from yhe HTML page let's see how to submit it.      
+We understood how to get string from the HTML page let's see how to submit it.      
 
 For this fireup BurpSuite and click on submit to see what data is being sent.           
 

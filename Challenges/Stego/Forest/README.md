@@ -1,4 +1,5 @@
 # Forest
+#stego
 
 ### Challenge Author(s): [pwn4magic](https://app.hackthebox.eu/users/119)
 

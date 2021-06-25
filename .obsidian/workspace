@@ -7,8 +7,11 @@
         "id": "59ee04ff6760f04e",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "Machines/Armageddon/README.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -81,6 +84,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "Machines/Armageddon/README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -116,6 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "Machines/Armageddon/README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,15 +167,15 @@
   },
   "active": "59ee04ff6760f04e",
   "lastOpenFiles": [
+    "Machines/Armageddon/README.md",
+    "Fortresses/Jet/README.md",
+    "Challenges/Web/Templated/README.md",
+    "Challenges/Web/Emdee_5_for_life/README.md",
+    "Challenges/OSINT/Easy Phish/README.md",
+    "Challenges/Stego/Forest/README.md",
+    "Challenges/Forensics/MarketDump/README.md",
+    "Challenges/Forensics/Illumination/README.md",
     "Dump/Untitled.md",
-    "Dump/README.md",
-    "Untitled.md",
-    "School Projects/Network Projects.md",
-    "Uni Internship list.md",
-    "NUS.md",
-    "Company Internship list.md",
-    "Years/2021.md",
-    "Education/Potential Phd.md",
-    "Education/Potential Master.md"
+    "Dump/README.md"
   ]
 }

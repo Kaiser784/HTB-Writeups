@@ -1,4 +1,5 @@
 # Easy Phish
+#osint #dnsrecords
 
 ### Challenge Author(s): [greenwolf](https://app.hackthebox.eu/users/110957)
 
