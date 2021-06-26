@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "Challenges/OSINT/Money Flowz/MoneyFlowz.md",
-                "mode": "source"
+                "mode": "preview"
               }
             },
             "group": "16ac4affd61ccb41"
@@ -26,7 +26,7 @@
               "type": "markdown",
               "state": {
                 "file": "Challenges/OSINT/Money Flowz/MoneyFlowz.md",
-                "mode": "preview"
+                "mode": "source"
               }
             },
             "group": "16ac4affd61ccb41"
@@ -185,7 +185,7 @@
     "width": 336,
     "collapsed": true
   },
-  "active": "769df90077da6983",
+  "active": "59ee04ff6760f04e",
   "lastOpenFiles": [
     "Challenges/OSINT/Money Flowz/MoneyFlowz.md",
     "README.md",
