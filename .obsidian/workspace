@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Challenges/Web/Templated/Templated.md",
                 "mode": "preview"
               }
             },
@@ -25,7 +25,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "Challenges/Web/Templated/Templated.md",
                 "mode": "source"
               }
             },
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "Challenges/Web/Templated/Templated.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "Challenges/Web/Templated/Templated.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -187,6 +187,7 @@
   },
   "active": "59ee04ff6760f04e",
   "lastOpenFiles": [
+    "Challenges/Web/Templated/Templated.md",
     "README.md",
     "Challenges/OSINT/Money Flowz/MoneyFlowz.md",
     "Challenges/OSINT/Money Flowz/images/Pasted image 20210626145014.png",
@@ -195,7 +196,6 @@
     "Dump/README.md",
     "Machines/README.md",
     "Challenges/OSINT/Money Flowz/README.md",
-    "Challenges/OSINT/Easy Phish/README.md",
-    "Challenges/OSINT/Easy Phish/Untitled.md"
+    "Challenges/OSINT/Easy Phish/README.md"
   ]
 }

