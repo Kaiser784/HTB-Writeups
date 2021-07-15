@@ -1,4 +1,4 @@
-# Easy Phish
+# Money Flowz
 #osint #cryptocurrency 
 
 ### Challenge Author(s): [Sm4rtK1dz](https://app.hackthebox.eu/users/276784)

@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "3d07424e155ff5bc",
+        "id": "6caecd43186d94e8",
         "type": "split",
         "children": [
           {
@@ -13,23 +13,23 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Challenges/Web/Templated/Templated.md",
+                "file": "Fortresses/Akerva/Akerva.md",
                 "mode": "preview"
               }
             },
-            "group": "16ac4affd61ccb41"
+            "group": "0257dbc2c88c5ad5"
           },
           {
-            "id": "59ee04ff6760f04e",
+            "id": "92a8c2960d4956f8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Challenges/Web/Templated/Templated.md",
+                "file": "Fortresses/Akerva/Akerva.md",
                 "mode": "source"
               }
             },
-            "group": "16ac4affd61ccb41"
+            "group": "0257dbc2c88c5ad5"
           }
         ],
         "direction": "horizontal"
@@ -104,7 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Challenges/Web/Templated/Templated.md",
+                "file": "Fortresses/Akerva/Akerva.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -140,7 +140,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Challenges/Web/Templated/Templated.md",
+                "file": "Fortresses/Akerva/Akerva.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -185,17 +185,17 @@
     "width": 336,
     "collapsed": true
   },
-  "active": "59ee04ff6760f04e",
+  "active": "92a8c2960d4956f8",
   "lastOpenFiles": [
+    "Fortresses/Akerva/Akerva.md",
+    "Fortresses/Jet/Jet.md",
+    "Fortresses/Jet/Untitled.md",
+    "Challenges/OSINT/ID Exposed/ID Exposed.md",
+    "Challenges/OSINT/Money Flowz/MoneyFlowz.md",
+    "Challenges/OSINT/Money Flowz/Untitled.md",
     "Challenges/Web/Templated/Templated.md",
     "README.md",
-    "Challenges/OSINT/Money Flowz/MoneyFlowz.md",
     "Challenges/OSINT/Money Flowz/images/Pasted image 20210626145014.png",
-    "Dump/Pasted image 20210626145014.png",
-    "Dump/Pasted image 20210626144907.png",
-    "Dump/README.md",
-    "Machines/README.md",
-    "Challenges/OSINT/Money Flowz/README.md",
-    "Challenges/OSINT/Easy Phish/README.md"
+    "Dump/Pasted image 20210626145014.png"
   ]
 }

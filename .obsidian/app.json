@@ -1,0 +1,33 @@
+{
+  "attachmentFolderPath": "Dump",
+  "promptDelete": true,
+  "showUnsupportedFiles": true,
+  "spellcheck": true,
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "current",
+  "defaultViewMode": "preview",
+  "strictLineBreaks": false,
+  "showLineNumber": true,
+  "pdfExportSettings": {
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  },
+  "foldHeading": true,
+  "foldIndent": true,
+  "spellcheckDictionary": [
+    "idor",
+    "InsiderPhd",
+    "PortSwigger",
+    "Swigger",
+    "Exfiltration",
+    "reddit",
+    "Ethereum",
+    "bruteforce",
+    "http",
+    "nmap",
+    "burpsuite",
+    "metasploit"
+  ]
+}
