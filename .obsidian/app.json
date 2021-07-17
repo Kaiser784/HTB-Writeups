@@ -28,6 +28,7 @@
     "http",
     "nmap",
     "burpsuite",
-    "metasploit"
+    "metasploit",
+    "decrypt"
   ]
 }

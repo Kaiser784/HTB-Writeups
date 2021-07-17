@@ -1,1 +1,51 @@
-{"collapse-filter":false,"search":"-tag: #temp","showTags":true,"showAttachments":false,"hideUnresolved":false,"showOrphans":true,"collapse-color-groups":true,"colorGroups":[{"query":"path:Challenges","color":{"a":1,"rgb":9625682}},{"query":"path:Machines","color":{"a":1,"rgb":541258}},{"query":"path:Fortresses","color":{"a":1,"rgb":7426784}},{"query":"path:Pro-Labs","color":{"a":1,"rgb":14701254}}],"collapse-display":true,"showArrow":true,"textFadeMultiplier":-1.5,"nodeSizeMultiplier":1.61404494382022,"lineSizeMultiplier":2.57752808988764,"collapse-forces":true,"centerStrength":0.337078651685393,"repelStrength":11.123595505618,"linkStrength":0.679775280898876,"linkDistance":320,"scale":0.2581105219953696,"close":true}
+{
+  "collapse-filter": false,
+  "search": "-tag: #temp",
+  "showTags": true,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "path:Challenges",
+      "color": {
+        "a": 1,
+        "rgb": 9625682
+      }
+    },
+    {
+      "query": "path:Machines",
+      "color": {
+        "a": 1,
+        "rgb": 541258
+      }
+    },
+    {
+      "query": "path:Fortresses",
+      "color": {
+        "a": 1,
+        "rgb": 7426784
+      }
+    },
+    {
+      "query": "path:Pro-Labs",
+      "color": {
+        "a": 1,
+        "rgb": 14701254
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": true,
+  "textFadeMultiplier": -1.5,
+  "nodeSizeMultiplier": 1.61404494382022,
+  "lineSizeMultiplier": 2.57752808988764,
+  "collapse-forces": true,
+  "centerStrength": 0.337078651685393,
+  "repelStrength": 11.123595505618,
+  "linkStrength": 0.679775280898876,
+  "linkDistance": 320,
+  "scale": 0.2581105219953696,
+  "close": true
+}

@@ -4,7 +4,7 @@
     "type": "split",
     "children": [
       {
-        "id": "6caecd43186d94e8",
+        "id": "c3ef5d8f0c7ab64d",
         "type": "split",
         "children": [
           {
@@ -17,10 +17,10 @@
                 "mode": "preview"
               }
             },
-            "group": "0257dbc2c88c5ad5"
+            "group": "14aba28701a6f488"
           },
           {
-            "id": "92a8c2960d4956f8",
+            "id": "eefdba1077735356",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -29,7 +29,7 @@
                 "mode": "source"
               }
             },
-            "group": "0257dbc2c88c5ad5"
+            "group": "14aba28701a6f488"
           }
         ],
         "direction": "horizontal"
@@ -185,7 +185,7 @@
     "width": 336,
     "collapsed": true
   },
-  "active": "92a8c2960d4956f8",
+  "active": "eefdba1077735356",
   "lastOpenFiles": [
     "Fortresses/Akerva/Akerva.md",
     "Fortresses/Jet/Jet.md",
