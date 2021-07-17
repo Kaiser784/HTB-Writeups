@@ -1,4 +1,3 @@
-#temp
 # Machine Name
 ### Machine Maker(s):
 
