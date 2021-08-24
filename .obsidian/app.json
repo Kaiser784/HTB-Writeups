@@ -1,10 +1,11 @@
 {
+  "obsidianCss": false,
   "attachmentFolderPath": "Dump",
   "promptDelete": true,
   "showUnsupportedFiles": true,
   "spellcheck": true,
   "alwaysUpdateLinks": true,
-  "newFileLocation": "current",
+  "newFileLocation": "root",
   "defaultViewMode": "preview",
   "strictLineBreaks": false,
   "showLineNumber": true,
@@ -30,5 +31,7 @@
     "burpsuite",
     "metasploit",
     "decrypt"
-  ]
+  ],
+  "readableLineLength": false,
+  "newLinkFormat": "shortest"
 }

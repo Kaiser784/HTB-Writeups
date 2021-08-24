@@ -1,0 +1,380 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=us-ascii" /><meta http-equiv="Content-Type" content="text/html; charset=us-ascii" /><title>JEP 223: New Version-String Scheme</title><link rel="shortcut icon" href="/images/nanoduke.ico" /><link rel="stylesheet" type="text/css" href="/page.css" /><script type="text/javascript" src="/page.js"><noscript></noscript></script><style type="text/css" xml:space="preserve">
+      TABLE { border-collapse: collapse; padding: 0px; margin: 1em 0; }
+      TD { padding: 0px; vertical-align: baseline; }
+      TD + TD { padding-left: 1em; }
+      TD:first-child, TD.jep { text-align: right; white-space: nowrap; }
+      TABLE.head TD:first-child { font-style: italic; padding-left: 2em; }
+      PRE { padding: 1ex; margin: 1ex 0; background: #eee; width: 44em;
+            font-size: inherit; }
+      TABLE.jeps TD:first-child + TD,
+      TABLE.jeps TD:first-child + TD + TD { padding-left: .5em; }
+      TABLE.jeps TD:first-child,
+      TABLE.jeps TD:first-child + TD,
+      TABLE.jeps TD:first-child + TD + TD { font-size: smaller; }
+      TABLE.jeps TD.cl { font-size: smaller; padding-right: 0; text-align: right; }
+      TABLE.jeps TD.cm { font-size: smaller; padding-left: .1em; padding-right: .1em; }
+      TABLE.jeps TD.cr { font-size: smaller; padding-left: 0; }
+      TABLE.jeps TD.z { padding-left: 0; padding-right: 0; }
+      .withdrawn { text-decoration: line-through; }
+    </style></head><body><div id="main"><h1>JEP 223: New Version-String Scheme</h1><table class="head"><tr><td>Authors</td><td>Iris Clark, Mark Reinhold</td></tr><tr><td>Owner</td><td>Iris Clark</td></tr><tr><td>Created</td><td>2014/10/20 18:27</td></tr><tr><td>Updated</td><td>2017/07/11 15:16</td></tr><tr><td>Type</td><td>Feature</td></tr><tr><td>Status</td><td>Closed&#8201;/&#8201;Delivered</td></tr><tr><td>Scope</td><td>SE</td></tr><tr><td>Discussion</td><td>verona dash dev at openjdk dot java dot net</td></tr><tr><td>Effort</td><td>M</td></tr><tr><td>Duration</td><td>M</td></tr><tr><td>Priority</td><td>1</td></tr><tr><td>Reviewed by</td><td>Brian Goetz, Roger Riggs</td></tr><tr><td>Endorsed by</td><td>Brian Goetz</td></tr><tr><td>Release</td><td>9</td></tr><tr><td>Issue</td><td><a href="https://bugs.openjdk.java.net/browse/JDK-8061493">8061493</a></td></tr><tr><td>Relates to</td><td><a href="https://bugs.openjdk.java.net/browse/JDK-8085822">8085822: JEP 223: New Version-String Scheme (initial integration)</a></td></tr></table><div class="markdown"><h2 id="Summary">Summary</h2>
+<p>Define a version-string scheme that easily distinguishes major, minor, and security-update releases, and apply it to the JDK.</p>
+<h2 id="Goals">Goals</h2>
+<ul>
+<li>
+<p>Be easily understandable by humans, and easily parsable by programs.</p>
+</li>
+<li>
+<p>Align with current industry practices, in particular
+<a href="http://semver.org/">Semantic Versioning</a>.</p>
+</li>
+<li>
+<p>Be adoptable by existing packaging systems and platform-deployment
+mechanisms including <a href="https://en.wikipedia.org/wiki/RPM_Package_Manager">RPM</a>, <a href="https://en.wikipedia.org/wiki/Dpkg">dpkg</a>, <a href="https://en.wikipedia.org/wiki/Image_Packaging_System">IPS</a>, and the
+<a href="https://en.wikipedia.org/wiki/JNLP">Java Network Launching Protocol (JNLP)</a>.</p>
+</li>
+<li>
+<p>Eliminate the current practice of encoding two types of information
+in one element of the version string, <em>i.e.</em>, the minor release
+number and the security level, which is difficult to decipher and
+results in skipping many version numbers.</p>
+</li>
+<li>
+<p>Provide a simple API for version-string parsing, validation, and
+comparison.</p>
+</li>
+</ul>
+<h2 id="Non-Goals">Non-Goals</h2>
+<ul>
+<li>Change the version-string format used by any release prior to this
+JEP's targeted release.</li>
+</ul>
+<h2 id="Motivation">Motivation</h2>
+<p>Which release contains all of the most recent security fixes: JDK 7
+Update 55, or JDK 7 Update 60?</p>
+<p>It looks like JDK 7 Update 60 is five releases later than Update 55, so
+therefore it must include more security fixes, right?</p>
+<p>That conclusion is, sadly, incorrect: These two releases both contain
+exactly the same security fixes.  To understand this answer, you first
+need to understand the <a href="http://www.oracle.com/technetwork/java/java-update-release-numbers-change-1836624.html">current numbering scheme</a> for JDK Update
+releases.  Minor releases containing changes beyond security fixes are
+multiples of&#160;20.  Security releases based on the previous minor
+release are odd numbers incremented by five, or by six if necessary in
+order to keep the update number odd.  To understand whether a minor
+release is actually more secure than an earlier release ultimately
+requires looking at the release notes or the source code.</p>
+<p>What's the difference between releases named "JDK 7 Update 60",
+"1.7.0_60", and "JDK 7u60"?</p>
+<p>These are just different names for the same release.  These differences
+make it difficult to identify and verify equivalent releases.  A simple
+pointwise comparison of sequences of parsed tokens does not suffice;
+instead, a fairly sophisticated algorithm is needed.  The use of the
+lower-case 'u' is not an industry standard and is not language-neutral.</p>
+<p>It's long past time for a simpler, more intuitive versioning scheme.</p>
+<h2 id="Description">Description</h2>
+<h3 id="Version-numbers">Version numbers</h3>
+<p>A <em>version number</em>, <code>$VNUM</code>, is a non-empty sequence of elements separated
+by period characters (U+002E).  An element is either zero, or an unsigned
+integer numeral without leading zeros.  The final element in a version
+number must not be zero.  The format is:</p>
+<pre><code>[1-9][0-9]*((\.0)*\.[1-9][0-9]*)*</code></pre>
+<p>The sequence may be of arbitrary length but the first three elements are
+assigned specific meanings, as follows:</p>
+<pre><code>$MAJOR.$MINOR.$SECURITY</code></pre>
+<ul>
+<li>
+<p><a id="descMAJOR"><code>$MAJOR</code></a> --- The major version number,
+incremented for a major release that contains significant new
+features as specified in a new edition of the Java&#160;SE Platform
+Specification, <em>e.g.</em>, <a href="https://jcp.org/en/jsr/detail?id=337">JSR 337</a> for Java&#160;SE&#160;8.
+Features may be removed in a major release, given advance notice at
+least one major release ahead of time, and incompatible changes may
+be made when justified.  The <code>$MAJOR</code> version number of JDK&#160;8
+is <code>8</code>; the <code>$MAJOR</code> version number of JDK&#160;9 is <code>9</code>.  When
+<code>$MAJOR</code> is incremented, all subsequent elements are removed.</p>
+</li>
+<li>
+<p><a id="descMINOR"><code>$MINOR</code></a> --- The minor version number,
+incremented for a minor update release that may contain compatible
+bug fixes, revisions to standard APIs mandated by a
+<a href="https://jcp.org/en/procedures/jcp2#5.2">Maintenance Release</a> of the relevant Platform Specification, and
+implementation features outside the scope of that Specification such
+as new JDK-specific APIs, additional service providers, new garbage
+collectors, and ports to new hardware architectures.</p>
+</li>
+<li>
+<p><a id="descSEC"><code>$SECURITY</code></a> --- The security level, incremented
+for a security-update release that contains critical fixes including
+those necessary to improve security.  <code>$SECURITY</code> is <strong>not</strong> reset to
+zero when <code>$MINOR</code> is incremented.  A higher value of <code>$SECURITY</code>
+for a given <code>$MAJOR</code> value, therefore, always indicates a more secure
+release, regardless of the value of <code>$MINOR</code>.</p>
+</li>
+</ul>
+<p>The fourth and later elements of a version number are free for use by
+downstream consumers of the JDK code base.  Such a consumer may, <em>e.g.</em>,
+use the fourth element to identify patch releases which contain a small
+number of critical non-security fixes in addition to the security fixes
+in the corresponding security release.</p>
+<p>The version number does not include trailing zero elements; <em>i.e.</em>,
+<code>$SECURITY</code> is omitted if it has the value zero, and <code>$MINOR</code> is omitted
+if both <code>$MINOR</code> and <code>$SECURITY</code> have the value zero.</p>
+<p>The sequence of numerals in a version number is compared to another such
+sequence in numerical, pointwise fashion; <em>e.g.</em>, <code>9.9.1</code> is less than
+<code>9.10.3</code>.  If one sequence is shorter than another then the missing
+elements of the shorter sequence are considered to be less than the
+corresponding elements of the longer sequence; <em>e.g.</em>, <code>9.1.2</code> is less than
+<code>9.1.2.1</code>.</p>
+<h3 id="Version-strings">Version strings</h3>
+<p>A <em>version string</em>, <code>$VSTR</code>, consists of a version number <code>$VNUM</code>, as
+described above, optionally followed by pre-release and build information,
+in one of the following formats:</p>
+<pre><code>$VNUM(-$PRE)?\+$BUILD(-$OPT)?
+$VNUM-$PRE(-$OPT)?
+$VNUM(+-$OPT)?</code></pre>
+<p>where:</p>
+<ul>
+<li>
+<p><a id="descPRE"><code>$PRE</code>, matching <code>([a-zA-Z0-9]+)</code> --- A
+pre-release identifier.</a> Typically <code>ea</code>, for an early-access
+release that's under active development and potentially unstable, or
+<code>internal</code>, for an internal developer build.</p>
+<p>When comparing two version strings, a string with a pre-release
+identifier is always less than one with an equal <code>$VNUM</code> but no such
+identifier.  Pre-release identifiers are compared numerically when
+they consist only of digits, and lexicographically otherwise.
+Numeric identifiers are considered to be less than non-numeric
+identifiers.</p>
+</li>
+<li>
+<p><a id="descBUILD"><code>$BUILD</code>, matching <code>(0|[1-9][0-9]*)</code> --- The
+build number, incremented for each promoted build.</a> <code>$BUILD</code> is
+reset to one when any portion of <code>$VNUM</code> is incremented.</p>
+<p>When comparing two version strings with equal <code>$VNUM</code> and <code>$PRE</code>
+components, a string without a <code>$BUILD</code> component is always less than
+one with a <code>$BUILD</code> component; otherwise, <code>$BUILD</code> numbers are
+compared numerically.</p>
+</li>
+<li>
+<p><a id="descSTR">$OPT, matching <code>([-a-zA-Z0-9\.]+)</code> --- Additional
+build information, if desired.</a> In the case of an <code>internal</code> build
+this will often contain the date and time of the build.</p>
+<p>When comparing two version strings the value of <code>$OPT</code>, if present, may
+or may not be significant depending on the chosen comparison method.</p>
+</li>
+</ul>
+<p>A version number <code>10-ea</code> matches <code>$VNUM = "10"</code> and <code>$PRE = "ea"</code>.  The
+version number <code>10+-ea</code> matches <code>$VNUM = "10"</code> and <code>$OPT = "ea"</code>.</p>
+<p>The following table compares potential version strings for JDK&#160;9,
+using the existing and proposed formats:</p>
+<pre><code>Existing                Proposed
+Release Type    long           short    long           short
+------------    --------------------    --------------------
+Early Access    1.9.0-ea-b19    9-ea    9-ea+19        9-ea
+Major           1.9.0-b100      9       9+100          9
+Security #1     1.9.0_5-b20     9u5     9.0.1+20       9.0.1
+Security #2     1.9.0_11-b12    9u11    9.0.2+12       9.0.2
+Minor #1        1.9.0_20-b62    9u20    9.1.2+62       9.1.2
+Security #3     1.9.0_25-b15    9u25    9.1.3+15       9.1.3
+Security #4     1.9.0_31-b08    9u31    9.1.4+8        9.1.4
+Minor #2        1.9.0_40-b45    9u40    9.2.4+45       9.2.4</code></pre>
+<p>For reference, this table shows version strings in the new format as they
+would have been used, hypothetically, for some JDK&#160;7 update and
+security releases:</p>
+<pre><code>Actual               Hypothetical
+Release Type        long           short    long          short
+------------        --------------------    -------------------
+Security 2013/04    1.7.0_21-b11    7u21    7.4.10+11    7.4.10
+Security 2013/06    1.7.0_25-b15    7u25    7.4.11+15    7.4.11
+Minor    2013/09    1.7.0_40-b43    7u40    7.5.11+43    7.5.11
+Security 2013/10    1.7.0_45-b18    7u45    7.5.12+18    7.5.12
+Security 2014/01    1.7.0_51-b13    7u51    7.5.13+13    7.5.13
+Security 2014/04    1.7.0_55-b13    7u55    7.5.14+13    7.5.14
+Minor    2014/05    1.7.0_60-b19    7u60    7.6.14+19    7.6.14
+Security 2014/07    1.7.0_65-b20    7u65    7.6.15+20    7.6.15</code></pre>
+<h3 id="Dropping-the-initial-1-element-from-version-numbers">Dropping the initial <code>1</code> element from version numbers</h3>
+<p>This proposal drops the initial <code>1</code> element from JDK version numbers.
+That is, it suggests that the first release of JDK 9 will have the
+version number <code>9.0.0</code> rather than <code>1.9.0.0</code>.</p>
+<p>After nearly twenty years it's clear that the second element of the
+current version-number scheme is the JDK's <em>de facto</em> <code>$MAJOR</code> version
+number.  We increment that element when we add significant new features,
+and also when we make incompatible changes.</p>
+<p>We could start treating the initial element of the current scheme as the
+<code>$MAJOR</code> version number, but then JDK 9 would have the version number
+<code>2.0.0</code> even though everyone already refers to it as "JDK 9".  This would
+help no one.</p>
+<p>If we retain the initial <code>1</code> then JDK version numbers will continue to
+violate the principles of <a href="http://semver.org/">Semantic Versioning</a> and developers
+new to Java will continue to be confused about the difference between,
+<em>e.g.</em>, <code>1.9</code> and <code>9</code>.</p>
+<p>There is some risk in dropping the initial <code>1</code>.  There are many ways to
+compare version numbers; some will work correctly, while some will not.</p>
+<ul>
+<li>
+<p>Existing code that compares version numbers by parsing their elements
+and comparing them numerically will continue to work, since nine is
+greater than one; <em>i.e.</em>, <code>9.0.0</code> will be considered to be later than
+<code>1.8.0</code>.</p>
+</li>
+<li>
+<p>Existing code that skips the initial element when it has the value
+<code>1</code> will also continue to work, since in the new scheme the initial
+element will never have that value.</p>
+</li>
+<li>
+<p>Existing code that assumes the initial element to have the value <code>1</code>,
+however, and therefore always skips to the second element when
+comparing version numbers, will not work correctly; <em>e.g.</em>, such code
+will consider <code>9.0.1</code> to precede <code>1.8.0</code>.</p>
+</li>
+</ul>
+<p>Anecdotal evidence suggests that existing code in the third category is
+not very common, but we would welcome data to the contrary.</p>
+<h3 id="API">API</h3>
+<p>A simple Java API to parse, validate, and compare version strings will
+be defined (<a href="https://bugs.openjdk.java.net/browse/JDK-8072379">8072379</a>, <a href="https://bugs.openjdk.java.net/browse/JDK-8144062">8144062</a>):</p>
+<pre><code>package java.lang;
+
+import java.util.Optional;
+
+public class Runtime {
+
+    public static Version version();
+
+    public static class Version
+        implements Comparable&lt;Version&gt;
+    {
+
+        public static Version parse(String);
+
+        public int major();
+        public int minor();
+        public int security();
+
+        public List&lt;Integer&gt; version();
+        public Optional&lt;String&gt; pre();
+        public Optional&lt;Integer&gt; build();
+        public Optional&lt;String&gt; optional();
+
+        public int compareTo(Version o);
+        public int compareToIgnoreOpt(Version o);
+
+        public boolean equals(Object o);
+        public boolean equalsIgnoreOpt(Object o);
+
+        public String toString();
+        public int hashCode();
+    }
+}</code></pre>
+<p>An equivalent C API will be defined, most likely in terms of a revised
+<a href="http://hg.openjdk.java.net/jdk9/jdk9/jdk/file/tip/src/java.base/share/native/include/jvm.h">jvm_version_info struct</a>.</p>
+<p>All code in the JDK that inspects and compares JDK version strings will
+be updated to use these APIs.  Developers whose libraries or applications
+inspect and compare JDK version strings will be encouraged to use these
+APIs.</p>
+<h3 id="System-properties">System properties</h3>
+<p>The values returned by the following <a href="http://docs.oracle.com/javase/8/docs/api/java/lang/System.html#getProperties--">system properties</a> are modified
+by this JEP.  The general syntax is as follows:</p>
+<pre><code>Name                            Syntax
+------------------------------  --------------
+java.version                    $VNUM(\-$PRE)?  
+java.runtime.version            $VSTR
+java.vm.version                 $VSTR
+java.specification.version      $VNUM
+java.vm.specification.version   $VNUM</code></pre>
+<p>The system property <code>java.class.version</code> is not affected.</p>
+<p>The following table shows the existing and proposed values for different
+release types:</p>
+<pre><code>System Property                   Existing      Proposed
+-------------------------------   ------------  --------
+Early Access 
+  java.version                    1.9.0-ea      9-ea
+  java.runtime.version            1.9.0-ea-b73  9-ea+73
+  java.vm.version                 1.9.0-ea-b73  9-ea+73
+  java.specification.version      1.9           9
+  java.vm.specification.version   1.9           9
+
+Major (GA)
+  java.version                    1.9.0         9
+  java.runtime.version            1.9.0-b100    9+100
+  java.vm.version                 1.9.0-b100    9+100
+  java.specification.version      1.9           9
+  java.vm.specification.version   1.9           9
+
+Minor #1 (GA)
+  java.version                    1.9.0_20      9.1.2
+  java.runtime.version            1.9.0_20-b62  9.1.2+62
+  java.vm.version                 1.9.0_20-b62  9.1.2+62
+  java.specification.version      1.9           9
+  java.vm.specification.version   1.9           9
+
+Security #1 (GA)
+  java.version                    1.9.0_5       9.0.1
+  java.runtime.version            1.9.0_5-b20   9.0.1+20
+  java.vm.version                 1.9.0_5-b20   9.0.1+20
+  java.specification.version      1.9           9
+  java.vm.specification.version   1.9           9</code></pre>
+<p>Note that all code which has historically detected <code>.</code> in any of these system
+properties as part of version identification will need to be examined and
+potentially modified.  For example,
+<code>System.getProperty("java.version").indexof('.')</code> will return <code>-1</code> for major
+releases.</p>
+<h3 id="Launcher">Launcher</h3>
+<p>In the OpenJDK <code>java</code> launcher implementation, system properties are used when
+reporting version information, e.g. <code>java -version</code>, <code>java -fullversion</code>, and
+<code>java -showversion</code>.</p>
+<p>The launcher output continues to depend on the system properties as follows:</p>
+<pre><code>$ java -version
+openjdk version \"${java.version}\"
+${java.runtime.name} (build ${java.runtime.version})
+${java.vm.name} (build ${java.vm.version}, ${java.vm.info})
+
+$ java -showversion &lt; ... &gt;
+openjdk version \"${java.version}\"
+${java.runtime.name} (build ${java.runtime.version})
+${java.vm.name} (build ${java.vm.version}, ${java.vm.info})
+[ ... ]
+
+$ java -fullversion
+openjdk full version \"${java.runtime.version}\"</code></pre>
+<p>Implementation details may be found in the <a href="http://hg.openjdk.java.net/jdk9/jdk9/jdk/file/tip/src/java.base/share/classes/sun/misc/Version.java.template">source</a>.</p>
+<h3 id="@since-JavaDoc-tag"><code>@since</code> JavaDoc tag</h3>
+<p>The value for the <code>@since</code> JavaDoc tag will continue to be aligned
+with the system property <code>java.specification.version</code>; hence, new
+JDK 9 APIs will be indicated by <code>@since 9</code>.</p>
+<h3 id="Mercurial-changeset-tags">Mercurial changeset tags</h3>
+<p>Mercurial tags are used to identify a promotion's changesets.  Tools such
+as <a href="http://openjdk.java.net/code-tools">Code Tool's</a> <a href="http://hg.openjdk.java.net/code-tools/jcheck/file/tip/jcheck.py">jcheck</a>, which is used to validate
+all changesets pushed to JDK release forests, will be enhanced to support
+tags using the new version scheme.</p>
+<p>The general syntax for Mercurial tags is <code>jdk\-$VNUM\+$BUILD</code>.  The following
+table shows the proposed values for different release types:</p>
+<pre><code>Release Type      Proposed
+----------------  -----------
+Major (GA)        jdk-9+100
+Minor #1 (GA)     jdk-9.1.2+27
+Security #1 (GA)  jdk-9.0.1+3</code></pre>
+<p>Some tools may need to support both existing and proposed tag formats.</p>
+<h2 id="Testing">Testing</h2>
+<p>Changing the syntax and semantics of version strings will require
+extensive testing of all component areas.  Existing tests that are
+independent of the JDK version string should continue to pass.</p>
+</div></div><div id="sidebar"><div id="openjdk-sidebar-logo"><a href="/"><img alt="OpenJDK logo" src="/images/openjdk-small.png" /></a></div><div class="links"><div class="link"><a href="/faq/">OpenJDK FAQ</a></div><div class="link"><a href="/install/">Installing</a></div><div class="link"><a href="/contribute/">Contributing</a></div><div class="link"><a href="/sponsor/">Sponsoring</a></div><div class="link"><a href="/guide/">Developers' Guide</a></div></div><div class="links"><div class="links"><a href="http://mail.openjdk.java.net">Mailing lists</a></div><div class="link"><a href="/irc">IRC</a>
+                      &#183; <a href="http://wiki.openjdk.java.net">Wiki</a></div></div><div class="links"><div class="links"><a href="/bylaws">Bylaws</a> &#183; <a href="/census">Census</a></div><div class="link"><a href="/legal/">Legal</a></div></div><div class="links"><div class="links"><a href="/jeps/0"><b>JEP Process</b></a></div></div><div class="links"><div class="link search"><form method="get" action="http://www.google.com/search"><input id="searchBox" style="color: gray" type="text" name="q" size="10" maxlength="255" value="search" /><input type="hidden" name="sitesearch" value="openjdk.java.net" /></form></div></div><div class="links"><div class="about">Source code</div><div class="link"><a href="http://hg.openjdk.java.net">Mercurial</a></div><div class="link">Bundles (<a href="http://download.java.net/openjdk/jdk6">6</a>)</div></div><div class="links"><div class="about">Groups</div><div class="link"><a href="/groups/">(overview)</a></div><div class="link"><a href="/groups/2d">2D Graphics</a></div><div class="link"><a href="/groups/adoption">Adoption</a></div><div class="link"><a href="/groups/awt">AWT</a></div><div class="link"><a href="/groups/build">Build</a></div><div class="link"><a href="/groups/csr">Compatibility &amp; Specification Review</a></div><div class="link"><a href="/groups/compiler">Compiler</a></div><div class="link"><a href="/groups/conformance">Conformance</a></div><div class="link"><a href="/groups/core-libs">Core Libraries</a></div><div class="link"><a href="/groups/gb">Governing Board</a></div><div class="link"><a href="/groups/hotspot">HotSpot</a></div><div class="link"><a href="/groups/i18n">Internationalization</a></div><div class="link"><a href="/groups/jmx">JMX</a></div><div class="link"><a href="/groups/members">Members</a></div><div class="link"><a href="/groups/net">Networking</a></div><div class="link"><a href="/groups/nb-projects">NetBeans Projects</a></div><div class="link"><a href="/groups/porters">Porters</a></div><div class="link"><a href="/groups/quality">Quality</a></div><div class="link"><a href="/groups/security">Security</a></div><div class="link"><a href="/groups/serviceability">Serviceability</a></div><div class="link"><a href="/groups/sound">Sound</a></div><div class="link"><a href="/groups/swing">Swing</a></div><div class="link"><a href="/groups/web">Web</a></div></div><div class="links"><div class="about">Projects</div><div class="link"><a href="/projects/">(overview)</a></div><div class="link"><a href="/projects/amber">Amber</a></div><div class="link"><a href="/projects/anno-pipeline">Annotations Pipeline 2.0</a></div><div class="link"><a href="/projects/audio-engine">Audio Engine</a></div><div class="link"><a href="/projects/build-infra">Build Infrastructure</a></div><div class="link"><a href="/projects/caciocavallo">Caciocavallo</a></div><div class="link"><a href="/projects/closures">Closures</a></div><div class="link"><a href="/projects/code-tools">Code Tools</a></div><div class="link"><a href="/projects/coin">Coin</a></div><div class="link"><a href="/projects/cvmi">Common VM Interface</a></div><div class="link"><a href="/projects/compiler-grammar">Compiler Grammar</a></div><div class="link"><a href="/projects/dio">Device I/O</a></div><div class="link"><a href="/projects/duke">Duke</a></div><div class="link"><a href="/projects/font-scaler">Font Scaler</a></div><div class="link"><a href="/projects/fbtoolkit">Framebuffer Toolkit</a></div><div class="link"><a href="/projects/graal">Graal</a></div><div class="link"><a href="/projects/graphics-rasterizer">Graphics Rasterizer</a></div><div class="link"><a href="/projects/harfbuzz">HarfBuzz Integration</a></div><div class="link"><a href="/projects/icedtea">IcedTea</a></div><div class="link"><a href="/projects/jdk6">JDK 6</a></div><div class="link"><a href="/projects/jdk7">JDK 7</a></div><div class="link"><a href="/projects/jdk7u">JDK 7 Updates</a></div><div class="link"><a href="/projects/jdk8">JDK 8</a></div><div class="link"><a href="/projects/jdk8u">JDK 8 Updates</a></div><div class="link"><a href="/projects/jdk9">JDK 9</a></div><div class="link"><a href="/projects/jdk">JDK</a>
+      (<a href="/projects/jdk/10">10</a>,
+       <a href="/projects/jdk/11">11</a>)</div><div class="link"><a href="/projects/jdk-updates">JDK Updates</a></div><div class="link"><a href="/projects/javadoc-next">JavaDoc.Next</a></div><div class="link"><a href="/projects/jigsaw">Jigsaw</a></div><div class="link"><a href="/projects/kona">Kona</a></div><div class="link"><a href="/projects/kulla">Kulla</a></div><div class="link"><a href="/projects/lambda">Lambda</a></div><div class="link"><a href="/projects/locale-enhancement">Locale Enhancement</a></div><div class="link"><a href="/projects/loom">Loom</a></div><div class="link"><a href="/projects/jmm">Memory Model Update</a></div><div class="link"><a href="/projects/metropolis">Metropolis</a></div><div class="link"><a href="/projects/mobile">Mobile</a></div><div class="link"><a href="/projects/modules">Modules</a></div><div class="link"><a href="/projects/mlvm">Multi-Language VM</a></div><div class="link"><a href="/projects/nashorn">Nashorn</a></div><div class="link"><a href="/projects/nio">New I/O</a></div><div class="link"><a href="/projects/openjfx">OpenJFX</a></div><div class="link"><a href="/projects/panama">Panama</a></div><div class="link"><a href="/projects/penrose">Penrose</a></div><div class="link"><a href="/projects/aarch32-port">Port: AArch32</a></div><div class="link"><a href="/projects/aarch64-port">Port: AArch64</a></div><div class="link"><a href="/projects/bsd-port">Port: BSD</a></div><div class="link"><a href="/projects/haiku-port">Port: Haiku</a></div><div class="link"><a href="/projects/macosx-port">Port: Mac OS X</a></div><div class="link"><a href="/projects/mips-port">Port: MIPS</a></div><div class="link"><a href="/projects/ppc-aix-port">Port: PowerPC/AIX</a></div><div class="link"><a href="/projects/s390x-port">Port: s390x</a></div><div class="link"><a href="/projects/portola">Portola</a></div><div class="link"><a href="/projects/sctp">SCTP</a></div><div class="link"><a href="/projects/shenandoah">Shenandoah</a></div><div class="link"><a href="/projects/sumatra">Sumatra</a></div><div class="link"><a href="/projects/threeten">ThreeTen</a></div><div class="link"><a href="/projects/tiered-attrib">Tiered Attribution</a></div><div class="link"><a href="/projects/type-annotations">Type Annotations</a></div><div class="link"><a href="/projects/xrender">XRender Pipeline</a></div><div class="link"><a href="/projects/valhalla">Valhalla</a></div><div class="link"><a href="/projects/verona">Verona</a></div><div class="link"><a href="/projects/visualvm">VisualVM</a></div><div class="link"><a href="/projects/zero">Zero</a></div><div class="link"><a href="/projects/zgc">ZGC</a></div></div><div class="links"><div class="about">Tools</div><div class="link"><a href="http://java.sun.com/javase/downloads/index.jsp">Java SE</a></div><div class="link"><a href="http://www.selenic.com/mercurial/">Mercurial</a></div><div class="link"><a href="http://netbeans.org">NetBeans</a></div><div class="link"><a href="/jtreg/index.html">jtreg harness</a></div></div><div class="links"><div class="about">Community</div><div class="link"><a href="http://planetjdk.org">Planet JDK blogs</a></div><div class="link"><a href="http://blogs.oracle.com/theaquarium">The Aquarium</a></div><div class="link"><a href="http://java.sun.com">java.sun.com</a></div><div class="link"><a href="http://jcp.org">Java Community Process</a></div></div><div class="links"><div class="about">Related</div><div class="link">JDK Snapshots (<a href="http://jdk.java.net/8/">8u</a>,
+       <a href="http://jdk.java.net/9/">9</a>) </div><div class="link"><a href="http://javaee.github.io/glassfish/">GlassFish</a></div></div><div class="buttons"><a href="http://oracle.com"><img alt="Oracle logo" src="/images/oracle.png" /></a></div></div><div id="footer">
+
+        &#169; 2018 Oracle Corporation and/or its affiliates
+        <br /><a href="/legal/tou/">Terms of Use</a>
+        &#183;
+        
+            License: <a href="/legal/gplv2+ce.html">GPLv2</a>
+        &#183; <a href="http://www.oracle.com/us/legal/privacy/">Privacy</a>
+        &#183; <a href="http://www.oracle.com/us/legal/third-party-trademarks/third-party-trademarks-078568.html">Trademarks</a></div><SCRIPT type="text/javascript">
+  var sc_project=2527440;
+  var sc_invisible=1;
+  var sc_partition=24;
+  var sc_security="d832a704";
+  var sc_remove_link=1;
+  </SCRIPT><script type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js"></script><noscript><div class="statcounter"><img class="statcounter" src="http://c25.statcounter.com/counter.php?sc_project=2527440&amp;java=0&amp;security=d832a704&amp;invisible=1" alt="web statistics" /></div></noscript></body></html>

@@ -1,0 +1,21 @@
+# All files for version 1.6 (source code and manpages) are compiled from UTF-8 Unicode or ASCII.
+# Run the script "install-star-cygwin.sh" from Cygwin itself, to install versions 1.6 for your architecture,
+# make sure you have enough privileges.
+# The script can be called from any directory:
+
+chmod +x install-star-cygwin.sh
+bash install-star-cygwin.sh
+
+# To view information:
+man 1 star
+man 5 star
+star -version
+star -help
+man 1 star_sym
+star_sym -version
+star_sym -help
+
+# To remove these files, use the script "remove-star-cygwin.sh"
+
+chmod +x remove-star-cygwin.sh
+bash remove-star-cygwin.sh

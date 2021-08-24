@@ -1,0 +1,184 @@
+Examples of "java -version" run on different system configurations.
+From version 9 and up, the version is displayed differently.
+
+JEP 223: New Version-String Scheme > http://openjdk.java.net/jeps/223
+New Java Version - it's not JDK 1.9 > https://www.infoq.com/news/2014/11/new-java-version-its-not-jdk19
+
+Versioning from java 9 onwards:
+
+                      Existing                Proposed
+Release Type    long           short    long           short
+------------    --------------------    --------------------
+Early Access    1.9.0-ea-b19    9-ea    9.0.0-ea+19    9-ea
+Major           1.9.0-b100      9       9.0.0+100      9
+Security #1     1.9.0_5-b20     9u5     9.0.1+20       9.0.1
+Security #2     1.9.0_11-b12    9u11    9.0.2+12       9.0.2
+Minor #1        1.9.0_20-b62    9u20    9.1.2+62       9.1.2
+Security #3     1.9.0_25-b15    9u25    9.1.3+15       9.1.3
+Security #4     1.9.0_31-b08    9u31    9.1.4+8        9.1.4
+Minor #2        1.9.0_40-b45    9u40    9.2.4+45       9.2.4
+
+Note: the comand "java -version" outputs the version as in the column "Proposed > short"
+
+
+#Start of custom examples
+# cat java-test.txt | grep -v ^# | grep -i version | cut -d \" -f2 | tr -d '\r'
+
+## one character
+java version "0"
+java version "1"
+java version "2"
+java version "3"
+java version "4"
+java version "5"
+java version "6"
+java version "7"
+java version "8"
+java version "9"
+java version "10"
+java version "11"
+
+## early access, starting with version 9
+java version "9-ea"
+java version "10-ea"
+java version "11-ea"
+
+## example versions with 2 numbers old format
+java version "1.0"
+java version "1.1"
+java version "1.2"
+java version "1.3"
+java version "1.4"
+java version "1.5"
+java version "1.6"
+java version "1.7"
+java version "1.8"
+
+## old versions with 3 numbers
+java version "1.0.0"
+java version "1.8.0"
+
+## old version most common
+java version "1.6.0_04"
+java version "1.8.0_141"
+
+## long version old format
+java version "1.8.0_72-internal"
+java version "1.8.0_999-internal"
+
+#End of custom examples
+
+
+---- EXAMPLES OF "java -version" ON DIFFERENT SYSTEMS AND JAVA VERSIONS ----
+
+-- OpenJDK --
+
+java version "1.6.0_24"
+OpenJDK Runtime Environment (IcedTea6 1.11.11.90) (rhel-1.62.1.11.11.90.el6_4-x86_64)
+OpenJDK 64-Bit Server VM (build 20.0-b12, mixed mode)
+
+java version "1.7.0_91"
+OpenJDK Runtime Environment (amzn-2.6.2.2.63.amzn1-x86_64 u91-b00)
+OpenJDK 64-Bit Server VM (build 24.91-b01, mixed mode)
+
+java version "1.7.0_111"
+OpenJDK Runtime Environment (IcedTea 2.6.7) (7u111-2.6.7-1~deb8u1)
+OpenJDK 64-Bit Server VM (build 24.111-b01, mixed mode)
+
+openjdk version "1.8.0_72-internal"
+OpenJDK Runtime Environment (build 1.8.0_72-internal-b05)
+OpenJDK 64-Bit Server VM (build 25.72-b05, mixed mode)
+
+openjdk version "1.8.0_131"
+OpenJDK Runtime Environment (build 1.8.0_131-8u131-b11-1~14.04.york0-b11)
+OpenJDK 64-Bit Server VM (build 25.131-b11, mixed mode)
+
+# jdk-9+181_windows-x64_ri.zip
+openjdk version "9"
+OpenJDK Runtime Environment (build 9+181)
+OpenJDK 64-Bit Server VM (build 9+181, mixed mode)
+
+openjdk version "9.0.4"
+OpenJDK Runtime Environment (build 9.0.4+11)
+OpenJDK 64-Bit Server VM (build 9.0.4+11, mixed mode)
+
+openjdk version "10.0.1" 2018-04-17
+OpenJDK Runtime Environment (build 10.0.1+10-Ubuntu-3ubuntu1)
+OpenJDK 64-Bit Server VM (build 10.0.1+10-Ubuntu-3ubuntu1, mixed mode)
+
+
+-- Oracle Java --
+
+java version "1.4.2_03"
+Java(TM) 2 Runtime Environment, Standard Edition (build 1.4.2_03-b02)
+Java HotSpot(TM) Client VM (build 1.4.2_03-b02, mixed mode)
+
+java version "1.5.0_16"
+Java(TM) 2 Runtime Environment, Standard Edition (build 1.5.0_16-b02)
+Java HotSpot(TM) Client VM (build 1.5.0_16-b02, mixed mode, sharing)
+
+java version "1.5.0_29"
+Java(TM) 2 Runtime Environment, Standard Edition (build 1.5.0_29-b02)
+Java HotSpot(TM) Server VM (build 1.5.0_29-b02, mixed mode)
+
+java version "1.6.0_04"
+Java(TM) SE Runtime Environment (build 1.6.0_04-b12)
+Java HotSpot(TM) Server VM (build 10.0-b19, mixed mode)
+
+java version "1.6.0_65"
+Java(TM) SE Runtime Environment (build 1.6.0_65-b14-468)
+Java HotSpot(TM) 64-Bit Server VM (build 20.65-b04-468, mixed mode)
+
+java version "1.7.0_04"
+Java(TM) SE Runtime Environment (build 1.7.0_04-b20)
+Java HotSpot(TM) 64-Bit Server VM (build 23.0-b21, mixed mode)
+
+java version "1.7.0_79"
+Java(TM) SE Runtime Environment (build 1.7.0_79-b15)
+Java HotSpot(TM) 64-Bit Server VM (build 24.79-b02, mixed mode)
+
+java version "1.8.0_141"
+Java(TM) SE Runtime Environment (build 8.0.5.0 - pmz3180sr5-20170629_01(SR5))
+IBM J9 VM (build 2.9, JRE 1.8.0 z/OS s390-31 20170622_353577 (JIT enabled, AOT enabled)
+J9VM - e418ba5
+JIT - tr.open_20170622_105942_3805cca
+OMR - c9b30d3)
+JCL - 20170622_01 based on Oracle jdk8u141-b13
+
+java version "1.8.0_151"
+Java(TM) SE Runtime Environment (build 1.8.0_151-b12)
+Java HotSpot(TM) 64-Bit Server VM (build 25.151-b12, mixed mode)
+
+java version "1.8.0_162"
+Java(TM) SE Runtime Environment (build 1.8.0_162-b12)
+Java HotSpot(TM) 64-Bit Server VM (build 25.162-b12, mixed mode)
+
+java version "9-ea"
+Java(TM) SE Runtime Environment (build 9-ea+162)
+Java HotSpot(TM) Server VM (build 9-ea+162, mixed mode)
+
+# jre-9_windows-x64_bin.exe
+java version "9"
+Java(TM) SE Runtime Environment (build 9+181)
+Java HotSpot(TM) 64-Bit Server VM (build 9+181, mixed mode)
+
+java version "9.0.1"
+Java(TM) SE Runtime Environment (build 9.0.1+11)
+Java HotSpot(TM) 64-Bit Server VM (build 9.0.1+11, mixed mode)
+
+java version "9.0.4"
+Java(TM) SE Runtime Environment (build 9.0.4+11)
+Java HotSpot(TM) 64-Bit Server VM (build 9.0.4+11, mixed mode)
+
+java version "10" 2018-03-20
+Java(TM) SE Runtime Environment 18.3 (build 10+43)
+Java HotSpot(TM) 64-Bit Server VM 18.3 (build 10+43, mixed mode)
+
+java version "10.0.1" 2018-04-17
+Java(TM) SE Runtime Environment 18.3 (build 10.0.1+10)
+Java HotSpot(TM) 64-Bit Server VM 18.3 (build 10.0.1+10, mixed mode)
+
+# jdk-11-ea+14_windows-x64_bin.exe
+java version "11-ea" 2018-09-25
+Java(TM) SE Runtime Environment 18.9 (build 11-ea+14)
+Java HotSpot(TM) 64-Bit Server VM 18.9 (build 11-ea+14, mixed mode)
