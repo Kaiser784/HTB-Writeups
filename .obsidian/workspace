@@ -14,7 +14,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Challenges/Reversing/Impossible Password/Impossible Password.md",
+                "file": "Challenges/pwn/0xDiablos/0xDiablos.md",
                 "mode": "preview"
               }
             },
@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Challenges/Reversing/Impossible Password/Impossible Password.md",
+                "file": "Challenges/pwn/0xDiablos/0xDiablos.md",
                 "mode": "source"
               }
             },
@@ -106,7 +106,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Challenges/Reversing/Impossible Password/Impossible Password.md",
+                "file": "Challenges/pwn/0xDiablos/0xDiablos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Challenges/Reversing/Impossible Password/Impossible Password.md",
+                "file": "Challenges/pwn/0xDiablos/0xDiablos.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -189,15 +189,15 @@
   },
   "active": "769df90077da6983",
   "lastOpenFiles": [
+    "Challenges/pwn/0xDiablos/0xDiablos.md",
+    "Challenges/Reversing/Bypass/Bypass.md",
+    "Challenges/Reversing/Impossible Password/Impossible Password.md",
     "Untitled.md",
     "Challenges/OSINT/ID Exposed/ID Exposed.md",
     "Challenges/OSINT/Money Flowz/MoneyFlowz.md",
     "Challenges/Mobile/Cryptohorrific/Cryptohorrific.md",
     "Challenges/Mobile/Cat/Cat.md",
     "Challenges/Forensics/reminiscient/reminiscient.md",
-    "Challenges/Web/petpet rcbee/rcbee.md",
-    "Fortresses/Akerva/Akerva.md",
-    "Challenges/Web/LoveTok/LoveTok.md",
-    "Challenges/Web/PhoneBook/Untitled.md"
+    "Challenges/Web/petpet rcbee/rcbee.md"
   ]
 }
