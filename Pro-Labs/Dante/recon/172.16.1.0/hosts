@@ -1,0 +1,120 @@
+Nmap scan report for 172.16.1.1
+Cannot find nmap-mac-prefixes: Ethernet vendor correlation will not be performed
+Host is up (0.00048s latency).
+Not shown: 1180 closed ports
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+MAC Address: 00:50:56:B9:FD:3A (Unknown)
+
+Nmap scan report for 172.16.1.5
+Host is up (0.00035s latency).
+Not shown: 1175 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+111/tcp  open  sunrpc
+135/tcp  open  epmap
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+1433/tcp open  ms-sql-s
+2049/tcp open  nfs
+MAC Address: 00:50:56:B9:05:3E (Unknown)
+
+Nmap scan report for 172.16.1.10
+Host is up (0.00034s latency).
+Not shown: 1178 closed ports
+PORT    STATE SERVICE
+22/tcp  open  ssh
+80/tcp  open  http
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+MAC Address: 00:50:56:B9:13:8E (Unknown)
+
+Nmap scan report for 172.16.1.12
+Host is up (0.00036s latency).
+Not shown: 1177 closed ports
+PORT     STATE SERVICE
+21/tcp   open  ftp
+22/tcp   open  ssh
+80/tcp   open  http
+443/tcp  open  https
+3306/tcp open  mysql
+MAC Address: 00:50:56:B9:B7:11 (Unknown)
+
+Nmap scan report for 172.16.1.13
+Host is up (0.00077s latency).
+Not shown: 1179 filtered ports
+PORT    STATE SERVICE
+80/tcp  open  http
+443/tcp open  https
+445/tcp open  microsoft-ds
+MAC Address: 00:50:56:B9:DC:28 (Unknown)
+
+Nmap scan report for 172.16.1.17
+Host is up (0.00044s latency).
+Not shown: 1178 closed ports
+PORT      STATE SERVICE
+80/tcp    open  http
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+10000/tcp open  webmin
+MAC Address: 00:50:56:B9:79:26 (Unknown)
+
+Nmap scan report for 172.16.1.19
+Host is up (0.00035s latency).
+Not shown: 1180 closed ports
+PORT     STATE SERVICE
+80/tcp   open  http
+8080/tcp open  http-alt
+MAC Address: 00:50:56:B9:C0:DF (Unknown)
+
+Nmap scan report for 172.16.1.20
+Host is up (0.00026s latency).
+Not shown: 1169 closed ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+53/tcp   open  domain
+80/tcp   open  http
+88/tcp   open  kerberos
+135/tcp  open  epmap
+139/tcp  open  netbios-ssn
+389/tcp  open  ldap
+443/tcp  open  https
+445/tcp  open  microsoft-ds
+464/tcp  open  kpasswd
+593/tcp  open  unknown
+636/tcp  open  ldaps
+3389/tcp open  ms-wbt-server
+MAC Address: 00:50:56:B9:0D:5E (Unknown)
+
+Nmap scan report for 172.16.1.101
+Host is up (0.00041s latency).
+Not shown: 1178 closed ports
+PORT    STATE SERVICE
+21/tcp  open  ftp
+135/tcp open  epmap
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+MAC Address: 00:50:56:B9:4D:97 (Unknown)
+
+Nmap scan report for 172.16.1.102
+Host is up (0.0017s latency).
+Not shown: 1176 closed ports
+PORT     STATE SERVICE
+80/tcp   open  http
+135/tcp  open  epmap
+139/tcp  open  netbios-ssn
+443/tcp  open  https
+445/tcp  open  microsoft-ds
+3389/tcp open  ms-wbt-server
+MAC Address: 00:50:56:B9:1B:D4 (Unknown)
+
+Nmap scan report for 172.16.1.100
+Host is up (0.0000070s latency).
+Not shown: 1178 closed ports
+PORT   STATE SERVICE
+21/tcp open  ftp
+22/tcp open  ssh
+80/tcp open  http
+81/tcp open  unknown
+

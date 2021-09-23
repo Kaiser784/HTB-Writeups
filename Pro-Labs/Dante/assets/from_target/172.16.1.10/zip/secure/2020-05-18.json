@@ -1,0 +1,405 @@
+[
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1589794001.000200",
+        "user": "U013CT40QHM",
+        "text": "<@U013CT40QHM> has joined the channel"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_purpose",
+        "ts": "1589794001.000300",
+        "user": "U013CT40QHM",
+        "text": "<@U013CT40QHM> set the channel purpose: discuss network security",
+        "purpose": "discuss network security"
+    },
+    {
+        "type": "message",
+        "subtype": "channel_join",
+        "ts": "1589794007.000600",
+        "user": "U014025GL3W",
+        "text": "<@U014025GL3W> has joined the channel",
+        "inviter": "U013CT40QHM"
+    },
+    {
+        "client_msg_id": "24eb32d6-f430-4b09-9151-7678873d617e",
+        "type": "message",
+        "text": "Hi Margaret, I created the channel so we can discuss the network security - in private!",
+        "user": "U013CT40QHM",
+        "ts": "1589794069.001100",
+        "team": "T013LTDB554",
+        "user_team": "T013LTDB554",
+        "source_team": "T013LTDB554",
+        "user_profile": {
+            "avatar_hash": "ga341d23f843",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/a341d23f843e566bde18c04a566b47f3.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Frank",
+            "display_name": "",
+            "team": "T013LTDB554",
+            "name": "htb_donotuse",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "oRyfi",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Hi Margaret, I created the channel so we can discuss the network security - in private!"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "2ffdee9d-a241-44c8-afb9-236519cc9f68",
+        "type": "message",
+        "text": "Great idea, Frank",
+        "user": "U014025GL3W",
+        "ts": "1589794079.001300",
+        "team": "T013LTDB554",
+        "user_team": "T013LTDB554",
+        "source_team": "T013LTDB554",
+        "user_profile": {
+            "avatar_hash": "g368549a1713",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/368549a1713abb8d1a5ec871da25b0ce.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "",
+            "real_name": "Margaret",
+            "display_name": "Margaret",
+            "team": "T013LTDB554",
+            "name": "thisissecretright",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "xoKz",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Great idea, Frank"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "06348d4d-8155-447b-8493-cda0486770ec",
+        "type": "message",
+        "text": "We need to migrate the Slack workspace to the new Ubuntu images, can you do this today?",
+        "user": "U013CT40QHM",
+        "ts": "1589794187.002400",
+        "team": "T013LTDB554",
+        "user_team": "T013LTDB554",
+        "source_team": "T013LTDB554",
+        "user_profile": {
+            "avatar_hash": "ga341d23f843",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/a341d23f843e566bde18c04a566b47f3.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Frank",
+            "display_name": "",
+            "team": "T013LTDB554",
+            "name": "htb_donotuse",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "OgTuz",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "We need to migrate the Slack workspace to the new Ubuntu images, can you do this today?"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "4ef850bb-a93c-490f-9e99-b9198cc0ec67",
+        "type": "message",
+        "text": "Sure, but I need my password for the Ubuntu images, I haven't been given it yet",
+        "user": "U014025GL3W",
+        "ts": "1589794206.002900",
+        "team": "T013LTDB554",
+        "user_team": "T013LTDB554",
+        "source_team": "T013LTDB554",
+        "user_profile": {
+            "avatar_hash": "g368549a1713",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/368549a1713abb8d1a5ec871da25b0ce.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "",
+            "real_name": "Margaret",
+            "display_name": "Margaret",
+            "team": "T013LTDB554",
+            "name": "thisissecretright",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "xuSlT",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Sure, but I need my password for the Ubuntu images, I haven't been given it yet"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "c79fa547-1e2e-43ea-b61a-5d51e42110ca",
+        "type": "message",
+        "text": "Ahh sorry about that - its STARS5678FORTUNE401",
+        "user": "U013CT40QHM",
+        "ts": "1589794345.003500",
+        "team": "T013LTDB554",
+        "user_team": "T013LTDB554",
+        "source_team": "T013LTDB554",
+        "user_profile": {
+            "avatar_hash": "ga341d23f843",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/a341d23f843e566bde18c04a566b47f3.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Frank",
+            "display_name": "",
+            "team": "T013LTDB554",
+            "name": "htb_donotuse",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "QtUII",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Ahh sorry about that - its STARS5678FORTUNE401"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "4408bde0-2036-41e3-8fe0-563fc3e34576",
+        "type": "message",
+        "text": "Thanks very much, I'll get on that now.",
+        "user": "U014025GL3W",
+        "ts": "1589794355.003700",
+        "team": "T013LTDB554",
+        "user_team": "T013LTDB554",
+        "source_team": "T013LTDB554",
+        "user_profile": {
+            "avatar_hash": "g368549a1713",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/368549a1713abb8d1a5ec871da25b0ce.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "",
+            "real_name": "Margaret",
+            "display_name": "Margaret",
+            "team": "T013LTDB554",
+            "name": "thisissecretright",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "vS2m",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Thanks very much, I'll get on that now."
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "ad6201ce-f21e-4536-88e5-629e929a8461",
+        "type": "message",
+        "text": "No problem at all. I'll make this channel private from now on - we cant risk another breach",
+        "user": "U013CT40QHM",
+        "ts": "1589794395.004200",
+        "team": "T013LTDB554",
+        "user_team": "T013LTDB554",
+        "source_team": "T013LTDB554",
+        "user_profile": {
+            "avatar_hash": "ga341d23f843",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/a341d23f843e566bde18c04a566b47f3.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Frank",
+            "display_name": "",
+            "team": "T013LTDB554",
+            "name": "htb_donotuse",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "GW7",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "No problem at all. I'll make this channel private from now on - we cant risk another breach"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "0db0128e-52cf-468b-9b5f-5df008169397",
+        "type": "message",
+        "text": "Please get rid of my admin privs on the Ubuntu box and go ahead and make yourself an admin account",
+        "user": "U014025GL3W",
+        "ts": "1589795777.004900",
+        "team": "T013LTDB554",
+        "user_team": "T013LTDB554",
+        "source_team": "T013LTDB554",
+        "user_profile": {
+            "avatar_hash": "g368549a1713",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/368549a1713abb8d1a5ec871da25b0ce.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "",
+            "real_name": "Margaret",
+            "display_name": "Margaret",
+            "team": "T013LTDB554",
+            "name": "thisissecretright",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "NRyy=",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Please get rid of my admin privs on the Ubuntu box and go ahead and make yourself an admin account"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "59070443-7ef0-4b17-a88f-072b71c37451",
+        "type": "message",
+        "text": "Thanks, will do",
+        "user": "U013CT40QHM",
+        "ts": "1589795785.005100",
+        "team": "T013LTDB554",
+        "user_team": "T013LTDB554",
+        "source_team": "T013LTDB554",
+        "user_profile": {
+            "avatar_hash": "ga341d23f843",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/a341d23f843e566bde18c04a566b47f3.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0002-72.png",
+            "first_name": "",
+            "real_name": "Frank",
+            "display_name": "",
+            "team": "T013LTDB554",
+            "name": "htb_donotuse",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "NTkt",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "Thanks, will do"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "client_msg_id": "386f950e-2c8f-4d02-93de-5ef92bf6172b",
+        "type": "message",
+        "text": "I also set you a new password on the Ubuntu box - 69F15HST1CX, same username",
+        "user": "U014025GL3W",
+        "ts": "1589806690.005900",
+        "team": "T013LTDB554",
+        "user_team": "T013LTDB554",
+        "source_team": "T013LTDB554",
+        "user_profile": {
+            "avatar_hash": "g368549a1713",
+            "image_72": "https:\/\/secure.gravatar.com\/avatar\/368549a1713abb8d1a5ec871da25b0ce.jpg?s=72&d=https%3A%2F%2Fa.slack-edge.com%2Fdf10d%2Fimg%2Favatars%2Fava_0021-72.png",
+            "first_name": "",
+            "real_name": "Margaret",
+            "display_name": "Margaret",
+            "team": "T013LTDB554",
+            "name": "thisissecretright",
+            "is_restricted": false,
+            "is_ultra_restricted": false
+        },
+        "blocks": [
+            {
+                "type": "rich_text",
+                "block_id": "oT1",
+                "elements": [
+                    {
+                        "type": "rich_text_section",
+                        "elements": [
+                            {
+                                "type": "text",
+                                "text": "I also set you a new password on the Ubuntu box - 69F15HST1CX, same username"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

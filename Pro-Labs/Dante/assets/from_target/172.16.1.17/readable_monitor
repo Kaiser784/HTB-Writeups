@@ -1,0 +1,1319 @@
+bj<P
+]cz%)
+x6nXG
+C/g@z
+7oa;Q
+1/XI
+_spotify-connect
+_tcp
+local
+M-SEARCH * HTTP/1.1
+HOST: 239.255.255.250:1900
+MAN: "ssdp:discover"
+MX: 1
+ST: urn:dial-multiscreen-org:service:dial:1
+\POST /session_login.cgi HTTP/1.1
+Host: 172.16.88.154:10000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://172.16.88.154:10000/session_login.cgi?logout=1
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 28
+Origin: http://172.16.88.154:10000
+DNT: 1
+Connection: keep-alive
+Cookie: redirect=1; testing=1; sid=x
+Upgrade-Insecure-Requests: 1
+user=admin&pass=password6543
+HTTP/1.0 200 Document follows
+Date: Thu, 25 Jun 2020 21:00:47 GMT
+Server: MiniServ/1.900
+Connection: close
+Auth-type: auth-required=1
+Set-Cookie: redirect=1; path=/
+Set-Cookie: testing=1; path=/
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: script-src 'self' 'unsafe-inline' 'unsafe-eval'; frame-src 'self'; child-src 'self'
+Content-type: text/html; Charset=UTF-8
+<!DOCTYPE HTML>
+<html data-background-style="gainsboro" class="session_login">
+"<head>
+ <noscript> <style> html[data-background-style="gainsboro"] { background-color: #d6d6d6; } html[data-background-style="nightRider"] { background-color: #1a1c20; } html[data-background-style="nightRider"] div[data-noscript] { color: #979ba080; } html[data-slider-fixed='1'] { margin-right: 0 !important; } body > div[data-noscript] ~ * { display: none !important; } div[data-noscript] { visibility: hidden; animation: 2s noscript-fadein; animation-delay: 1s; text-align: center; animation-fill-mode: forwards; } @keyframes noscript-fadein { 0% { opacity: 0; } 100% { visibility: visible; opacity: 1; } } </style> <div data-noscript> <div class="fa fa-3x fa-exclamation-triangle margined-top-20 text-danger"></div> <h2>JavaScript is disabled</h2> <p>Please enable javascript and refresh the page</p> </div> </noscript>
+<meta charset="utf-8">
+<link data-link-ref rel="apple-touch-icon" sizes="180x180" href="/images/favicons/webmin/apple-touch-icon.png"><link data-link-ref rel="icon" type="image/png" sizes="32x32" href="/images/favicons/webmin/favicon-32x32.png"><link data-link-ref rel="icon" type="image/png" sizes="192x192" href="/images/favicons/webmin/android-chrome-192x192.png"><link data-link-ref rel="icon" type="image/png" sizes="16x16" href="/images/favicons/webmin/favicon-16x16.png">
+"<link data-link-ref rel="manifest" href="/images/favicons/webmin/site.webmanifest">
+"<link data-link-ref rel="mask-icon" href="/images/favicons/webmin/safari-pinned-tab.svg" color="#3d74ca"><meta name="msapplication-TileColor" content="#3d74ca"><meta data-link-ref name="msapplication-TileImage" content="/images/favicons/webmin/mstile-144x144.png"><meta name="theme-color" content="#3d74ca"><title>Login to Webmin</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="/unauthenticated/css/bundle.min.css?1921999999999901" rel="stylesheet">
+<script>setTimeout(function(){var a=document.querySelectorAll('input[type="password"]');i=0;
+for(length=a.length;i<length;i++){var b=document.createElement("span"),d=30<a[i].offsetHeight?1:0;b.classList.add("input_warning_caps");b.setAttribute("title","Caps Lock");d&&b.classList.add("large");a[i].classList.add("use_input_warning_caps");a[i].parentNode.insertBefore(b,a[i].nextSibling);a[i].addEventListener("blur",function(){this.nextSibling.classList.remove("visible")});a[i].addEventListener("keydown",function(c){"function"===typeof c.getModifierState&&((state=20===c.keyCode?!c.getModifierState("CapsLock"):
+c.getModifierState("CapsLock"))?this.nextSibling.classList.add("visible"):this.nextSibling.classList.remove("visible"))})};},100);function spinner() {var x = document.querySelector('.fa-sign-in:not(.invisible)'),s = '<span class="cspinner_container"><span class="cspinner"><span class="cspinner-icon white small"></span></span></span>';if(x)
+"{x.classList.add("invisible"); x.insertAdjacentHTML('afterend', s);x.parentNode.classList.add("disabled");x.parentNode.disabled=true}}</script> <link href="/unauthenticated/css/fonts-roboto.min.css?1921999999999901" rel="stylesheet">
+</head>
+<body class="session_login" >
+<div class="container session_login" data-dcontainer="1">
+<div class="alert alert-warning">
+<strong><i class ="fa fa-exclamation-triangle"></i> Warning!</strong><br />
+<span>Login failed. Please try again.</span>
+</div>
+<form method="post" target="_top" action="/session_login.cgi" class="form-signin session_login clearfix" role="form" onsubmit="spinner()">
+<i class="wbm-webmin"></i><h2 class="form-signin-heading">
+     <span>Webmin</span></h2>
+<p class="form-signin-paragraph">You must enter a username and password to login to the server on<strong> 172.16.88.154</strong></p>
+<div class="input-group form-group">
+<span class="input-group-addon"><i class="fa fa-fw fa-user"></i></span>
+<input type="text" class="form-control session_login" name="user" autocomplete="off" autocapitalize="none" placeholder="Username"  autofocus>
+</div>
+<div class="input-group form-group">
+<span class="input-group-addon"><i class="fa fa-fw fa-lock"></i></span>
+<input type="password" class="form-control session_login" name="pass" autocomplete="off" placeholder="Password"  >
+</div>
+<div class="input-group form-group">
+            <span class="awcheckbox awobject"><input class="iawobjec
+,t" name="save" value="1" id="save" type="checkbox"> <label class="lawobject" for="save">Remember me</label></span>
+         </div>
+.{x.classList.add("invisible"); x.insertAdjacentHTML('afterend', s);x.parentNode.classList.add("disabled");x.parentNode.disabled=true}}</script> <link href="/unauthenticated/css/fonts-roboto.min.css?1921999999999901" rel="stylesheet">
+</head>
+<body class="session_login" >
+<div class="container session_login" data-dcontainer="1">
+<div class="alert alert-warning">
+<strong><i class ="fa fa-exclamation-triangle"></i> Warning!</strong><br />
+<span>Login failed. Please try again.</span>
+</div>
+<form method="post" target="_top" action="/session_login.cgi" class="form-signin session_login clearfix" role="form" onsubmit="spinner()">
+<i class="wbm-webmin"></i><h2 class="form-signin-heading">
+     <span>Webmin</span></h2>
+<p class="form-signin-paragraph">You must enter a username and password to login to the server on<strong> 172.16.88.154</strong></p>
+<div class="input-group form-group">
+<span class="input-group-addon"><i class="fa fa-fw fa-user"></i></span>
+<input type="text" class="form-control session_login" name="user" autocomplete="off" autocapitalize="none" placeholder="Username"  autofocus>
+</div>
+<div class="input-group form-group">
+<span class="input-group-addon"><i class="fa fa-fw fa-lock"></i></span>
+<input type="password" class="form-control session_login" name="pass" autocomplete="off" placeholder="Password"  >
+</div>
+<div class="input-group form-group">
+            <span class="awcheckbox awobject"><input class="iawobjec
+.<div class="form-group form-signin-group"><button class="btn btn-primary" type="submit"><i class="fa fa-sign-in"></i>&nbsp;&nbsp;Sign in</button>
+</div></form>
+2</div>
+2</body>
+</html>
+Ii5@
+chat-pa
+clients6
+google
+chat-pa
+clients6
+google
+yY6F2.!
+q_ @
+chat-pa.clients6.google.com
+http/1.1
+$(JjN
+P>LlE
+w]u6
+r,=6F
+r7i!f
+d3)\
+kw|8
+J-86
+g|xx
+U,g:,
+JA8S
+l;(q
+{d~I2I
+A26|H%
+&'C=Q
+|9m-
+mse-
+[U	]
+fYA>
+H8(;
+/>(}
+!zN~{
+e$Sk
+r@"Gr
+Iiz@
+5JiBD
+chat-pa
+clients6
+google
+ElZBD
+chat-pa
+clients6
+google
+TP~5
+chat-pa.clients6.google.com
+http/1.1
+B9e;
+Vz?!
+2Ecg
+doao#
+a^?i
+L&lz
+=%3S)
+y[6(
+*3/kU
+2,:'
+^l>tF
+Be3`9
+}PUG
+f([q9Hj
+[j}y
+"yg0
+;s$M
+0_fA
+n0jwz|
+7b5f
+>yYz
+("I]
+E:_!
+2?Cxr
+T	Rc
+X_h[
+%+Xb
+V-EC
+{i<lo
+5_R7
+tb9c
+ pLJ as
+zUV!
+cNRXll
+7c:<y?T
+<Q7k
+!74	A
+i]dc?
+~XF.
+y5NF
+]0,Q)1
+inX`
+"w1Cg
+?VDlX
+LZAp
+4m<SpotUdp0
+1#fI
+l(S|
+<="@
+4=#@
+x=$@
+POST /session_login.cgi HTTP/1.1
+Host: 172.16.88.154:10000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://172.16.88.154:10000/session_login.cgi
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 28
+Origin: http://172.16.88.154:10000
+DNT: 1
+Connection: keep-alive
+Cookie: redirect=1; testing=1; sid=x
+Upgrade-Insecure-Requests: 1
+user=admin&pass=Password6543
+HTTP/1.0 302 Moved Temporarily
+4=%@
+u;bDate: Thu, 25 Jun 2020 21:01:01 GMT
+4=&@
+u;nServer: MiniServ/1.900
+Set-Cookie: sid=2d35cb72e843b8ef6d0272407b427f20; path=/; httpOnly
+Location: http://172.16.88.154:10000/
+Connection: close
+4='@
+4=(@
+4=)@
+Fuu@
+detectportal
+firefox
+w(DGET / HTTP/1.1
+Host: 172.16.88.154:10000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://172.16.88.154:10000/session_login.cgi
+DNT: 1
+Connection: keep-alive
+Cookie: redirect=1; testing=1; sid=2d35cb72e843b8ef6d0272407b427f20
+Upgrade-Insecure-Requests: 1
+detectportal
+firefox
+detectportal
+prod
+mozaws
+detectportal
+firefox
+com-v2	edgesuite
+a1089
+dscd
+akamai
+n7dscd
+n6dscd
+n4dscd
+n0dscd
+n2dscd
+n1dscd
+n5dscd
+n3dscd
+HTTP/1.0 200 Document follows
+Date: Thu, 25 Jun 2020 21:01:01 GMT
+Server: MiniServ/1.900
+Connection: close
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: script-src 'self' 'unsafe-inline' 'unsafe-eval'; frame-src 'self'; child-src 'self'
+W=vS
+ wt*
+TW+J
+Content-type: text/html; Charset=UTF-8
+GET /success.txt HTTP/1.1
+Host: detectportal.firefox.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Cache-Control: no-cache
+Pragma: no-cache
+DNT: 1
+Connection: keep-alive
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-Length: 8
+Last-Modified: Mon, 15 May 2017 18:04:40 GMT
+ETag: "ae780585f49b94ce1444eb7d28906123"
+Accept-Ranges: bytes
+Server: AmazonS3
+X-Amz-Cf-Id: QBScAga6SwAk70jeGSog3XSf9IH5BDiF4SjRneAF0gzrbMScG7xA3Q==
+Cache-Control: no-cache, no-store, must-revalidate
+Date: Thu, 25 Jun 2020 21:01:01 GMT
+Connection: keep-alive
+success
+<!DOCTYPE html>
+mozilla
+mozilla
+mozilla
+detectportal
+firefox
+detectportal
+firefox
+detectportal
+firefox
+<html data-host="172.16.88.154:10000" data-hostname="ubuntu" data-title-initial="Webmin 1.900 on ubuntu (Ubuntu Linux 20.04)" data-debug="0" data-session="1" data-script-name="/" data-background-style="gainsboro" data-night-mode="0" data-high-contrast="0" data-navigation-collapsed="0" data-slider-fixed="0" data-sestatus="0" data-shell="1" data-webmin="1" data-usermin="" data-navigation="1" data-status="1" data-package-updates="1" data-csf="0" data-theme="white" data-default-theme="white" data-theme-version="19.21" data-theme-mversion="01"  data-level="0" data-user-home="" data-user-id="" data-user="admin" data-dashboard="1" data-ltr="1" data-language="en" data-language-full="en" data-charset="UTF-8" data-notice="0" data-redirect="" data-initial-wizard="1" data-webprefix="" data-current-product="webmin" data-module="" data-uri="/" data-progress="1" data-product="webmin" data-access-level="0">
+u<* <head>
+ <noscript> <style> html[data-background-style="gainsboro"] { background-color: #d6d6d6; } html[data-background-style="nightRider"] { background-color: #1a1c20; } html[data-background-style="nightRider"] div[data-noscript] { color: #979ba080; } html[data-slider-fixed='1'] { margin-right: 0 !important; } body > div[data-noscript] ~ * { display: none !important; } div[data-noscript] { visibility: hidden; animation: 2s noscript-fadein; animation-delay: 1s; text-align: center; animation-fill-mode: forwards; } @keyframes noscript-fadein { 0% { opacity: 0; } 100% { visibility: visible; opacity: 1; } } </style> <div data-noscript> <div class="fa fa-3x fa-exclamation-triangle margined-top-20 text-danger"></div> <h2>JavaScript is disabled</h2> <p>Please enable javascript and refresh the page</p> </div> </noscript>
+ <meta charset="UTF-8">
+<link data-link-ref rel="apple-touch-icon" sizes="180x180" href="/images/favicons/webmin/apple-touch-icon.png">
+detectportal
+firefox
+detectportal
+prod
+mozaws
+detectportal
+firefox
+com-v2	edgesuite
+a1089
+dscd
+akamai
+u<,<link data-link-ref rel="icon" type="image/png" sizes="32x32" href="/images/favicons/webmin/favicon-32x32.png">
+/v	@
+u<4<link data-link-ref rel="icon" type="image/png" sizes="192x192" href="/images/favicons/webmin/android-chrome-192x192.png"><link data-link-ref rel="icon" type="image/png" sizes="16x16" href="/images/favicons/webmin/favicon-16x16.png"><link data-link-ref rel="manifest" href="/images/favicons/webmin/site.webmanifest"><link data-link-ref rel="mask-icon" href="/images/favicons/webmin/safari-pinned-tab.svg" color="#3d74ca"><meta name="msapplication-TileColor" content="#3d74ca"><meta data-link-ref name="msapplication-TileImage" content="/images/favicons/webmin/mstile-144x144.png"><meta name="theme-color" content="#3d74ca"> <title>Webmin 1.900 on ubuntu (Ubuntu Linux 20.04)</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>
+detectportal
+firefox
+detectportal
+prod
+mozaws
+detectportal
+firefox
+com-v2	edgesuite
+a1089
+dscd
+akamai
+u<6var v___theme_language = {"theme_xhred_mail_search_has_attach":"Has attachment","theme_xhred_force_upgrade_beta":"Install latest development version (beta)","settings_right_logos_title":"Theme logos can be easily set here, for both, authenticated and unauthenticated users. Recommended logo size is <kbd>180x90</kbd> pixels and the only supported format is <kbd>.png</kbd>, to provide alpha transparency.","theme_xhred_database_adding_new_row":"Adding new row","settings_right_thirdparties_options_title":"Third-parties modules options","settings_brightness_level_navigation":"Brightness filter","theme_xhred_title_locale_non_ui_config":"Non-UI format (like in automated emails and exported files)","theme_xhred_mail_search_with_status":"With status","settings_right_theme_left_background_title":"Theme Background Control","theme_xhred_tooltip_side_slider_mark_read_all_notification":"Mark all notifications as read","theme_xhred_global_forward":"Forward","theme_xhred_filemanager_changing_ownership":"Changing ownership to <strong><em>%value</em></strong> on selected file(s).","settings_right_cloudmin_default":"Default page for Cloudmin","settings_right_options":"Options","theme_xhred_global_files_selected":"files selected","theme_xhred_global_shipped":"Shipped","theme_xhred_filemanager_manual_path":"Enter path manually","right_bw":"Bandwith usage and limit","theme_xhred_filemanager_sorting_by_ownership":"Ownership","theme_xhred_filemanager_search_no_matches":"No matches found.","theme_xhred_filemanager_compressing_selected":"Compressing selected in the background.","theme_xhred_filemanager_context_calculate_selected_size":"Calculate selected size","theme_xhred_filemanager_sorting_asc":"Ascending","theme_xhred_datatable_semptytable":"No data available in table","theme_xhred_filemanager_records_per_page":"Default number of records per page","theme_xhred_filemanager_target_conflict_2":"Targets conflicts","theme_xhred_global_installed_and_latest_version":"Installed and latest version","settings_right_soft_updates_page_options_title":"Software updates","theme_xhred_global_directory":"Directory","body_no_javascript_title":"JavaScript is disabled","theme_xhred_search_in_servermanager":"Search Cloudmin","theme_xhred_filemanager_context_bookmark_current":"Bookmark currently opened path","right_aliases":"Alias servers","theme_xhred_filemanager_successful_directory_creation":"Directory `<strong>%value</strong>` was created successfully.","theme_xhred_filemanager_context_chown":"Change ownership","theme_xhred_filemanager_context_paste":"Paste","theme_xhred_database_edit_selected_rows":"Edit selected rows","theme_xhred_filemanager_not_decompressable":"Can not decompress this type of file.","theme_xhred_login_pass":"Password","theme_xhred_title_locale_lang_based":"Locale language","theme_xhred_connection_success_details":"Connection to the server has been re-established.","theme_xhred_sysinfo_recent_logins":"Recent Logins","theme_xhred_database_edit_row_delete_successful":"Selected row was successfully deleted","theme_xhred_database_edit_selected_row":"Edit selected row","body_webmin":"Webmin version","theme_xhred_filemanager_context_transfer":"Transfer","settings_right_small_table_icons_description":"Substitute standard size table icons with small ones and display icons link using tooltip","right_sharedip":"(Shared IP)","theme_xhred_git_patch_initiated":"Theme update has been initiated.","theme_xhred_titles_um":"Usermin","theme_xhred_global_dir_up":"Go to previous directory (Backspace)","theme_xhred_browser_warning":"To have the best experience with server panel on your computer, use a supported, up-to-date browser.<br><br><em>Internet Explorer</em> is no longer supported.<br><br>Recommended browsers are <em>Chrome</em>, <em>Firefox</em>, <em>Opera</em> or <em>Safari</em>, <em>Edge</em>. <div class=\"alert alert-warning margined-top-10 margined-bottom--8\">You could download portable version of a browser, that doesn't require installation, to bypass imposed limitations.</div>","theme_xhred_global_report_an_issue":"Report an issue","theme_xhred_title_locale_full":"Full format","theme_xhred_move_down":"Move down","theme_xhred_database_delete_selected_fields":"Delete selected fields","theme_xhred_filemanager_downloading_from":"Downloading from","theme_xhred_filemanager_user_switch_description":"By selecting the username listed below, you will switch further operations to be performed as this user.","settings_invert_level_navigation_description":"Default/current values <code>0</code>/<code data-name=\"settings_invert_level_navigation\">0</code>","theme_xhred_global_installed_version":"Installed version","settings_saturate_level_navigation_description":"Default/current values <code>1</code>/<code data-name=\"settings_saturate_level_navigation\">0</code>","theme_xhred_database_objects_selected_delete":"Delete selected objects","theme_xhred_global_minimize":"Minimize","body_updates":"Package updates","theme_xhred_source_encoding":"Source encoding","theme_xhred_notifications_firewall_update":"Firewall Update","theme_xhred_filemanager_target_conflict_message_1":"Pasted target already exists! What do you prefer to do?","theme_xhred_global_no_target":"Target doesn't exist or not accessible","theme_xhred_filemanager_tree_view_toggle":"Tree-view toggle","theme_xhred_signing_in":"Signing in","theme_xhred_database_edit_but_not_saved":"Table data has been edited but not saved.","theme_xhred_sysinfo_vm_package_updates":"Virtualmin Package Updates","theme_xhred_global_automatic_refresh":"Automatic refresh","body_drivetemps":"Drive temperatures","theme_xhred_filemanager_tree_view_depth":"Extracted tree-view depth on initial load (smaller loads faster)","theme_xhred_move_up":"Move up","settings_right_navigation_menu_title":"Navigation menu options","theme_xhred_filemanager_cutting_successful":"Cut to clipboard successful.","theme_xhred_filemanager_context_delete_selected":"Delete selected","settings_saturate_level_navigation":"Saturate filter","body_upmins":"$1 minutes","theme_xhred_database_edit_field_delete_successful":"Selected field was successfully deleted","theme_xhred_database_editing_rows":"Editing selected rows","body_virt":"Virtual memory","right_login":"Logged in as","theme_xhred_filemanager_successful_rename":"Renaming `<strong><em><s>%from</s></em></strong>` to `<strong><em>%to</em></strong>` was successful.","theme_xhred_global_file_selected":"file selected","theme_xhred_filemanager_not_editable":"Can not edit this type of selection.","theme_xhred_filemanager_bookmark_success":"Directory <strong><em>%value</em></strong> was successfully added to your bookmarks.","theme_xhred_global_sort":"Sort","theme_xhred_connection_error":"Connection error","theme_xhred_tooltip_side_slider_delete_all_notification":"Delete all notifications","theme_xhred_global_stats":"Stats","theme_xhred_filemanager_successful_compression_bg_with_errors":"Compression has finished with errors. Compressed file <strong>`%file</strong> should be located in <strong>`%path`</strong> directory.","theme_xhred_filemanager_settings_notification_type_warn_err":"Warnings and errors","theme_xhred_global_empty":"Empty","theme_xhred_global_seconds":"Seconds","settings_right_restor
+u<6ed":"Restored","theme_xhred_global_no":"No","theme_xhred_filemanager_pasting_and_replacing_2":"Existing targets have been replaced with new successfully.","theme_xhred_filemanager_editor_align_panels_vertically":"Align Panels Vertically","theme_xhred_notifications_firewall_update_message":"A new version <em>%v</em> of <strong>ConfigServer Server Security and Firewall</strong> is available. Please update.","theme_xhred_global_selected":"Selected","settings_right_restoring":"Restoring","theme_xhred_filemanager_pasting_and_replacing_1":"Existing target has been replaced with new successfully.","theme_xhred_filemanager_file_edit_but_not_saved_what_to_do":"What do you want to do?","theme_xhred_mail_pagination_first":"List starting with first","theme_xhred_settings_right_theme_bgs_title":"Theme Backgrounds","theme_xhred_filemanager_pasting_selected":"Pasting from clipboard.","theme_xhred_global_total":"Total","body_kernelon":"$1 $2 on $3","right_faliases":"Mail aliases","theme_xhred_filemanager_new_tab":"Add new tab (Ctrl+Space)","theme_xhred_global_theme_version":"Theme version","theme_xhred_sysinfo_update_start":"System information is being recollected.","theme_xhred_connection_error_details":"Can
+t establish a connection to the server at <strong>%server</strong>. <ul><li>Check the server status</li><li>Check the connection</li></ul>","theme_xhred_tooltip_side_slider_sync_sysinfo":"Force to synchronize background status collection","theme_xhred_notifications_packages_updates":"Packages Update","theme_xhred_mail_search_empty":"No messages matched your search","theme_xhred_global_light":"Light","settings_right_theme_extensions_title":"Theme Extensions","theme_xhred_global_maximize":"Maximize","settings_right_theme_left_logo_title":"Theme Logo Control","right_virtualmin":"Virtualmin version","theme_xhred_filemanager_context_clipboard_selection":"Copy selection to clipboard","theme_xhred_encoding_warning":"Detected that you are using non-unicode character set, which is not recommended. Strange <tt>
+</tt> character might appear in text-editor mode and/or other encoding issues are going to happen. <br><br>Change language in <a href=\"%link\" class=\"label label-primary\"><strong><i class=\"fa fa-cog\"></i> %prod Configuration</strong></a> to <code>%lang.UTF-8</code> and make sure, that your browser also detected it correctly. <span class=\"_hidden_\"><br><br>Pay attention, that <em>Webmin</em> in-built module, named <em>Change Language and Theme</em> can override global settings.</span>","theme_xhred_global_back":"Back","theme_xhred_filemanager_sorting_by_name":"Name","theme_xhred_filemanager_context_bookmarks":"Bookmarks","theme_xhred_filemanager_successful_ownership":"Ownership has been changed successfully.","theme_xhred_database_adding_new_row_data":"Set data","theme_xhred_filemanager_context_chattr":"Change attributes","right_vm2":"Cloudmin version","theme_xhred_filemanager_selected_entry":"Selected: %value entry","right_dom":"Your server name","settings_right_notification_slider_options_title":"Side slider options","theme_xhred_filemanager_search_match":"Find in results","theme_xhred_global_move":"Move","theme_xhred_xsql_fit_content_screen_height":"Fit database table content in screen height","theme_xhred_global_copy":"Copy","theme_xhred_filemanager_searching_matching":"Searching for <em>`%value`</em> matching names of files/directories, containing <em>`%text`</em> text.","theme_xhred_titles_thirdlane":"Thirdlane","theme_xhred_session_failed_password":"Wrong password, please try again.","theme_xhred_find_in_config_files_results_found":"$1 results found in $2 files for $3","settings_right_virtualmin_default":"Default page for Virtualmin","body_uptime":"System uptime","theme_xhred_global_return_to_module_index":"Return to module index","theme_xhred_global_favorites":"Favorites","theme_xhred_mail_search_has_words":"Has the words","theme_xhred_settings_show_webmin_tab":"Show Webmin switch in navigation menu?","settings_grayscale_level_navigation_description":"Default/current values <code>0</code>/<code data-name=\"settings_grayscale_level_navigation\">0</code>","theme_xhred_global_warning":"Warning","theme_xhred_upload_initial_info":"Drag and drop files here or click to select","theme_xhred_updates_disabled_notice":"Detected that you don't have enabled notifications for <em>Authentic Theme</em> updates? <br><br>Enabling this feature in <a href=\"%link\" class=\"label label-default\"><strong><i class=\"fa fa-cogs\"></i> Theme Configuration</strong></a> will help you to update to the latest version in a single click as soon as it's out.","theme_xhred_global_cancel":"Cancel","settings_right_grayscaled_table_icons":"Grayscale table icons and bring color on focus only","theme_xhred_notifications_theme_update_message":"A new version <em>%v</em> of <strong>Authentic Theme</strong> is available. Please update.","settings_right_bgs_title":"Theme background for login page can be set here. The only supported format is <kbd>.png</kbd>, to provide alpha transparency.","theme_xhred_mail_pagination_last":"List starting with last","body_upsec1":"$1 package updates are available, of which $2 is security update","theme_xhred_filemanager_context_extract":"Extract","theme_xhred_global_second":"Second","theme_xhred_filemanager_successful_secontext":"Security context has been changed successfully.","right_vlcheck":"Re-Check Virtualmin License","theme_xhred_filter_content":"Filter content","theme_xhred_global_theme_configuration":"Theme configuration","theme_xhred_filemanager_editor_align_panels_horizontally":"Align Panels Horizontally","theme_xhred_filemanager_context_deselect_all":"Deselect All","settings_right_theme_extensions":"Theme extensions","settings_right_animate_table_icons":"Animate table icons on focus","theme_xhred_filemanager_tree_expand_search":"Expand all branches that contain matches while filtering tree-view","theme_xhred_mail_search_advanced":"Hide search options","theme_xhred_global_resolved_issues":"Resolved issues in %value releases","theme_xhred_global_please_wait":"Please wait...","theme_xhred_filemanager_no_selection_to_copy":"No directories/files selected to copy.","theme_xhred_filemanager_save_to_refresh_content":"File must be saved, in order to allow its content to be refreshed.","theme_xhred_session_failed":"Login failed. Please try again.","theme_xhred_tooltip_side_slider_pinned":"Pin/unpin side slider","theme_xhred_database_add_new_row":"Add row","theme_xhred_global_normalize":"Normalize","theme_xhred_filter_content_no_matches_query":"No content matches %str query","theme_xhred_global_beta_version":"Beta version","theme_xhred_filemanager_copying_successful":"Copy to clipboard successful.","body_upneed":"$1 package updates are available","theme_xhred_global_whats_new":"What's new","theme_xhred_filemanager_tree_exclude_on_first_load":"Exclude inessential directories from traversing on initial load for tree-view (loads faster)","theme_xhred_sysinfo_software_versions":"Software Versions","theme_xhred_database_edit_fields_delete_successful":"Successfully deleted <em>%n</em> selected fields","theme_xhred_password_generator_new":"Generate New Password<br> (To Clipboard)","theme_xhred_filemanager_sorting_by
+u<N_attributes":"Attributes","theme_xhred_filemanager_sorting_by_type":"Type","theme_xhred_filemanager_unpacking_archive":"Unpacking selected file(s).","theme_xhred_tooltip_switch_user":"Switch user","body_cp":"CPU","theme_xhred_filemanager_cutting_selected":"Cutting selected.","settings_right_default_tab_usermin":"Default tab after logging in to Usermin","theme_xhred_login_user":"Username","theme_xhred_toggle_accordions":"Toggle accordions visibility","theme_xhred_server_process_running":"Server process is still running!? Are you sure that you want to navigate away and have no access to output information? Even if you leave now the process will not be terminated.","theme_xhred_filemanager_file_saved":"File `<strong><em>%value</em></strong>` has been successfully saved.","theme_xhred_filemanager_refreshing":"Refreshing directory content.","theme_xhred_mail_search_simple":"Show search options","body_real":"Real memory","theme_xhred_filemanager_user_switch":"Switch to user (Ctrl+M)","theme_xhred_global_reauthenticate":"Reauthenticate","theme_xhred_filemanager_prepared_download":"Download is ready. Archived %number file(s).","settings_right_theme_configurable_options_title":"Configurable options for Authentic Theme","theme_xhred_mail_search_with_status_special":"Special","right_from":"Logged in from","right_vm_server_summary":"Virtual Server Summary","settings_right_bg_unauthenticated_users":"Background for unauthenticated users","theme_xhred_filemanager_edit_html":"Edit as HTML","theme_xhred_filemanager_context_goto":"Open item location","body_used_and_free":"$1 total / $2 free / $3 used","theme_xhred_filemanager_hovered_toolbar":"Activate dropdown in toolbar on mouse hover","theme_xhred_global_latest_beta":"Latest beta","theme_xhred_titles_wm":"Webmin","theme_xhred_datatable_sprocessing":"Processing...","theme_xhred_global_available":"Available","body_uphours":"$1 hours, $2 minutes","right_slcheck":"Re-Check Cloudmin License","theme_xhred_filemanager_sorting":"Default sorting type","theme_xhred_filemanager_context_chcon":"Change security context","theme_xhred_filemanager_canceled_download":"Download canceled.","theme_xhred_filemanager_creating_file":"Creating file","theme_xhred_filemanager_title_symlink_target":"Link target","theme_xhred_filemanager_context_open_new_tab":"Open in new tab","theme_xhred_global_development_version":"Development version","theme_xhred_filemanager_nothing_is_selected":"Nothing is selected!","theme_xhred_filemanager_context_chmod":"Change permissions","theme_xhred_sysinfo_system_monitors":"System Monitors","settings_right_small_table_icons":"Small table icons","theme_xhred_global_replace":"Replace","theme_xhred_global_no_results_found":"No results found","theme_xhred_force_upgrade_stable":"Install latest release version (stable)","theme_xhred_move_top":"Move to top","theme_xhred_filemanager_context_copy":"Copy","theme_xhred_filemanager_target_conflict_replace":"Merge and replace","theme_xhred_titles_cm":"Cloudmin","theme_xhred_global_ok":"OK","theme_xhred_filemanager_no_selection_to_cut":"No directories/files selected to cut.","right_unlimited":"Unlimited","right_return_theme_options":"theme options","theme_xhred_filemanager_sorting_desc":"Descending","theme_xhred_filemanager_context_rename":"Rename","theme_xhred_global_committed_on":"Committed on","theme_xhred_global_click_here":"click here","settings_right_reload":"Load default content page","theme_xhred_notification_no_data":"No collected data","theme_xhred_global_redirecting":"Redirecting","settings_right_file_edit":"Edit extension file:","settings_right_logo_authenticated_users":"Logo for authenticated users","theme_xhred_global_minute":"Minute","settings_right_default_tab_webmin":"Default tab after logging in to Webmin","theme_xhred_global_example":"Example","settings_right_table_options_title":"Table options","theme_xhred_datatable_sloadingrecords":"Loading","right_fusers":"Mail/FTP users","right_fusers2":"FTP users","theme_xhred_global_starred":"Starred","right_licenceheader_vm2":"Cloudmin Licenses","theme_xhred_connection_success":"Connection successful","theme_xhred_global_delete":"Delete","theme_xhred_filemanager_context_newarchive":"Create new archive","theme_xhred_mail_more":"More","theme_xhred_titles_dashboard":"Dashboard","right_fweb":"Virtual Websites","body_upok":"All installed packages are up to date","theme_xhred_filemanager_successful_compression_bg":"Compression has successfully finished. Compressed file <strong>`%file</strong> is located in <strong>`%path`</strong> directory.","theme_xhred_notifications_firewall_danger_message":"It appears that <strong>ConfigServer Server Security and Firewall</strong> is <span class=\"badge badge-danger\">not running</span> or has been stopped! Don't leave your server exposed, check for the firewall settings (%v)","theme_xhred_filemanager_successful_ownership_with_errors_fatal":"Ownership can't be changed due to following errors:","settings_right_saving":"Saving","theme_xhred_titles_mail":"Mail","theme_xhred_filemanager_context_edit":"Edit","theme_xhred_add_before":"Add before","settings_right_sysinfo_page_options_title":"Dashboard options","theme_xhred_global_help":"Help","theme_xhred_global_settings":"Settings","theme_xhred_connection_lost":"Connection lost","theme_xhred_title_language_locale":"Language and Locale","settings_right_saved":"Saved","theme_xhred_filemanager_editor_refresh_content":"Refresh Content","theme_xhred_search_in_webmin":"Search Webmin","settings_right_theme_left_extensions_title":"Theme Extensions Editor","theme_xhred_filemanager_successful_permissions_with_errors":"Permissions have been changed successfully but not for all objects:","theme_xhred_global_select_files":"Select file(s)","body_load":"$1 (1 min) $2 (5 mins) $3 (15 mins)","theme_xhred_global_reset":"Reset","theme_xhred_database_delete_selected_row":"Delete selected row","right_not":"Not installed","theme_xhred_database_delete_selected_rows":"Delete selected rows","theme_xhred_filemanager_successful_compression_with_errors":"Compression has finished with the following errors:","theme_xhred_filemanager_successful_secontext_with_errors":"Security context has not been changed successfully for all objects:","theme_xhred_datatable_szerorecords":"No matching records found","theme_xhred_global_search":"Search","theme_xhred_download_is_being_prepared":"Your download is being prepared. It may take a while. Please wait..","theme_xhred_global_close":"Close","theme_xhred_global_release":"Release","theme_xhred_global_complete_changelog":"Complete changelog","theme_xhred_filemanager_search_found":"Found <strong>1</strong> match.","theme_xhred_filemanager_unbookmark_success":"Directory <strong><em>%value</em></strong> was successfully removed from your bookmarks.","settings_right_hotkey_custom_options_description":"Custom links enable you to use digits from <code>1</code> to <code>9</code> in order to quick-access any valid Webmin/Usermin/Virtualmin/Cloudmin <code>URL.</code> The <code>URL</code> can be extracted from the currently opened right frame content page, by reading its source. It's important that <code>URL</code> has no slash at the beginning and doesn't use prefixes. For example, to quick-switch to Apache, set to <code>custom link 1</code> field <code>/apache/</code>. If the default hotkeys modifier set to <code>Alt,</code> clicking <code>Alt+1</code>, will open you Apache module","theme_xhred_sysinfo_server_status":"Servers Status","theme_xhred_global_close_without_saving":"Close without saving","theme_xhred_filemanager_setting_permissions":"Setting permissions to <strong><em>%value</em></strong> on selected file(s).","theme_xhred_session_expired":"Session expired","theme_xhred_global_released_on":"Released on","theme_xhred_global_file":"File","theme_xhred_filemanager_context_newfoder":"Create new directory","theme_xhred_database_add_row_successful":"New row was successfully added","theme_xhred_title_locale_config":"Locale configuration","theme_xhred_filemanager_context_new":"New","settings_right_title":"This page allows you to configure options for <a href=\"https://github.com/authentic-theme/authentic-theme\" target=\"_blank\">Authentic Theme</a>. Settings will be stored upon theme update.","theme_xhred_filemanager_searching":"Searching for <em>`%value`</em> matching names of files/directories.","theme_xhred_datatable_slengthmenu":"Show _MENU_ entries","theme_xhred_filemanager_context_download_file":"Download","body_cputemps":"CPU temperatures","theme_xhred_title_locale_auto":"Automatic, based on selected language","body_driveerr":"$1 errors!","theme_xhred_filemanager_context_select_all":"Select All","theme_xhred_global_continue_editing":"Continue editing","theme_xhred_filemanager_successful_attributes":"Attributes have been set successfully.","theme_xhred_mail_search_search_in":"Search in","settings_right_extensions_title":"Theme extensive design, enables you easily manipulate on targeted parts of the interface.","theme_xhred_global_unbeforeunload_message":"If you continue, unsaved changes on this page could be permanently lost.","theme_xhred_notification_no_favorites":"No favorites data","settings_right_clear_local_cache":"Clear cache","theme_xhred_mail_search_with_status_read":"Read","theme_xhred_global_save_and_close":"Save and close","body_upsec3":"$1 package update is available, of which $2 is security update","theme_xhred_global_all":"All","theme_xhred_mail_search_with_status_any":"Any","theme_xhred_database_edit_rows_successful":"Selected rows were successfully updated","theme_xhred_backup_is_being_prepared":"Your backup is being prepared. It may take a while. Please wait..","theme_xhred_filemanager_target_conflict_paste":"Paste with new name","body_upneed1":"$1 package update is available","theme_xhred_global_cpu_load":"CPU load","theme_xhred_sysinfo_disk_quotas":"Disk Quotas","theme_xhred_settings_right_theme_logos_title":"Theme Logos","theme_xhred_filemanager_changing_attributes":"Setting attributes to <strong><em>%value</em></strong> on selected file(s).","body_cputype":"$5, $8 cores","theme_xhred_global_choose":"Choose
+u<N","theme_xhred_filemanager_search_replaced_multi":"Found and replaced in <strong>%value</strong> files.","theme_xhred_datatable_filter":"Filter","theme_xhred_find_in_config_files":"Find in config files","theme_xhred_datatable_sinfo":"Showing _START_ to _END_ of _TOTAL_ entries","settings_hue_level_navigation_description":"Default/current values <code>0</code>
+/<code data-name=\"settings_hue_level_navigation\">0</code>
+","settings_right_page_hide_persistent_vscroll":"Hide persistent vertical scrollbar","theme_xhred_filemanager_context_delete":"Delete","theme_xhred_database_editing_row":"Editing selected row","theme_xhred_notifications_firewall_danger":"Firewall Danger","body_disk":"Local disk space","theme_xhred_global_unlimited":"Unlimited","theme_xhred_global_not_available":"Not available","theme_xhred_filemanager_search_query":"Query mask","theme_xhred_global_none":"None","theme_xhred_add_after":"Add after","theme_xhred_global_upload":"Upload","theme_xhred_filemanager_settings_notification_type_inf_warn_err":"Informations, warnings and errors","theme_xhred_filemanager_editor_toggle_soft_wrap":"Toggle Soft Wrap","theme_xhred_login_token":"Token","theme_xhred_filemanager_settings_force_tar_download":"Force <code>tar</code> command, even if <code>zip</code> is available, when downloading as archive","theme_xhred_title_locale_short":"Short format","settings_right_hide_table_icons_description":"Completely remove icons from the content page tables and display plain links with right chevron","theme_xhred_mail_search_subject":"Subject","settings_contrast_level_navigation_description":"Default/current values <code>1</code>/<code data-name=\"settings_contrast_level_navigation\">0</code>","theme_xhred_filemanager_user_switch_option":"Automatically switch to user mode upon entering its home directory","theme_xhred_sysinfo_bandwidth_quotas":"Bandwidth Quotas","theme_xhred_filemanager_successful_extraction":"Extraction of selected file(s) was successful.","theme_xhred_global_symbolic":"Symbolic link","body_upsec2":"$1 package update is available, of which $2 are security updates","theme_xhred_mail_search_with_status_unread":"Unread","theme_xhred_filemanager_settings_tabs_remember_state":"Restore previously used tabs on first load","theme_xhred_filemanager_hide_tree_view":"Enable tree-view panel","settings_right_theme_left_configuration_title":"Theme Configuration","theme_xhred_filemanager_pasting_and_copying_2":"Selected sources have been pasted with the new names successfully.","theme_xhred_global_unstarred":"Not starred","theme_xhred_global_official_website":"Official website","theme_xhred_filemanager_settings_notification_type_err":"Errors only","theme_xhred_global_select":"Select","theme_xhred_filemanager_sorting_by_permissions":"Permissions","theme_xhred_tooltip_side_slider_open_favorites_control":"Open favorites control","theme_xhred_filemanager_selected_entries":"Selected: %value entries","theme_xhred_mail_search_search_mail":"Search mail","theme_xhred_filemanager_preparing_download":"Preparing download. Archiving %number file(s). Please wait%dots","theme_xhred_filemanager_creating_directory":"Creating directory","theme_xhred_find_in_config_files_result_found_single":"$1 result found in $2 file for $3","body_os":"Operating system","theme_xhred_database_delete_selected_field":"Delete selected field","body_upsec":"$1 package updates are available, of which $2 are security updates","theme_xhred_title_locale_long":"Long format","body_time":"Time on system","theme_xhred_search_in_virtualserver":"Search Virtualmin","theme_xhred_filemanager_save_to_refresh_content_proc":"Refreshing file content.","settings_contrast_level_navigation":"Contrast filter","theme_xhred_find_in_config_files_result_found_multi":"$1 results found in $2 file for $3","theme_xhred_move_bottom":"Move to bottom","body_used":"$1 total / $2 used","theme_xhred_filemanager_saving_file":"File `<strong><em>%value</em></strong>` is being saved.","theme_xhred_notifications_theme_update":"Theme Update","theme_xhred_tooltip_navigation_pinned":"Pin/unpin navigation menu","theme_xhred_datatable_sinfoempty":"Showing 0 to 0 of 0 entries","theme_xhred_tooltip_side_slider_go_to_dashboard":"Go to dashboard","theme_xhred_global_on":"On","theme_xhred_encoding_manually_set":"Manually set encoding","theme_xhred_database_edit_row_successful":"Selected row was successfully updated","right_download_is_ready":"Your download is ready.","theme_xhred_filemanager_move_into_self":"You cannot move a directory into itself! The destination directory is inside the source directory.","theme_xhred_editor_help_title":"Editor Keyboard Shortcuts","theme_xhred_global_default":"Default","theme_xhred_filemanager_successful_ownership_with_errors":"Ownership has not been changed successfully for all objects:","settings_right_hide_table_icons":"Hide table icons","theme_xhred_global_dark":"Dark","theme_xhred_mail_search_from":"From","theme_xhred_filemanager_hide_actions":"Hide actions column","theme_xhred_search_in_usermin":"Search Usermin","theme_xhred_title_webmin_ui_locale":"Webmin UI locale","settings_sepia_level_navigation_description":"Default/current values <code>0</code>/<code data-name=\"settings_sepia_level_navigation\">0</code>","theme_xhred_filemanager_settings_notification_type":"Type of notifications to display","theme_xhred_filemanager_buffer_error":"Failed to paste files to the buffer - permission denied.","settings_right_window_options_title":"Window options","theme_xhred_filemanager_successful_deletion":"Deletion was successful.","theme_xhred_config_configurable_options":"Configurable options","theme_xhred_filemanager_pasting_successful":"Paste from clipboard was successful.","theme_xhred_global_prev_page":"Go back one page","theme_xhred_notifications_firewall_warning":"Firewall Warning","settings_brightness_level_navigation_description":"Default/current values <code>1</code>/<code data-name=\"settings_brightness_level_navigation\">0</code>","settings_sepia_level_navigation":"Sepia filter","theme_xhred_global_notifications":"Notifications","theme_xhred_filemanager_context_cut":"Cut","right_subs":"Sub-servers","theme_xhred_datatable_semptydirectory":"Directory is empty","theme_xhred_mail_search_clear":"Clear search results","theme_xhred_filemanager_context_calculate_size":"Calculate size on spacebar","theme_xhred_global_update_and_return":"Update and return","theme_xhred_mail_copy_only":"Don't move, only copy","theme_xhred_filemanager_renaming_selected":"Renaming selected.","theme_xhred_mail_search_limit_results":"Limit search results","settings_grayscale_level_navigation":"Grayscale filter","theme_xhred_module_help":"Module help","right_fdoms":"Virtual Servers","theme_xhred_filemanager_successful_permissions":"Permissions have been changed successfully.","theme_xhred_global_off":"Off","theme_xhred_filemanager_sorting_by_selinux":"Security context","theme_xhred_global_minutes":"Minutes","theme_xhred_filemanager_context_select_invert":"Invert Selection","theme_xhred_filemanager_bookmark":"Bookmark current directory","theme_xhred_filemanager_search_replace":"Replace in results","theme_xhred_global_yes":"Yes","right_fvm2":"Virtual Machines","theme_xhred_settings_right_theme_logos":"Theme logos","theme_xhred_signing_success":"Successfully signed in!","theme_xhred_filemanager_pasting_and_copying_1":"Selected source has been pasted with the new name successfully.","theme_xhred_filemanager_successful_attributes_with_errors":"Attributes haven't been set successfully for all objects:","theme_xhred_global_refresh":"Refresh","theme_xhred_filemanager_unbookmark":"Unbookmark current directory","body_cpuinfo":"Processor information","theme_xhred_mail_search_limit_results_yes":"Yes, search only through","theme_xhred_log_file_empty":"Log file is empty","theme_xhred_return_home":"Return to panel index","theme_xhred_filemanager_context_properties":"Properties","theme_xhred_sysinfo_update_failed":"System information can't be recollected. Try again later.","theme_xhred_filemanager_delete_warning":"Deletion has finished successfully but not for all objects. It is possible that requested object(s) could have been <em>renamed</em> or <em>moved</em> before deletion. Restricted permissions (attributes) is another possible cause.  Error message:","theme_xhred_global_outdated":"This version is outdated","theme_xhred_filemanager_context_download":"Download from remote URL","theme_xhred_global_manual":"Manual","theme_xhred_global_local_system_default":"Local system default","body_header1":"Account Information","theme_xhred_filemanager_context_clipboard":"Copy path to clipboard","theme_xhred_filemanager_sorting_by_size":"Size","theme_xhred_sysinfo_update_end":"System information has been recollected successfully.","theme_xhred_global_firewall":"Firewall","body_procs":"Running processes","theme_xhred_filemanager_context_upload":"Upload to current directory","body_drivefailed":"SMART check failed!","theme_xhred_filemanager_search_founds":"Found <strong>%value</strong> matches.","theme_xhred_database_edit_rows_delete_successful":"Successfully deleted <em>%n</em> selected rows","theme_xhred_database_object_selected_delete":"Delete selected object","settings_right_logo_unauthenticated_users":"Logo for unauthenticated users","theme_xhred_global_output_example":"Output example","theme_xhred_filemanager_target_conflict_message_2":"Pasted targets already exist! What do you prefer to do?","theme_xhred_global_about_theme":"About theme","theme_xhred_mail_search_doesnt_have_words":"Does not have","theme_xhred_global_notice":"Notice","body_kernel":"Kernel and CPU","theme_xhred_settings_right_theme_bgs":"Theme backgrounds","theme_xhred_filemanager_deleting_selected":"Deleting selected.","theme_xhred_filemanager_changing_secontext":"Changing security context to <strong><em>%value</em></strong> on selected file(s).","theme_xhred_filemanager_context_search":"Search","body_host":"System hostname","theme_xhred_filemanager_user_switch_current_user":"Current user","theme_xhred_filemanager_context_symlink":"Create new symbolic link","body_cpu":"CPU load averages","theme_xhred_mail_new_message":"New message","theme_xhred_filemanager_successful_file_creation":"File `<strong>%value</strong>` was created successfully.","theme_xhred_password_generator_new_success":"Generated password %password has been copied to clipboard successfully.","settings_right_hotkey_options_title":"Hotkey options","theme_xhred_global_latest_stable":"Latest stable","theme_xhred_git_compare_changes":"Compare changes","right_fdbs":"Databases","settings_right_restore_defaults":"Restore defaults","theme_xhred_global_save":"Save","theme_xhred_filemanager_sorting_by_last_mod_time":"Last modification time","theme_xhred_database_db_selected_drop":"Drop selected database","theme_xhred_database_dbs_selected_drop":"Drop selected databases","right_quota":"Disk usage and quota","right_reselip":"(Reseller $1)","theme_xhred_filemanager_context_refresh":"Refresh","theme_xhred_titles_vm":"Virtualmin","theme_xhred_datatable_no_search_results":"<span class=\"h5\">No results found</span><br>Try a different search","settings_right_page_defaults_title":"Default pages","theme_xhred_filemanager_target_conflict_1":"Target conflict","theme_xhred_global_update_and_close":"Update and close","theme_xhred_global_error_code":"Error code","theme_xhred_datatable_filter_visible_tables":"Filter Visible Table(s)","theme_xhred_filemanager_copying_selected":"Copying selected.","theme_xhred_filemanager_empty_clipboard":"Clipboard is empty.","settings_hue_level_navigation":"Hue-rotate filter","theme_xhred_global_update":"Update","theme_xhred_session_unlocked":"Session unlocked","theme_xhred_filemanager_context_newfile":"Create new file","theme_xhred_session_expired_details":"You have been logged out due to inactivity.","theme_xhred_global_system_default":"System default","theme_xhred_filemanager_searching_replacing":"Replacing matches <em>`%text`</em> with <em>`%replace`</em> in files with names containing <em>`%value`</em>.","theme_xhred_filemanager_save_to_change_encoding":"File must be saved, in order to allow encoding to be changed.","theme_xhred_title_locale_config_format":"Locale language and format","settings_right_current_theme":"Current theme","settings_invert_level_navigation":"Invert filter","theme_xhred_global_set_encoding":"Set encoding","theme_xhred_title_locale_config_format_ui":"Webmin UI locale language and format","theme_xhred_global_target":"Target","body_usermin":"Usermin version","body_header0":"System Information","body_firewall":"Firewall version","theme_xhred_global_continue":"Continue","theme_xhred_global_no_such_command":"It appears that <tt>%cmd</tt> executable is not installed or not in the path on your system.","right_virtdocs2":"Additional documentation","theme_xhred_global_unbeforeunload_title":"Changes you have made may not be saved","theme_xhred_git_patch_update":"Theme update has failed. Try using console to do it manually.","theme_xhred_filemanager_file_edit_but_not_saved":"File has been edited but hasn't been saved.","theme_xhred_filemanager_search_replaced":"Found and replaced in <strong>1</strong> file.","theme_xhred_global_find":"Find","theme_xhred_mail_search_to":"To","theme_xhred_filemanager_link_to_clipboard":"Symbolic link's name `<strong><em>%value</em></strong>` has been copied to clipboard.","theme_xhred_global_return":"Return","right_of":"$1 out of $2","theme_xhred_global_module_config":"Module config","theme_xhred_notification_none":"No notifications","theme_xhred_filemanager__no_bookmarks":"No saved bookmarks","theme_xhred_filemanager_successful_compression":"Compression has successfully finished.","body_no_javascript_message":"Please enable javascript and refresh the page","body_updays":"$1 days, $2 hours, $3 minutes","theme_xhred_filemanager_hide_toolbar":"Hide toolbar","theme_xhred_filemanager_user_switch_description_back":"To switch back to default mode choose the first option in select."}</script> <link href="/unauthenticated/css/bundle.min.css?1921999999999901" rel="stylesheet">
+ <link href="/unauthenticated/css/fonts-roboto.min.css?1921999999999901" rel="stylesheet">
+ <script src="/unauthenticated/js/bundle.min.js?1921999999999901"></script>
+</head>
+Iv%@
+u<O<body data-uri="/" >
+Av&@
+u<P<div class="visible-xs mobile-menu-toggler" style="position: fixed; -webkit-filter: grayscale(0) sepia(0) saturate(1) hue-rotate(0deg) invert(0) brightness(1) contrast(1); filter: grayscale(0) sepia(0) saturate(1) hue-rotate(0deg) invert(0) brightness(1) contrast(1);">
+u<P<button type="button" class="btn btn-primary btn-menu-toggler" style="padding-left: 6px; padding-right: 5px;">
+<i class="fa fa-fw fa-lg fa-bars"></i>
+</button>
+</div>
+<aside style="-webkit-filter: grayscale(0) sepia(0) saturate(1) hue-rotate(0deg) invert(0) brightness(1) contrast(1); filter: grayscale(0) sepia(0) saturate(1) hue-rotate(0deg) invert(0) brightness(1) contrast(1);" id="sidebar" class="hidden-xs">
+<div class="switch-toggle switch-2 switch-mins"><input class="dynamic" id="open_webmin" name="product-switcher" type="radio" checked>
+        <label data-container="body" data-placement="auto bottom" data-toggle="tooltip" data-html="false" data-title="Webmin (Alt+W)" for="open_webmin">
+                <i class="wbm-webmin wbm-sm"></i><span>Webmin</span></label><input class="dynamic" id="open_dashboard" name="product-switcher" type="radio">
+          <label data-container="body" data-placement="auto right" data-toggle="tooltip" data-html="false" data-title="Dashboard (Alt+I)" for="open_dashboard" style="padding-top: 1px;">
+          <i class="fa fa-stack fa-dashboard"></i><span>Dashboard</span></label><a></a>
+            </div><br style="line-height:4.4"><ul class="navigation">
+mozilla
+ns1-240
+akam
+ns7-66
+ns4-64
+ns5-65
+mozilla
+ns7-66
+akam
+ns5-65
+ns4-64
+ns1-240
+mozilla
+D	infoblox1
+private
+mdc2
+mozilla
+	sysadmins
+m6#2
+detectportal
+firefox
+detectportal
+prod
+mozaws
+detectportal
+firefox
+com-v2	edgesuite
+a1089
+dscd
+akamai
+n7dscd
+n3dscd
+n1dscd
+n2dscd
+n4dscd
+n0dscd
+n5dscd
+n6dscd
+GET /success.txt?ipv4 HTTP/1.1
+Host: detectportal.firefox.com
+User-Agent: Mozilla/5.0 (Windows NT 10.0; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: */*
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+DNT: 1
+Connection: keep-alive
+Pragma: no-cache
+Cache-Control: no-cache
+u<Q<li class="menu-container search-form-container"><form id="webmin_search_form" action="/webmin_search.cgi" role="search">
+u<a<div class="form-group">
+<i class="fa fa-search"></i>
+<input type="text" class="form-control sidebar-search" name="search" placeholder="Search">
+;v*@
+u<a</div>
+Av+@
+u<l</form></li>
+Iv,@
+u<m<li class="has-sub">
+u<q<a data-has-sub-link href="#webmin"><i class="fa fa-cog fa-fw"></i> <span>Webmin</span></a>
+</li>
+<li class="sub-wrapper"><ul class="sub" style="display: none;" id="webmin">
+Ev.@
+u<r<li data-linked>
+u<}<a href="/backup-config/"> Backup Configuration Files</a>
+</li>
+<li data-linked>
+<a href="/change-user/"> Change Language and Theme</a>
+</li>
+<li data-linked>
+<a href="/webminlog/"> Webmin Actions Log</a>
+</li>
+<li data-linked class="hidden">
+<a data-parent-hidden href="/webmin/edit_themes.cgi"> Theme Configuration</a>
+</li>
+<li data-linked class="hidden">
+u<~<a data-parent-hidden href="/settings-editor_read.cgi"> Theme Extensions Editor</a>
+$v1@
+</li>
+<li data-linked class="hidden">
+<a data-parent-hidden href="/settings-logos.cgi"> Theme Logo Control</a>
+</li>
+<li data-linked class="hidden">
+<a data-parent-hidden href="/settings-backgrounds.cgi"> Theme Background Control</a>
+</li>
+HTTP/1.1 200 OK
+Content-Type: text/plain
+Content-Length: 8
+Last-Modified: Mon, 15 May 2017 18:04:40 GMT
+ETag: "ae780585f49b94ce1444eb7d28906123"
+Accept-Ranges: bytes
+Server: AmazonS3
+X-Amz-Cf-Id: QBScAga6SwAk70jeGSog3XSf9IH5BDiF4SjRneAF0gzrbMScG7xA3Q==
+Cache-Control: no-cache, no-store, must-revalidate
+Date: Thu, 25 Jun 2020 21:01:01 GMT
+Connection: keep-alive
+success
+Ev2@
+<li data-linked>
+<a href="/webmin/"> Webmin Configuration</a>
+</li>
+<li data-linked>
+<a href="/servers/"> Webmin Servers Index</a>
+</li>
+<li data-linked>
+<a href="/acl/"> Webmin Users</a>
+:v4@
+</li>
+?v5@
+</ul></li>
+Iv6@
+<li class="has-sub">
+<a data-has-sub-link href="#system"><i class="fa fa-wrench fa-fw"></i> <span>System</span></a>
+</li>
+<li class="sub-wrapper"><ul class="sub" style="display: none;" id="system">
+<li data-linked>
+<a href="/init/"> Bootup and Shutdown</a>
+</li>
+<li data-linked>
+<a href="/passwd/"> Change Passwords</a>
+</li>
+<li data-linked>
+<a href="/mount/"> Disk and Network Filesystems</a>
+</li>
+ov:@
+<li data-linked>
+<a href="/fsdump/"> Filesystem Backup</a>
+:v;@
+</li>
+xv<@
+<li data-linked>
+<a href="/logrotate/"> Log File Rotation</a>
+</li>
+Ev=@
+<li data-linked>
+<a href="/mailcap/"> MIME Type Programs</a>
+</li>
+<li data-linked>
+<a href="/pam/"> PAM Authentication</a>
+:v?@
+</li>
+Ev@@
+<li data-linked>
+<a href="/proc/"> Running Processes</a>
+</li>
+<li data-linked>
+<a href="/cron/"> Scheduled Cron Jobs</a>
+</li>
+<li data-linked>
+<a href="/package-updates/"> Software Package Updates</a>
+</li>
+<li data-linked>
+<a href="/software/"> Software Packages</a>
+</li>
+<li data-linked>
+<a href="/man/"> System Documentation</a>
+</li>
+<li data-linked>
+<a href="/syslog/"> System Logs</a>
+</li>
+EvB@
+<li data-linked>
+<a href="/useradmin/"> Users and Groups</a>
+</li>
+</ul></li>
+<li class="has-sub">
+<a data-has-sub-link href="#servers"><i class="fa fa-rocket fa-fw"></i> <span>Servers</span></a>
+</li>
+<li class="sub-wrapper"><ul class="sub" style="display: none;" id="servers">
+<li data-linked>
+<a href="/apache/"> Apache Webserver</a>
+</li>
+<li data-linked>
+<a href="/mysql/"> MySQL Database Server</a>
+</li>
+<li data-linked>
+<a href="/mailboxes/"> Read User Mail</a>
+</li>
+<li data-linked>
+<a href="/samba/"> Samba Windows File Sharing</a>
+</li>
+</ul></li>
+<li class="has-sub">
+<a data-has-sub-link href="#other"><i class="fa fa-gavel fa-fw"></i> <span>Others</span></a>
+</li>
+<li class="sub-wrapper"><ul class="sub" style="display: none;" id="other">
+HvE@
+<li data-linked>
+<a href="/shell/"> Command Shell</a>
+</li>
+<li data-linked>
+<a href="/custom/"> Custom Commands</a>
+</li>
+<li data-linked>
+<a href="/filemin/index.cgi?path=/"> File Manager</a>
+</li>
+<li data-linked>
+<a href="/tunnel/"> HTTP Tunnel</a>
+</li>
+<li data-linked>
+\vF@
+<a href="/file/"> Java File Manager</a>
+nvG@
+</li>
+<li data-linked>
+<a href="/cpan/"> Perl Modules</a>
+:vH@
+</li>
+uvI@
+<li data-linked>
+<a href="/phpini/"> PHP Configuration</a>
+</li>
+EvJ@
+<li data-linked>
+wvK@
+<a href="/htaccess-htpasswd/"> Protected Web Directories</a>
+</li>
+EvL@
+<li data-linked>
+VvM@
+<a href="/telnet/"> SSH Login</a>
+</li>
+<li data-linked>
+<a href="/status/"> System and Server Status</a>
+</li>
+<li data-linked>
+<a href="/ajaxterm/"> Text Login</a>
+</li>
+<li data-linked>
+<a href="/updown/"> Upload and Download</a>
+</li>
+?vO@
+</ul></li>
+u=*<li class="has-sub">
+<a data-has-sub-link href="#net"><i class="fa fa-shield fa-fw"></i> <span>Networking</span></a>
+</li>
+<li class="sub-wrapper"><ul class="sub" style="display: none;" id="net">
+EvQ@
+u=*<li data-linked>
+dvR@
+u=2<a href="/bandwidth/"> Bandwidth Monitoring</a>
+:vS@
+u=2</li>
+OvT@
+u=><li data-linked>
+<a href="/firewall/"> Linux Firewall</a>
+</li>
+<li data-linked>
+<a href="/firewall6/"> Linux IPv6 Firewall</a>
+</li>
+<li data-linked>
+<a href="/net/"> Network Configuration</a>
+</li>
+<li data-linked>
+<a href="/nis/"> NIS Client and Server</a>
+</li>
+<li data-linked>
+avU@
+u=><a href="/pptp-client/"> PPTP VPN Client</a>
+u=G</li>
+<li data-linked>
+<a href="/tcpwrappers/"> TCP Wrappers</a>
+</li>
+</ul></li>
+<li class="has-sub">
+<a data-has-sub-link href="#hardware"><i class="fa fa-hdd-o fa-fw"></i> <span>Hardware</span></a>
+</li>
+<li class="sub-wrapper"><ul class="sub" style="display: none;" id="hardware">
+<li data-linked>
+<a href="/burner/"> CD Burner</a>
+</li>
+u=H<li data-linked>
+<a href="/iscsi-client/"> iSCSI Client</a>
+</li>
+<li data-linked>
+_vX@
+u=J<a href="/iscsi-server/"> iSCSI Server</a>
+:vY@
+u=S</li>
+EvZ@
+u=S<li data-linked>
+u=]<a href="/iscsi-target/"> iSCSI Target</a>
+</li>
+<li data-linked>
+<a href="/iscsi-tgtd/"> iSCSI TGTd</a>
+</li>
+<li data-linked>
+<a href="/raid/"> Linux RAID</a>
+</li>
+<li data-linked>
+cv\@
+u=^<a href="/lvm/"> Logical Volume Management</a>
+Kv]@
+u=j</li>
+<li data-linked>
+dv^@
+u=j<a href="/lpadmin/"> Printer Administration</a>
+u=t</li>
+<li data-linked>
+<a href="/time/"> System Time</a>
+</li>
+</ul></li>
+<li class="has-sub">
+<a data-has-sub-link href="#cluster"><i class="fa fa-power-off fa-fw"></i> <span>Cluster</span></a>
+:v`@
+u=t</li>
+<li class="sub-wrapper"><ul class="sub" style="display: none;" id="cluster">
+~vb@
+<li data-linked>
+<a href="/cluster-passwd/"> Cluster Change Passwords</a>
+:vc@
+</li>
+vvd@
+<li data-linked>
+<a href="/cluster-copy/"> Cluster Copy Files</a>
+:ve@
+</li>
+{vf@
+<li data-linked>
+<a href="/cluster-cron/"> Cluster Cron Jobs</a>
+</li>
+Evg@
+<li data-linked>
+<a href="/cluster-shell/"> Cluster Shell Commands</a>
+</li>
+<li data-linked>
+<a href="/cluster-software/"> Cluster Software Packages</a>
+:vi@
+</li>
+Evj@
+<li data-linked>
+svk@
+<a href="/cluster-usermin/"> Cluster Usermin Servers</a>
+</li>
+Evl@
+<li data-linked>
+@vm@
+<a href="/cluster-useradmin/"> Cluster Users and Groups</a>
+</li>
+<li data-linked>
+<a href="/cluster-webmin/"> Cluster Webmin Servers</a>
+</li>
+</ul></li>
+<li class="has-sub">
+<a data-has-sub-link href="#unused"><i class="fa fa-puzzle-piece fa-fw"></i> <span>Un-used Modules</span></a>
+</li>
+<li class="sub-wrapper"><ul class="sub" style="display: none;" id="unused">
+<li data-linked>
+<a href="/adsl-client/"> ADSL Client</a>
+</li>
+<li data-linked>
+<a href="/bacula-backup/"> Bacula Backup System</a>
+</li>
+<li data-linked>
+[vn@
+<a href="/bind8/"> BIND DNS Server</a>
+</li>
+<li data-linked>
+<a href="/dhcpd/"> DHCP Server</a>
+</li>
+<li data-linked>
+Wvp@
+<a href="/quota/"> Disk Quotas</a>
+Qvq@
+</li>
+<li data-linked>
+<a href="/dovecot/"> Dovecot IMAP/POP3 Server</a>
+</li>
+<li data-linked>
+<a href="/fail2ban/"> Fail2Ban Intrusion Detector</a>
+</li>
+<li data-linked>
+<a href="/fetchmail/"> Fetchmail Mail Retrieval</a>
+</li>
+<li data-linked>
+<a href="/firewalld/"> FirewallD</a>
+:vr@
+</li>
+lvs@
+<li data-linked>
+<a href="/grub/"> GRUB Boot Loader</a>
+:vt@
+</li>
+<li data-linked>
+<a href="/heartbeat/"> Heartbeat Monitor</a>
+</li>
+<li data-linked>
+<a href="/idmapd/"> idmapd daemon</a>
+<~=@
+4~>@
+GET /index.cgi/?xhr-get_available_modules=1 HTTP/1.1
+Host: 172.16.88.154:10000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: text/plain, */*; q=0.01
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://172.16.88.154:10000/
+X-Requested-With: XMLHttpRequest
+DNT: 1
+Connection: keep-alive
+Cookie: redirect=1; testing=1; sid=2d35cb72e843b8ef6d0272407b427f20
+:vv@
+</li>
++vw@
+<li data-linked>
+<a href="/ipsec/"> IPsec VPN Configuration</a>
+</li>
+<li data-linked>
+<a href="/jabber/"> Jabber IM Server</a>
+</li>
+<li data-linked>
+<a href="/krb5/"> Kerberos5</a>
+</li>
+<li data-linked>
+<a href="/ldap-client/"> LDAP Client</a>
+:vx@
+</li>
+Avy@
+<li data-linked>
+<a href="/ldap-server/"> LDAP Server</a>
+</li>
+<li data-linked>
+<a href="/ldap-useradmin/"> LDAP Users and Groups</a>
+</li>
+<li data-linked>
+<a href="/mon/"> MON Service Monitor</a>
+</li>
+<li data-linked>
+<a href="/xinetd/"> Network Services</a>
+</li>
+GET /index.cgi/?xhr-get_user_level=1 HTTP/1.1
+Host: 172.16.88.154:10000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: text/plain, */*; q=0.01
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://172.16.88.154:10000/
+X-Requested-With: XMLHttpRequest
+DNT: 1
+Connection: keep-alive
+Cookie: redirect=1; testing=1; sid=2d35cb72e843b8ef6d0272407b427f20
+GET /index.cgi?xhr-manage-config=1&load=1 HTTP/1.1
+Host: 172.16.88.154:10000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://172.16.88.154:10000/
+X-Requested-With: XMLHttpRequest
+DNT: 1
+Connection: keep-alive
+Cookie: redirect=1; testing=1; sid=2d35cb72e843b8ef6d0272407b427f20
+Evz@
+<li data-linked>
+<a href="/inetd/"> Network Services and Protocols</a>
+</li>
+<li data-linked>
+<a href="/openslp/"> OpenSLP Server</a>
+:v|@
+</li>
+Ev}@
+u>&<li data-linked>
+u>0<a href="/postfix/"> Postfix Mail Server</a>
+</li>
+<li data-linked>
+<a href="/postgresql/"> PostgreSQL Database Server</a>
+</li>
+<li data-linked>
+<a href="/pap/"> PPP Dialin Server</a>
+</li>
+u>1<li data-linked>
+<a href="/ppp-client/"> PPP Dialup Client</a>
+</li>
+u>2<li data-linked>
+u>5<a href="/pptp-server/"> PPTP VPN Server</a>
+u>6</li>
+u>><li data-linked>
+<a href="/procmail/"> Procmail Mail Filter</a>
+</li>
+u>?<li data-linked>
+<a href="/proftpd/"> ProFTPD Server</a>
+</li>
+<li data-linked>
+<a href="/qmailadmin/"> QMail Mail Server</a>
+</li>
+<li data-linked>
+<a href="/at/"> Scheduled Commands</a>
+u>A</li>
+u>I<li data-linked>
+<a href="/sendmail/"> Sendmail Mail Server</a>
+</li>
+<li data-linked>
+<a href="/shorewall/"> Shorewall Firewall</a>
+</li>
+<li data-linked>
+<a href="/shorewall6/"> Shorewall6 Firewall</a>
+</li>
+<li data-linked>
+<a href="/smart-status/"> SMART Drive Status</a>
+</li>
+<li data-linked>
+<a href="/spam/"> SpamAssassin Mail Filter</a>
+HTTP/1.0 200 Document follows
+u>L</li>
+<li data-linked>
+<a href="/squid/"> Squid Proxy Server</a>
+</li>
+<li data-linked>
+<a href="/sarg/"> Squid Report Generator</a>
+</li>
+<li data-linked>
+4~@@
+u>L<a href="/sshd/"> SSH Server</a>
+u>T</li>
+u>LDate: Thu, 25 Jun 2020 21:01:02 GMT
+4~A@
+u>WServer: MiniServ/1.900
+Connection: close
+Content-type: text/html
+4~B@
+u>V<li data-linked>
+HTTP/1.0 200 Document follows
+u>`<a href="/stunnel/"> SSL Tunnels</a>
+</li>
+HTTP/1.0 200 Document follows
+u>b<li data-linked>
+u>j<a href="/syslog-ng/"> System Logs NG</a>
+</li>
+<li data-linked>
+<a href="/usermin/"> Usermin Configuration</a>
+</li>
+u>j<li data-linked>
+<a href="/vgetty/"> Voicemail Server</a>
+</li>
+<li data-linked>
+<a href="/webalizer/"> Webalizer Logfile Analysis</a>
+</li>
+<li data-linked>
+<a href="/wuftpd/"> WU-FTP Server</a>
+</li>
+</ul></li>
+<li data-linked><a href="/webmin/refresh_modules.cgi" class="navigation_module_trigger"><i class="fa fa-fw fa-refresh"></i> <span>Refresh Modules</span></a></li>
+u>bDate: Thu, 25 Jun 2020 21:01:02 GMT
+u>cDate: Thu, 25 Jun 2020 21:01:02 GMT
+u>m</ul>
+<br><br><ul class="user-links"><li data-collapse-trigger-container data-linked data-container="body" data-placement="auto top" data-toggle="tooltip" data-html="false" data-title="Pin/unpin navigation menu (Alt+A)" class="user-link cursor-pointer"><span class="pd-lf-rt-6"><i data-collapse-trigger="1" class="fa fa2 fa-fw fa2-collapse-left vertical-align-middle"></i></span></li><li data-linked data-container="body" data-placement="auto top" data-toggle="tooltip" data-html="false" data-title="Day/night mode toggle (Alt+L)" class="user-link palette-toggle cursor-pointer">
+u>mServer: MiniServ/1.900
+Connection: close
+Content-type: text/html
+u>mServer: MiniServ/1.900
+Connection: close
+Content-type: text/html
+u>m<span><i class="fa fa-fw fa-moon"></i></span>
+u>w</li>
+u>n0
+u>Z["syslog-ng","burner","ajaxterm","inetd","cluster-webmin","sarg","tunnel","jabber","krb5","bind8","adsl-client","cluster-software","logrotate","mailcap","bacula-backup","smart-status","cluster-usermin","shell","webmin","pap","package-updates","bandwidth","tcpwrappers","man","webalizer","sendmail","iscsi-server","filter","mon","openslp","postgresql","heartbeat","useradmin","system-status","firewalld","time","filemin","pptp-server","cluster-copy","syslog","sshd","raid","firewall","telnet","proc","wuftpd","phpini","apache","qmailadmin","stunnel","iscsi-target","ldap-client","fail2ban","lpadmin","dhcpd","mysql","exim","squid","cluster-passwd","pptp-client","fsdump","cluster-useradmin","iscsi-tgtd","custom","quota","net","xinetd","pam","ldap-server","at","backup-config","idmapd","software","fetchmail","vgetty","shorewall6","usermin","acl","firewall6","cron","cpan","change-user","spam","servers","ldap-useradmin","postfix","iscsi-client","mailboxes","htaccess-htpasswd","grub","proftpd","shorewall","cluster-shell","passwd","status","webmincron","samba","lvm","ppp-client","updown","nis","ipsec","init","dovecot","mount","procmail","file","webminlog","cluster-cron"]
+u>y<li data-linked data-container="body" data-placement="auto top" data-toggle="tooltip" data-html="false" data-title="Terminal (Alt+K)" class="user-link ported-console cursor-pointer">
+u>y<span class="pd-rt-4"><i class="fa fa-fw fa-terminal"></i></span></li><li data-linked data-container="body" data-placement="auto top" data-toggle="tooltip" data-html="false" data-title="Favorites (Alt+F)" class="user-link favorites cursor-pointer"><span class="pd-rt-4"><i class="fa fa-fw fa-star"></i></span></li><li data-linked data-container="body" data-placement="auto top" data-toggle="tooltip" data-html="false" data-title="Theme Configuration" class="user-link theme-options cursor-pointer"><a class="menu-exclude-link" href="/webmin/edit_themes.cgi" data-href="/webmin/edit_themes.cgi"><i class="fa fa-fw fa-cogs"></i></a></li><li class="user-link"><a data-container="body" data-placement="auto top" data-toggle="tooltip" data-html="false" data-title="Edit user" class="menu-exclude-link" data-href="/acl/edit_user.cgi" href="/acl/edit_user.cgi?user=admin"><i class="fa fa-fw fa-user"></i>&nbsp;<span>admin</span></a></li><li class="user-link __logout-link"><a data-nref data-container="body" data-placement="auto top" data-toggle="tooltip" data-html="false" data-title="Sign out" class="menu-exclude-link pd-rt-4" href="/session_login.cgi?logout=1"><i class="fa fa-fw fa-sign-out text-danger"></i></a></li><li data-linked data-container="body" data-placement="auto top" data-toggle="tooltip" data-html="false" data-title="Refresh (Alt+R)" class="user-link hidden"><a class="menu-exclude-link pd-rt-4" data-refresh="true" style="cursor: poi
+4~C@
+nter"><i class="fa fa-fw fa-refresh"></i></a></li></ul><ul class="user-html"><li class="user-html-string"></li></ul>
+u>m{}
+</aside>
+<div id="favorites-menu">
+    <div class="favorites-menu-outer">
+      <nav class="favorites-menu">
+          <ul class="favorites-menu-content ui-sortable">
+              <li class="menu-exclude exclude favorites-title">
+                <h1><i class="fa fa-star-o"></i>&nbsp;&nbsp;Favorites<sup style="position: absolute; margin: 25px 0 0 -10px;" class="hidden">&nbsp;&nbsp;<small class="text-white"> <a href="/settings-editor_read.cgi?file=/etc/webmin/authentic-theme/favorites.json" class="fa fa-pencil-square-o hidden" style="display: inline; font-size: 1em;"></a></small></sup></h1>
+              </li>
+4~D@
+              <li class="menu-exclude exclude favorites-no-message">
+                    <span>There were no favorites added yet...</span>
+              </li>
+        
+        </ul>
+      </nav>
+    </div>
+    <a class="favorites-menu-close">
+      <div class="favorites-menu-icon">
+        <div class="favorites-menu-bar"></div>
+        <div class="favorites-menu-bar"></div>
+      </div>
+    </a>
+</div><div id="content" class="__page">
+ <div class="container-fluid col-lg-10 col-lg-offset-1" data-dcontainer="1"></div>
+</div>
+<div data-autocomplete="1" class="-shell-port-">
+  <div class="-shell-port-container">
+    <div data-shell-config><i class="fa fa-lg fa-cogs"></i></div>
+    <div class="-shell-port-close"></div>
+    <div data-output="true"><pre data-xconsole></pre></div>
+    <div class="-shell-port-cmd">
+      <span class="-shell-port-prompt"><span class="-shell-port-type">[admin@ubuntu <span class="-shell-port-pwd" data-home="" data-pwd="">~</span>]#</span></span><input type="text" data-command="true" autocomplete="off" spellcheck="false"><span class="-shell-port-cursor">&nbsp;</span>
+    </div>
+  </div>
+</div>
+<div class="top-aprogress"></div>
+</body>
+</html>
+GET /extensions/stats/stats.min.js?1921999999999901&_=1593118862200 HTTP/1.1
+Host: 172.16.88.154:10000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://172.16.88.154:10000/
+X-Requested-With: XMLHttpRequest
+DNT: 1
+Connection: keep-alive
+Cookie: redirect=1; testing=1; sid=2d35cb72e843b8ef6d0272407b427f20
+HTTP/1.0 200 Document follows
+Date: Thu, 25 Jun 2020 21:01:02 GMT
+Server: MiniServ/1.900
+Content-type: application/x-javascript
+Last-Modified: Fri, 16 Nov 2018 15:22:27 GMT
+Expires: Thu, 2 Jul 2020 21:01:02 GMT
+Cache-Control: public; max-age=604800
+Content-length: 2896
+Connection: Keep-Alive
+'use strict';var _typeof=typeof Symbol==="function"&&typeof Symbol.iterator==="symbol"?function(obj){return typeof obj;}:function(obj){return obj&&typeof Symbol==="function"&&obj.constructor===Symbol&&obj!==Symbol.prototype?"symbol":typeof obj;};var _slicedToArray=function(){function sliceIterator(arr,i){var _arr=[];var _n=true;var _d=false;var _e=undefined;try{for(var _i=arr[Symbol.iterator](),_s;!(_n=(_s=_i.next()).done);_n=true){_arr.push(_s.value);if(i&&_arr.length===i)break;}}catch(err){_d=true;_e=err;}finally{try{if(!_n&&_i["return"])_i["return"]();}finally{if(_d)throw _e;}}return _arr;}return function(arr,i){if(Array.isArray(arr)){return arr;}else if(Symbol.iterator in Object(arr)){return sliceIterator(arr,i);}else{throw new TypeError("Invalid attempt to destructure non-iterable instance");}};}();var stats={general:{timeout:1000,stopped:1,error:0,requery:0,call:{},extend:{prefix:v___location_prefix,error:connection_error,state:function state(){return v___theme_state_visible;},enabled:function enabled()
+{return settings_sysinfo_real_time_status;},timeout:function timeout(){return settings_sysinfo_real_time_timeout;}},query:function query(){var _this=this;this.stopped&&function(){_this.stopped=0;_this.call={};_this.call=$.ajax({context:_this,url:_this.extend.prefix+"/stats.cgi?xhr-stats=general",error:function error(xhr){var _this2=this;this.error++;if(this.error>3){this.extend.error(xhr,1),this.stopped=1,this.error=0,this.requery=0;return;}!this.requery&&(this.requery=setTimeout(function(){_this2.stopped=1,_this2.requery=0,_this2.query();},3000));},success:function success(data){var _this3=this;this.error=0;setTimeout(function(){_this3.render(data);},this.timeout);this.stopped=1;},dataType:"json"});}();},render:function render(data){Object.entries(data).map(function(_ref){var _ref2=_slicedToArray(_ref,2),target=_ref2[0],data=_ref2[1];var v=parseInt(data),vo=(typeof data==="undefined"?"undefined":_typeof(data))==='object'?data[data.length-1]:false,vt=vo?vo:v,$pc=$('#system-status .piechart[data-charts*="'+tar
+get+'"]'),$lc=$('.info-container .'+target+'_percent'),$od=$('#system-status span[data-id="sysinfo_'+target+'"], .info-container span[data-data="'+target+'"]');if(Number.isInteger(v)){if($pc.length){$pc.data('easyPieChart').update(v);}if($lc.length){$lc.find('.bar').attr('style','width:'+v+'%');var $dp=$lc.find('.description'),$lb=$dp.text().split(":")[0];$dp.attr('title',vo).text($lb+": "+v+'% ('+vo+')');}if($od.length){if($od.find('a').length){$od.find('a').text(vt);}else{$od.text(vt);}}}});this.extend.state()&&this.query();},kill:function kill(){var _this4=this;var abort=this.call.abort;typeof abort==="function"&&(abort.call(),this.stopped=0);setTimeout(function(){_this4.stopped=1,_this4.call={};},this.timeout+2);},enable:function enable(){if(this.extend.enabled()){this.timeout=this.extend.timeout(),this.stopped=1,this.query();}}}};
+POST /index.cgi/?xhr-theme_temp_data=1&xhr-theme_temp_data_action=get&xhr-theme_temp_data_name=goto&xhr-theme_temp_data_value=false&xhr-theme_temp_data_keep=0 HTTP/1.1
+Host: 172.16.88.154:10000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: text/plain, */*; q=0.01
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://172.16.88.154:10000/
+X-Requested-From: 0
+X-Requested-From-Tab: webmin
+X-Requested-With: XMLHttpRequest
+Origin: http://172.16.88.154:10000
+DNT: 1
+Connection: keep-alive
+Cookie: redirect=1; testing=1; sid=2d35cb72e843b8ef6d0272407b427f20
+Content-Length: 0
+w-HGET /stats.cgi?xhr-stats=general HTTP/1.1
+Host: 172.16.88.154:10000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://172.16.88.154:10000/
+X-Requested-From: 0
+X-Requested-From-Tab: webmin
+X-Requested-With: XMLHttpRequest
+DNT: 1
+Connection: keep-alive
+Cookie: redirect=1; testing=1; sid=2d35cb72e843b8ef6d0272407b427f20
+HTTP/1.0 200 Document follows
+Date: Thu, 25 Jun 2020 21:01:02 GMT
+Server: MiniServ/1.900
+Connection: close
+Content-type: text/html
+GET /index.cgi/?xhr-default=1 HTTP/1.1
+Host: 172.16.88.154:10000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: text/plain, */*; q=0.01
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://172.16.88.154:10000/
+X-Requested-From: 0
+X-Requested-From-Tab: webmin
+X-Requested-With: XMLHttpRequest
+DNT: 1
+Connection: keep-alive
+Cookie: redirect=1; testing=1; sid=2d35cb72e843b8ef6d0272407b427f20
+HTTP/1.0 200 Document follows
+uA@Date: Thu, 25 Jun 2020 21:01:03 GMT
+uAKServer: MiniServ/1.900
+Connection: close
+Content-type: text/html
+?17V_
+uAK/sysinfo.cgi
+?=7V_
+?>7V_
+w.HPOST /sysinfo.cgi HTTP/1.1
+Host: 172.16.88.154:10000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: text/html, */*; q=0.01
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://172.16.88.154:10000/
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+X-PJAX: true
+X-PJAX-Container: [data-dcontainer]
+X-PJAX-URL: /sysinfo.cgi
+X-Requested-From: 0
+X-Requested-From-Tab: webmin
+X-Requested-With: XMLHttpRequest
+Origin: http://172.16.88.154:10000
+DNT: 1
+Connection: keep-alive
+Cookie: redirect=1; testing=1; sid=2d35cb72e843b8ef6d0272407b427f20
+Content-Length: 0
+HTTP/1.0 200 Document follows
+Date: Thu, 25 Jun 2020 21:01:03 GMT
+Server: MiniServ/1.900
+Connection: close
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: script-src 'self' 'unsafe-inline' 'unsafe-eval'; frame-src 'self'; child-src 'self'
+Content-type: text/html; Charset=UTF-8
+<!DOCTYPE html>
+<html data-host="172.16.88.154:10000" data-hostname="ubuntu" data-title-initial="Webmin 1.900 on ubuntu (Ubuntu Linux 20.04)" data-debug="0" data-session="1" data-script-name="/sysinfo.cgi" data-background-style="gainsboro" data-night-mode="0" data-high-contrast="0" data-navigation-collapsed="0" data-slider-fixed="0" data-sestatus="0" data-shell="1" data-webmin="1" data-usermin="" data-navigation="0" data-status="1" data-package-updates="1" data-csf="0" data-theme="white" data-default-theme="white" data-theme-version="19.21" data-theme-mversion="01"  data-level="0" data-user-home="" data-user-id="" data-user="admin" data-dashboard="1" data-ltr="1" data-language="en" data-language-full="en" data-charset="UTF-8" data-notice="0" data-redirect="" data-initial-wizard="1" data-webprefix="" data-current-product="webmin" data-module="" data-uri="/sysinfo.cgi" data-progress="1" data-product="webmin" data-access-level="0">
+ <head>
+ <noscript> <style> html[data-background-style="gainsboro"] { background-color: #d6d6d6; } html[data-background-style="nightRider"] { background-color: #1a1c20; } html[data-background-style="nightRider"] div[data-noscript] { color: #979ba080; } html[data-slider-fixed='1'] { margin-right: 0 !important; } body > div[data-noscript] ~ * { display: none !important; } div[data-noscript] { visibility: hidden; animation: 2s noscript-fadein; animation-delay: 1s; text-align: center; animation-fill-mode: forwards; } @keyframes noscript-fadein { 0% { opacity: 0; } 100% { visibility: visible; opacity: 1; } } </style> <div data-noscript> <div class="fa fa-3x fa-exclamation-triangle margined-top-20 text-danger"></div> <h2>JavaScript is disabled</h2> <p>Please enable javascript and refresh the page</p> </div> </noscript>
+ <meta charset="UTF-8">
+<link data-link-ref rel="apple-touch-icon" sizes="180x180" href="/images/favicons/webmin/apple-touch-icon.png"><link data-link-ref rel="icon" type="image/png" sizes="32x32" href="/images/favicons/webmin/favicon-32x32.png"><link data-link-ref rel="icon" type="image/png" sizes="192x192" href="/images/favicons/webmin/android-chrome-192x192.png"><link data-link-ref rel="icon" type="image/png" sizes="16x16" href="/images/favicons/webmin/favicon-16x16.png"><link data-link-ref rel="manifest" href="/images/favicons/webmin/site.webmanifest"><link data-link-ref rel="mask-icon" href="/images/favicons/we
+uB'bmin/safari-pinned-tab.svg" color="#3d74ca">
+uB'<meta name="msapplication-TileColor" content="#3d74ca">
+uB2<meta data-link-ref name="msapplication-TileImage" content="/images/favicons/webmin/mstile-144x144.png">
+uB2<meta name="theme-color" content="#3d74ca">
+uB= <title>Webmin 1.900 on ubuntu (Ubuntu Linux 20.04)</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head><body data-uri="/sysinfo.cgi" >
+<div class="container-fluid col-lg-10 col-lg-offset-1" data-dcontainer="1">
+1 aI
+'(deZs-
+HTTP/1.0 200 Document follows
+Date: Thu, 25 Jun 2020 21:01:03 GMT
+Server: MiniServ/1.900
+Connection: close
+Content-type: application/json;
+< D)*
+{"virt":[93," 405.45 MB used / 437.98 MB total "],"disk":[95," 8.91 GB used /  386.15 MB free  / 9.29 GB total "],"mem":[78," 2.91 GB used / 3.73 GB total "],"io":["0","548"],"cpu":[26,"0.25 (1 min) 0.21 (5 mins) 0.23 (15 mins)"],"proc":"0"}
+uB=<div id="system-status" class="panel panel-default" style="margin-bottom: 5px">
+<div class="panel-heading">
+<h3 class="panel-title"><span class="btn btn-transparent-link pull-right _sync_sysinfo_cnt"><i class="fa fa-fw fa fa-reload _sync_sysinfo_"  data-container="body" data-placement="auto right" data-toggle="tooltip" data-html="false" data-title="Force to synchronize background status collection"></i></span>System Information
+            
+    </h3>
+</div><div class="panel-body">
+<div class="row" style="margin: 0;">
+<div class="col-md-3 col-md-6 col-xs-6 text-center">
+<span class="piechart" data-charts="sysinfo_cpu_percent" data-percent="7">
+        <div class="data-cnt">
+          <span class="percent"></span>
+          <span class="label">CPU</span>
+        </div>
+    </span>
+</div>
+uH!<div class="col-md-3 col-md-6 col-xs-6 text-center">
+uH!<span class="piechart" data-charts="sysinfo_mem_percent" data-percent="77">
+        <div class="data-cnt">
+          <span class="percent"></span>
+          <span class="label">Real memory</span>
+        </div>
+    </span>
+uH+</div>
+<div class="col-md-3 col-md-6 col-xs-6 text-center">
+<span class="piechart" data-charts="sysinfo_virt_percent" data-percent="92">
+        <div class="data-cnt">
+          <span class="percent"></span>
+          <span class="label">Virtual memory</span>
+        </div>
+    </span></div>
+<div class="col-md-3 col-md-6 col-xs-6 text-center">
+<span class="piechart" data-charts="sysinfo_disk_percent" data-percent="95">
+        <div class="data-cnt">
+          <span class="percent"></span>
+          <span class="label">Local disk space</span>
+        </div>
+    </span></div>
+</div>
+<table class="table table-hover margined-top-25"><tbody>
+uH,<tr>
+uH,<td style="width:20%;"><strong>System hostname</strong></td>
+uH,<td  style="width:30%;"><span data-id="sysinfo_host"><a href='/net/list_dns.cgi'>ubuntu (127.0.1.1)</a></span></td>
+<td style="width:15%;"><strong>Operating system</strong></td>
+<td  style="width:35%;"><span data-id="sysinfo_os">Ubuntu Linux 20.04</span></td>
+</tr>
+<tr>
+<td style="width:20%;"><strong>Webmin version</strong></td>
+<td  style="width:30%;"><span data-id="sysinfo_webmin_version">1.900 <div class="btn-group margined-left-4"><a class="btn btn-default btn-xxs btn-hidden hidden margined-left--1" title="Webmin documentation" href="http://doxfer.webmin.com" target="_blank"><i class="fa fa-fwh fa-book"></i></a></div></span></td>
+<td style="width:15%;"><strong>Authentic theme version</strong></td>
+<td  style="width:35%;"><span data-id="sysinfo_authentic_theme_version">19.21 <div class="btn-group margined-left-4"><a data-href="#theme-info" class="btn btn-default btn-xxs"><i class="fa fa-info-circle"></i></a><a href="/webmin/edit_themes.cgi" data-href="/webmin/edit_themes.cgi" class="btn btn-default btn-xxs btn-hidden hidden" title="Configurable options for Authentic Theme"><i class="fa fa-cogs"></i></a></div></span></td>
+</tr>
+<tr>
+<td style="width:20%;"><strong>Time on system</strong></td>
+<td  style="width:30%;"><span data-id="sysinfo_local_time"><a data-convertible-timestamp-full="1593118864"  data-convertible-date-full="Thu Jun 25 14:01:04 2020" href='/time/'>Thu Jun 25 14:01:04 2020</a></span></td>
+<td style="width:1
+uH65%;"><strong>Kernel and CPU</strong></td>
+<td  style="width:35%;"><span data-id="sysinfo_kernel_arch">Linux 5.4.0-37-generic on x86_64</span></td>
+</tr>
+uH7<tr>
+<td style="width:20%;"><strong>Processor information</strong></td>
+<td  style="width:30%;"><span data-id="sysinfo_cpu_type">Intel(R) Core(TM) i5-8279U CPU @ 2.40GHz, 2 cores</span></td>
+<td style="width:15%;"><strong>System uptime</strong></td>
+<td  style="width:35%;"><span data-id="sysinfo_uptime"><a href='/init/'>2 hours, 53 minutes</a></span></td>
+</tr>
+<tr>
+<td style="width:20%;"><strong>Running processes</strong></td>
+<td  style="width:30%;"><span data-id="sysinfo_proc"><a href='/proc/index_tree.cgi'>0</a></span></td>
+<td style="width:15%;"><strong>CPU load averages</strong></td>
+<td  style="width:35%;"><span data-id="sysinfo_cpu">0.25 (1 min) 0.21 (5 mins) 0.23 (15 mins)</span></td>
+</tr>
+uH7<tr>
+uHA<td style="width:20%;"><strong>Real memory</strong></td>
+<td  style="width:30%;"><span data-id="sysinfo_mem"> 2.89 GB used / 3.73 GB total </span></td>
+<td style="width:15%;"><strong>Virtual memory</strong></td>
+<td  style="width:35%;"><span data-id="sysinfo_virt"> 405.45 MB used / 437.98 MB total </span></td>
+</tr>
+<tr>
+<td style="width:20%;"><strong>Local disk space</strong></td>
+<td  style="width:30%;"><span data-id="sysinfo_disk"> 8.91 GB used /  386.15 MB free  / 9.29 GB total </span></td>
+<td style="width:15%;"><strong>Package updates</strong></td>
+<td  style="width:35%;"><span data-id="sysinfo_package_message"><a href='/package-updates/index.cgi?mode=updates'><i class='badge badge-danger font-style-normal'> 87 </i> package updates are available</a></span></td>
+</tr>
+</tbody></table>
+uHA<br><div class="alert alert-info" style="margin-bottom: 4px; ">
+<i class="fa fa-fw fa-info-circle"></i> <strong>Information!</strong><br>
+Webmin versions below 1.930 contain a remotely exploitable security hole and should be upgraded immediately! See http://www.webmin.com/security.html for more details.<p>
+<button type="button" class="btn btn-default ui_button"  onClick='window.open("/webmin/hide.cgi?id=exploit%2Etxt", "_self")' >Hide This Announcement</button>
+</div>
+<div class="alert alert-warning" style="margin-bottom: 4px; ">
+<i class="fa fa-fw fa-exclamation-circle"></i> <strong>Warning!</strong><br>
+<form class="ui_form" action="/webmin/upgrade.cgi" method="post" enctype="multipart/form-data" >
+<input class='ui_hidden' type='hidden' name="source" id="source" value="2">
+<input class='ui_hidden' type='hidden' name="sig" id="sig" value="0">
+<input class='ui_hidden' type='hidden' name="mode" id="mode" value="zip">
+Webmin version 1.941 is now available, but you are running version 1.900.<p>
+<table class='ui_form_end_buttons' ><tr><td>
+<div class="btn-group end_submits"><button class="btn btn-info  btn-tiny ui_submit ui_form_end_submit" type="button"><i class="fa fa-fw fa-update"></i>&nbsp;<span data-entry="notif_upgradeok">Upgrade Webmin Now&nbsp;</span></button>
+<input class="hidden" type="submit" >
+</div></td></tr></table>
+</form>
+<script>
+var opts = document.getElementsByClassName('ui_opt_textbox');
+for(var i=0; i<opts.
+uHAlength; i++) {
+  opts[i].disabled = document.getElementsByName(opts[i].name+'_def')[0].checked;
+</script>
+</div>
+<div class="alert alert-warning" style="margin-bottom: 4px; ">
+<i class="fa fa-fw fa-exclamation-circle"></i> <strong>Warning!</strong><br>
+<form class="ui_form" action="/init/reboot.cgi" method="post" enctype="multipart/form-data" >
+Recent package updates (such as a new kernel version) require a reboot to be fully applied.<p>
+<table class='ui_form_end_buttons' ><tr><td>
+<div class="btn-group end_submits"><button class="btn btn-warning  btn-tiny ui_submit ui_form_end_submit" type="button"><i class="fa fa-fw fa-refresh-fi fa-1_25x"></i>&nbsp;<span data-entry="notif_rebootok">Reboot Now&nbsp;</span></button>
+<input class="hidden" type="submit" >
+</div></td></tr></table>
+</form>
+<script>
+var opts = document.getElementsByClassName('ui_opt_textbox');
+for(var i=0; i<opts.length; i++) {
+  opts[i].disabled = document.getElementsByName(opts[i].name+'_def')[0].checked;
+</script>
+</div>
+</div></div>
+uHA<div class="panel-group" id="extended_sysinfo-1" role="tablist" aria-multiselectable="true">
+                    <div  data-referrer="acl_logins" data-sorter="acl" class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" data-target="#acl_logins-acl-1-collapse" role="tab" id="acl_logins-acl-1">
+                          <h4 class="panel-title">
+                            <a data-toggle="collapse" href="#acl_logins-acl-1-collapse" aria-expanded="true" aria-controls="acl_logins-acl-1-collapse">
+                              Recent Logins
+                            </a>
+                          </h4>
+                        </div>
+                    <div id="acl_logins-acl-1-collapse" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="acl_logins-acl-1">
+                      <div class="panel-body "><table class="table table-striped table-hover table-condensed">
+<thead>
+<tr>
+<th>IP address</th>
+<th>Last active at</th>
+<th>State</th>
+</tr>
+</thead>
+<tr class="tr_tag">
+<td class="td_tag">
+172.16.88.131</td>
+<td class="td_tag">
+<x-md-d>1593118863;0</x-md-d> <x-md-t>1593118863</x-md-t></td>
+<td class="td_tag">
+<font color=green>This login</a></td>
+</tr>
+<tr class="tr_tag">
+<td class="td_tag">
+172.16.88.131</td>
+<td class="td_tag">
+<x-md-d>1593118808;0</x-md-d> <x-md-t>1593118808</x-md-t></td>
+<td class="td_tag">
+Logged out</td>
+</tr>
+<tr class="tr_tag">
+<td class="t
+uHAd_tag">
+127.0.0.1</td>
+<td class="td_tag">
+<x-md-d>1593118567;0</x-md-d> <x-md-t>1593118567</x-md-t></td>
+<td class="td_tag">
+<font color=orange>Logged in</font></td>
+</tr>
+<tr class="tr_tag">
+<td class="td_tag">
+127.0.0.1</td>
+<td class="td_tag">
+<x-md-d>1593118230;0</x-md-d> <x-md-t>1593118230</x-md-t></td>
+<td class="td_tag">
+Logged out</td>
+</tr>
+<tr class="tr_tag">
+<td class="td_tag">
+172.16.88.131</td>
+<td class="td_tag">
+<x-md-d>1593116561;0</x-md-d> <x-md-t>1593116561</x-md-t></td>
+<td class="td_tag">
+Logged in</td>
+</tr>
+</table>
+</div>
+                    </div>
+                </div></div><br><br><br><br>
+uHB</div>
+uHL</div>
+uHL<div class="top-aprogress"></div>
+</body>
+</html>
+<j5@
+4j6@
+:j7@
+GET /index.cgi/?xhr-info=1 HTTP/1.1
+Host: 172.16.88.154:10000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://172.16.88.154:10000/sysinfo.cgi?xnavigation=1
+X-Requested-From: 
+X-Requested-From-Tab: dashboard
+X-Requested-With: XMLHttpRequest
+DNT: 1
+Connection: keep-alive
+Cookie: redirect=1; testing=1; sid=2d35cb72e843b8ef6d0272407b427f20
+HTTP/1.0 200 Document follows
+4j8@
+uI$Date: Thu, 25 Jun 2020 21:01:05 GMT
+4j9@
+uI.Server: MiniServ/1.900
+Connection: close
+Content-type: text/html
+4j:@
+GET /stats.cgi?xhr-stats=general HTTP/1.1
+Host: 172.16.88.154:10000
+User-Agent: Mozilla/5.0 (Windows NT 10.0; rv:68.0) Gecko/20100101 Firefox/68.0
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://172.16.88.154:10000/sysinfo.cgi?xnavigation=1
+X-Requested-From: 
+X-Requested-From-Tab: dashboard
+X-Requested-With: XMLHttpRequest
+DNT: 1
+Connection: keep-alive
+Cookie: redirect=1; testing=1; sid=2d35cb72e843b8ef6d0272407b427f20
+uI>HTTP/1.0 200 Document follows
+Date: Thu, 25 Jun 2020 21:01:05 GMT
+Server: MiniServ/1.900
+Connection: close
+Content-type: application/json;
+{"mem":[78," 2.91 GB used / 3.73 GB total "],"io":["0","484"],"cpu":[17,"0.23 (1 min) 0.20 (5 mins) 0.23 (15 mins)"],"proc":"0","virt":[93," 405.45 MB used / 437.98 MB total "],"disk":[95," 8.91 GB used /  386.13 MB free  / 9.29 GB total "]}

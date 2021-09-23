@@ -1,0 +1,90 @@
+[
+{
+    "id": "C01468H8KDF",
+    "name": "project",
+    "created": 1589786599,
+    "creator": "U013CT40QHM",
+    "is_archived": false,
+    "is_general": false,
+    "members": [
+        "U013CT40QHM",
+        "U014025GL3W"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "This *channel* is for working on a project. Hold meetings, share docs and make decisions together with your team.",
+        "creator": "U013CT40QHM",
+        "last_set": 1589786599
+    }
+},
+{
+    "id": "C0146FEQE73",
+    "name": "secure",
+    "created": 1589794001,
+    "creator": "U013CT40QHM",
+    "is_archived": false,
+    "is_general": false,
+    "members": [
+        "U013CT40QHM",
+        "U014025GL3W"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "discuss network security",
+        "creator": "U013CT40QHM",
+        "last_set": 1589794001
+    }
+},
+{
+    "id": "C014HEQV16C",
+    "name": "welcome",
+    "created": 1589786504,
+    "creator": "U013CT40QHM",
+    "is_archived": false,
+    "is_general": true,
+    "members": [
+        "U013CT40QHM",
+        "U014025GL3W"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "In Slack, conversations are organised into *channels*. Like this one, which is a place for you and your teammates to say hello.",
+        "creator": "U013CT40QHM",
+        "last_set": 1589786504
+    }
+},
+{
+    "id": "C014HETBH88",
+    "name": "team",
+    "created": 1589786599,
+    "creator": "U013CT40QHM",
+    "is_archived": false,
+    "is_general": false,
+    "members": [
+        "U013CT40QHM",
+        "U014025GL3W"
+    ],
+    "topic": {
+        "value": "",
+        "creator": "",
+        "last_set": 0
+    },
+    "purpose": {
+        "value": "This *channel* is for you and your team. It’s a place for sharing updates, planning your week and staying connected, wherever you are.",
+        "creator": "U013CT40QHM",
+        "last_set": 1589786599
+    }
+}
+]

@@ -30,7 +30,9 @@
     "nmap",
     "burpsuite",
     "metasploit",
-    "decrypt"
+    "decrypt",
+    "james",
+    "margaret"
   ],
   "readableLineLength": false,
   "newLinkFormat": "shortest"

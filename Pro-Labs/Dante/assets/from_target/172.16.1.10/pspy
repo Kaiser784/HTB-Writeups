@@ -1,0 +1,327 @@
+2021/09/21 08:53:45 CMD: UID=33   PID=9915   | /usr/sbin/apache2 -k start 
+2021/09/21 08:53:45 CMD: UID=33   PID=9914   | /usr/sbin/apache2 -k start 
+2021/09/21 08:53:45 CMD: UID=33   PID=9913   | /usr/sbin/apache2 -k start 
+2021/09/21 08:53:45 CMD: UID=33   PID=9912   | /usr/sbin/apache2 -k start 
+2021/09/21 08:53:45 CMD: UID=0    PID=99     | 
+2021/09/21 08:53:45 CMD: UID=0    PID=9897   | /usr/sbin/cups-browsed 
+2021/09/21 08:53:45 CMD: UID=0    PID=9896   | /usr/sbin/cupsd -l 
+2021/09/21 08:53:45 CMD: UID=33   PID=9887   | /usr/sbin/apache2 -k start 
+2021/09/21 08:53:45 CMD: UID=0    PID=98     | 
+2021/09/21 08:53:45 CMD: UID=0    PID=97     | 
+2021/09/21 08:53:45 CMD: UID=0    PID=96     | 
+2021/09/21 08:53:45 CMD: UID=0    PID=95     | 
+2021/09/21 08:53:45 CMD: UID=0    PID=946    | /usr/sbin/ModemManager --filter-policy=strict 
+2021/09/21 08:53:45 CMD: UID=0    PID=94     | 
+2021/09/21 08:53:45 CMD: UID=0    PID=93     | 
+2021/09/21 08:53:45 CMD: UID=0    PID=91     | 
+2021/09/21 08:53:45 CMD: UID=0    PID=90     | 
+2021/09/21 08:53:45 CMD: UID=0    PID=9      | 
+2021/09/21 08:53:45 CMD: UID=115  PID=868    | avahi-daemon: chroot helper 
+2021/09/21 08:53:45 CMD: UID=0    PID=86     | 
+2021/09/21 08:53:45 CMD: UID=0    PID=852    | /sbin/wpa_supplicant -u -s -O /run/wpa_supplicant 
+2021/09/21 08:53:45 CMD: UID=0    PID=851    | /usr/lib/udisks2/udisksd 
+2021/09/21 08:53:45 CMD: UID=0    PID=85     | 
+2021/09/21 08:53:45 CMD: UID=0    PID=845    | /lib/systemd/systemd-logind 
+2021/09/21 08:53:45 CMD: UID=0    PID=844    | /usr/libexec/switcheroo-control 
+2021/09/21 08:53:45 CMD: UID=0    PID=843    | /usr/lib/snapd/snapd 
+2021/09/21 08:53:45 CMD: UID=104  PID=841    | /usr/sbin/rsyslogd -n -iNONE 
+2021/09/21 08:53:45 CMD: UID=0    PID=84     | 
+2021/09/21 08:53:45 CMD: UID=0    PID=836    | /usr/lib/policykit-1/polkitd --no-debug 
+2021/09/21 08:53:45 CMD: UID=0    PID=83     | 
+2021/09/21 08:53:45 CMD: UID=0    PID=827    | /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers 
+2021/09/21 08:53:45 CMD: UID=0    PID=825    | /usr/sbin/irqbalance --foreground 
+2021/09/21 08:53:45 CMD: UID=0    PID=82     | 
+2021/09/21 08:53:45 CMD: UID=0    PID=81     | 
+2021/09/21 08:53:45 CMD: UID=0    PID=80     | 
+2021/09/21 08:53:45 CMD: UID=0    PID=79     | 
+2021/09/21 08:53:45 CMD: UID=0    PID=785    | /usr/sbin/NetworkManager --no-daemon 
+2021/09/21 08:53:45 CMD: UID=0    PID=78     | 
+2021/09/21 08:53:45 CMD: UID=103  PID=776    | /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+2021/09/21 08:53:45 CMD: UID=0    PID=770    | /usr/sbin/cron -f 
+2021/09/21 08:53:45 CMD: UID=115  PID=767    | avahi-daemon: running [DANTE-NIX02.local] 
+2021/09/21 08:53:45 CMD: UID=0    PID=762    | /usr/sbin/acpid 
+2021/09/21 08:53:45 CMD: UID=0    PID=760    | /usr/lib/accountsservice/accounts-daemon 
+2021/09/21 08:53:45 CMD: UID=0    PID=724    | /usr/bin/vmtoolsd 
+2021/09/21 08:53:45 CMD: UID=0    PID=712    | /usr/bin/VGAuthService 
+2021/09/21 08:53:45 CMD: UID=102  PID=691    | /lib/systemd/systemd-timesyncd 
+2021/09/21 08:53:45 CMD: UID=101  PID=690    | /lib/systemd/systemd-resolved 
+2021/09/21 08:53:45 CMD: UID=0    PID=6      | 
+2021/09/21 08:53:45 CMD: UID=0    PID=532    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=444    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=442    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=440    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=438    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=437    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=435    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=412    | vmware-vmblock-fuse /run/vmblock-fuse -o rw,subtype=vmware-vmblock,default_permissions,allow_other,dev,suid 
+2021/09/21 08:53:45 CMD: UID=0    PID=401    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=4      | 
+2021/09/21 08:53:45 CMD: UID=0    PID=399    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=395    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=394    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=393    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=392    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=391    | /lib/systemd/systemd-udevd 
+2021/09/21 08:53:45 CMD: UID=0    PID=390    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=387    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=381    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=375    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=355    | /lib/systemd/systemd-journald 
+2021/09/21 08:53:45 CMD: UID=0    PID=318    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=317    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=316    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=31     | 
+2021/09/21 08:53:45 CMD: UID=0    PID=30     | 
+2021/09/21 08:53:45 CMD: UID=0    PID=3      | 
+2021/09/21 08:53:45 CMD: UID=0    PID=296    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=295    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=294    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=29     | 
+2021/09/21 08:53:45 CMD: UID=0    PID=28     | 
+2021/09/21 08:53:45 CMD: UID=0    PID=27     | 
+2021/09/21 08:53:45 CMD: UID=0    PID=266    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=265    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=26436  | /lib/systemd/systemd-udevd 
+2021/09/21 08:53:45 CMD: UID=1000 PID=26421  | ./pspy64 
+2021/09/21 08:53:45 CMD: UID=0    PID=264    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=263    | 
+2021/09/21 08:53:45 CMD: UID=1000 PID=26257  | -bash 
+2021/09/21 08:53:45 CMD: UID=1000 PID=26256  | sshd: frank@pts/0    
+2021/09/21 08:53:45 CMD: UID=0    PID=262    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=26147  | sshd: frank [priv]   
+2021/09/21 08:53:45 CMD: UID=0    PID=261    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=260    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=26     | 
+2021/09/21 08:53:45 CMD: UID=0    PID=259    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=25887  | 
+2021/09/21 08:53:45 CMD: UID=0    PID=25821  | 
+2021/09/21 08:53:45 CMD: UID=0    PID=258    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=257    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=25624  | 
+2021/09/21 08:53:45 CMD: UID=0    PID=256    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=255    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=254    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=253    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=252    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=251    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=250    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=249    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=248    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=247    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=246    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=245    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=244    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=243    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=24273  | 
+2021/09/21 08:53:45 CMD: UID=0    PID=242    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=241    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=240    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=24     | 
+2021/09/21 08:53:45 CMD: UID=0    PID=239    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=238    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=236    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=235    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=23446  | 
+2021/09/21 08:53:45 CMD: UID=0    PID=234    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=233    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=232    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=231    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=230    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=23     | 
+2021/09/21 08:53:45 CMD: UID=0    PID=229    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=228    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=227    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=226    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=225    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=224    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=223    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=222    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=221    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=220    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=22     | 
+2021/09/21 08:53:45 CMD: UID=0    PID=21937  | 
+2021/09/21 08:53:45 CMD: UID=0    PID=219    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=218    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=217    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=216    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=215    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=214    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=213    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=212    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=211    | 
+2021/09/21 08:53:45 CMD: UID=1000 PID=2104   | update-notifier 
+2021/09/21 08:53:45 CMD: UID=0    PID=210    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=21     | 
+2021/09/21 08:53:45 CMD: UID=0    PID=209    | 
+2021/09/21 08:53:45 CMD: UID=1000 PID=2083   | /usr/libexec/gvfsd-metadata 
+2021/09/21 08:53:45 CMD: UID=0    PID=208    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=20720  | /usr/libexec/fwupd/fwupd 
+2021/09/21 08:53:45 CMD: UID=0    PID=207    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=206    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=205    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=204    | 
+2021/09/21 08:53:45 CMD: UID=1000 PID=2011   | /snap/slack/38/usr/lib/slack/slack --type=renderer --no-sandbox --autoplay-policy=no-user-gesture-required --force-color-profile=srgb --field-trial-handle=2594606880555550504,12748111210149817916,131072 --enable-features=WebComponentsV0Enabled --disable-features=CertVerifierService,CookiesWithoutSameSiteMustBeSecure,HardwareMediaKeyHandling,RequestInitiatorSiteLockEnfocement,SameSiteByDefaultCookies,SpareRendererForSitePerProcess,WebRtcHideLocalIpsWithMdns --disable-gpu-compositing --lang=en-US --enable-crash-reporter=039d2733-6c1f-4d19-ac42-e7de98c44182,no_channel --global-crash-keys=039d2733-6c1f-4d19-ac42-e7de98c44182,no_channel,_productName=Slack,_version=4.14.0 --standard-schemes=app,slack-webapp-dev --secure-schemes=app,slack-webapp-dev --bypasscsp-schemes=slack-webapp-dev --cors-schemes=slack-webapp-dev --fetch-schemes=slack-webapp-dev --service-worker-schemes=slack-webapp-dev --streaming-schemes --app-path=/snap/slack/38/usr/lib/slack/resources/app.asar --enable-sandbox --enable-blink-features=EventTiming --num-raster-threads=1 --renderer-client-id=6 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100 --window-type=main 
+2021/09/21 08:53:45 CMD: UID=0    PID=20     | 
+2021/09/21 08:53:45 CMD: UID=0    PID=2      | 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1976   | /snap/slack/38/usr/lib/slack/slack --type=gpu-process --field-trial-handle=2594606880555550504,12748111210149817916,131072 --enable-features=WebComponentsV0Enabled --disable-features=CertVerifierService,CookiesWithoutSameSiteMustBeSecure,HardwareMediaKeyHandling,RequestInitiatorSiteLockEnfocement,SameSiteByDefaultCookies,SpareRendererForSitePerProcess,WebRtcHideLocalIpsWithMdns --no-sandbox --enable-crash-reporter=039d2733-6c1f-4d19-ac42-e7de98c44182,no_channel --global-crash-keys=039d2733-6c1f-4d19-ac42-e7de98c44182,no_channel,_productName=Slack,_version=4.14.0 --gpu-preferences=UAAAAAAAAAAgAAAQAAAAAAAAAAAAAAAAAABgAAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAgAAAAAAAAACAAAAAAAAAA= --use-gl=swiftshader-webgl --shared-files 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1961   | /snap/slack/38/usr/lib/slack/slack --type=utility --utility-sub-type=network.mojom.NetworkService --field-trial-handle=2594606880555550504,12748111210149817916,131072 --enable-features=WebComponentsV0Enabled --disable-features=CertVerifierService,CookiesWithoutSameSiteMustBeSecure,HardwareMediaKeyHandling,RequestInitiatorSiteLockEnfocement,SameSiteByDefaultCookies,SpareRendererForSitePerProcess,WebRtcHideLocalIpsWithMdns --lang=en-US --service-sandbox-type=network --no-sandbox --enable-crash-reporter=039d2733-6c1f-4d19-ac42-e7de98c44182,no_channel --global-crash-keys=039d2733-6c1f-4d19-ac42-e7de98c44182,no_channel,_productName=Slack,_version=4.14.0 --standard-schemes=app,slack-webapp-dev --secure-schemes=app,slack-webapp-dev --bypasscsp-schemes=slack-webapp-dev --cors-schemes=slack-webapp-dev --fetch-schemes=slack-webapp-dev --service-worker-schemes=slack-webapp-dev --streaming-schemes --shared-files=v8_context_snapshot_data:100 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1914   | /snap/slack/38/usr/lib/slack/slack --type=zygote --no-sandbox 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1913   | /snap/slack/38/usr/lib/slack/slack --type=zygote --no-zygote-sandbox --no-sandbox 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1815   | /snap/slack/38/usr/lib/slack/slack --no-sandbox --executed-from=/home/frank --pid=1693 
+2021/09/21 08:53:45 CMD: UID=0    PID=18     | 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1762   | /snap/snap-store/518/usr/bin/snap-store --gapplication-service 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1760   | /usr/libexec/gsd-printer 
+2021/09/21 08:53:45 CMD: UID=121  PID=1747   | /usr/libexec/colord 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1716   | /usr/libexec/evolution-data-server/evolution-alarm-notify 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1715   | /usr/bin/vmtoolsd -n vmusr --blockFd 3 
+2021/09/21 08:53:45 CMD: UID=0    PID=17     | 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1678   | /usr/libexec/gsd-xsettings 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1672   | /usr/libexec/gsd-disk-utility-notify 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1666   | /usr/libexec/gsd-wwan 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1662   | /usr/libexec/gsd-wacom 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1657   | /usr/libexec/gsd-usb-protection 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1655   | /usr/libexec/gsd-sound 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1642   | /usr/libexec/gsd-smartcard 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1640   | /usr/libexec/gsd-sharing 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1638   | /usr/libexec/gsd-screensaver-proxy 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1634   | /usr/libexec/gsd-rfkill 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1633   | /usr/libexec/gsd-print-notifications 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1622   | /usr/libexec/gsd-power 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1621   | /usr/libexec/gsd-media-keys 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1617   | /usr/libexec/gsd-keyboard 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1615   | /usr/libexec/gsd-housekeeping 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1614   | /usr/libexec/gsd-datetime 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1613   | /usr/libexec/gsd-color 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1612   | /usr/libexec/gsd-a11y-settings 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1606   | /usr/libexec/gvfsd-trash --spawner :1.3 /org/gtk/gvfs/exec_spaw/0 
+2021/09/21 08:53:45 CMD: UID=0    PID=16     | 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1596   | /usr/bin/gjs /usr/share/gnome-shell/org.gnome.Shell.Notifications 
+2021/09/21 08:53:45 CMD: UID=0    PID=159    | 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1577   | /usr/libexec/evolution-addressbook-factory 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1562   | /usr/libexec/evolution-calendar-factory 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1554   | /usr/libexec/evolution-source-registry 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1546   | /usr/libexec/gnome-shell-calendar-server 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1531   | /usr/libexec/ibus-engine-simple 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1504   | /usr/bin/gnome-shell 
+2021/09/21 08:53:45 CMD: UID=0    PID=15     | 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1490   | /usr/libexec/dconf-service 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1479   | /usr/libexec/gnome-session-binary --systemd-service --session=ubuntu 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1476   | /usr/libexec/xdg-desktop-portal-gtk 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1473   | /usr/libexec/gnome-session-ctl --monitor 
+2021/09/21 08:53:45 CMD: UID=0    PID=146    | 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1459   | /usr/libexec/xdg-permission-store 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1456   | /usr/libexec/xdg-document-portal 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1452   | /usr/libexec/xdg-desktop-portal 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1438   | /usr/libexec/at-spi2-registryd --use-gnome-session 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1433   | /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 3 
+2021/09/21 08:53:45 CMD: UID=0    PID=143    | 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1428   | /usr/libexec/at-spi-bus-launcher 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1406   | /usr/libexec/ibus-portal 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1402   | /usr/libexec/ibus-x11 --kill-daemon 
+2021/09/21 08:53:45 CMD: UID=0    PID=14     | 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1399   | /usr/libexec/ibus-extension-gtk3 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1397   | /usr/libexec/ibus-ui-gtk3 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1396   | /usr/libexec/ibus-dconf 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1392   | /usr/bin/ibus-daemon --daemonize --xim 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1375   | /usr/bin/ssh-agent /usr/bin/im-launch env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu 
+2021/09/21 08:53:45 CMD: UID=0    PID=133    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=132    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=130    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=13     | 
+2021/09/21 08:53:45 CMD: UID=0    PID=129    | 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1281   | /usr/libexec/gnome-session-binary --systemd --systemd --session=ubuntu 
+2021/09/21 08:53:45 CMD: UID=0    PID=128    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=1275   | /usr/lib/upower/upowerd 
+2021/09/21 08:53:45 CMD: UID=0    PID=127    | 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1268   | /usr/libexec/gvfs-gphoto2-volume-monitor 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1261   | /usr/libexec/goa-identity-service 
+2021/09/21 08:53:45 CMD: UID=0    PID=126    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=125    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=124    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=123    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=122    | 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1212   | /usr/libexec/goa-daemon 
+2021/09/21 08:53:45 CMD: UID=0    PID=121    | 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1205   | /usr/libexec/gvfs-goa-volume-monitor 
+2021/09/21 08:53:45 CMD: UID=0    PID=120    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=12     | 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1198   | /usr/libexec/gvfs-mtp-volume-monitor 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1192   | /usr/libexec/gvfs-afc-volume-monitor 
+2021/09/21 08:53:45 CMD: UID=0    PID=119    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=118    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=117    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=116    | 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1158   | /usr/libexec/gvfs-udisks2-volume-monitor 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1154   | /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f -o big_writes 
+2021/09/21 08:53:45 CMD: UID=0    PID=115    | 
+2021/09/21 08:53:45 CMD: UID=111  PID=1142   | /usr/libexec/rtkit-daemon 
+2021/09/21 08:53:45 CMD: UID=0    PID=114    | 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1131   | /usr/libexec/gvfsd 
+2021/09/21 08:53:45 CMD: UID=0    PID=113    | 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1125   | /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1123   | /usr/lib/xorg/Xorg vt2 -displayfd 3 -auth /run/user/1000/gdm/Xauthority -background none -noreset -keeptty -verbose 3 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1121   | /usr/lib/gdm3/gdm-x-session --run-script env GNOME_SHELL_SESSION_MODE=ubuntu /usr/bin/gnome-session --systemd --session=ubuntu 
+2021/09/21 08:53:45 CMD: UID=0    PID=112    | 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1117   | /usr/bin/gnome-keyring-daemon --daemonize --login 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1114   | /usr/libexec/tracker-miner-fs 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1112   | /usr/bin/pulseaudio --daemonize=no --log-target=journal 
+2021/09/21 08:53:45 CMD: UID=0    PID=111    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=1107   | /usr/sbin/smbd --foreground --no-process-group 
+2021/09/21 08:53:45 CMD: UID=0    PID=1106   | /usr/sbin/smbd --foreground --no-process-group 
+2021/09/21 08:53:45 CMD: UID=0    PID=1105   | /usr/sbin/smbd --foreground --no-process-group 
+2021/09/21 08:53:45 CMD: UID=0    PID=110    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=11     | 
+2021/09/21 08:53:45 CMD: UID=0    PID=1094   | /usr/sbin/smbd --foreground --no-process-group 
+2021/09/21 08:53:45 CMD: UID=0    PID=109    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=108    | 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1077   | (sd-pam) 
+2021/09/21 08:53:45 CMD: UID=1000 PID=1076   | /lib/systemd/systemd --user 
+2021/09/21 08:53:45 CMD: UID=0    PID=107    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=106    | 
+2021/09/21 08:53:45 CMD: UID=126  PID=1057   | /usr/sbin/mysqld 
+2021/09/21 08:53:45 CMD: UID=0    PID=1050   | /usr/sbin/apache2 -k start 
+2021/09/21 08:53:45 CMD: UID=0    PID=105    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=1047   | gdm-session-worker [pam/gdm-autologin] 
+2021/09/21 08:53:45 CMD: UID=0    PID=1042   | /usr/sbin/gdm3 
+2021/09/21 08:53:45 CMD: UID=0    PID=104    | 
+2021/09/21 08:53:45 CMD: UID=116  PID=1039   | /usr/sbin/kerneloops 
+2021/09/21 08:53:45 CMD: UID=0    PID=103    | 
+2021/09/21 08:53:45 CMD: UID=116  PID=1028   | /usr/sbin/kerneloops --test 
+2021/09/21 08:53:45 CMD: UID=0    PID=1025   | sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups 
+2021/09/21 08:53:45 CMD: UID=120  PID=1022   | /usr/bin/whoopsie -f 
+2021/09/21 08:53:45 CMD: UID=0    PID=102    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=101    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=1009   | /usr/sbin/nmbd --foreground --no-process-group 
+2021/09/21 08:53:45 CMD: UID=0    PID=100    | 
+2021/09/21 08:53:45 CMD: UID=0    PID=10     | 
+2021/09/21 08:53:45 CMD: UID=0    PID=1      | /sbin/init auto noprompt 
+2021/09/21 08:53:57 CMD: UID=1000 PID=26438  | /snap/slack/38/usr/lib/slack/slack --type=renderer --no-sandbox --autoplay-policy=no-user-gesture-required --force-color-profile=srgb --field-trial-handle=2594606880555550504,12748111210149817916,131072 --enable-features=WebComponentsV0Enabled --disable-features=CertVerifierService,CookiesWithoutSameSiteMustBeSecure,HardwareMediaKeyHandling,RequestInitiatorSiteLockEnfocement,SameSiteByDefaultCookies,SpareRendererForSitePerProcess,WebRtcHideLocalIpsWithMdns --disable-gpu-compositing --lang=en-US --enable-crash-reporter=039d2733-6c1f-4d19-ac42-e7de98c44182,no_channel --global-crash-keys=039d2733-6c1f-4d19-ac42-e7de98c44182,no_channel,_productName=Slack,_version=4.14.0 --standard-schemes=app,slack-webapp-dev --secure-schemes=app,slack-webapp-dev --bypasscsp-schemes=slack-webapp-dev --cors-schemes=slack-webapp-dev --fetch-schemes=slack-webapp-dev --service-worker-schemes=slack-webapp-dev --streaming-schemes --app-path=/snap/slack/38/usr/lib/slack/resources/app.asar --enable-sandbox --enable-blink-features=EventTiming --num-raster-threads=1 --renderer-client-id=3072 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100 --window-type=main 
+2021/09/21 08:54:01 CMD: UID=0    PID=26446  | python3 /home/frank/apache_restart.py 
+2021/09/21 08:54:01 CMD: UID=0    PID=26445  | /bin/sh -c python3 /home/frank/apache_restart.py; sleep 1; rm /home/frank/call.py; sleep 1; rm /home/frank/urllib.py 
+2021/09/21 08:54:01 CMD: UID=0    PID=26444  | /usr/sbin/CRON -f 
+2021/09/21 08:54:01 CMD: UID=0    PID=26447  | sleep 1 
+2021/09/21 08:54:02 CMD: UID=0    PID=26448  | rm /home/frank/call.py 
+2021/09/21 08:54:02 CMD: UID=0    PID=26449  | sleep 1 
+2021/09/21 08:54:03 CMD: UID=???  PID=26450  | ???
+2021/09/21 08:54:12 CMD: UID=1000 PID=26451  | /snap/slack/38/usr/lib/slack/slack --type=renderer --no-sandbox --autoplay-policy=no-user-gesture-required --force-color-profile=srgb --field-trial-handle=2594606880555550504,12748111210149817916,131072 --enable-features=WebComponentsV0Enabled --disable-features=CertVerifierService,CookiesWithoutSameSiteMustBeSecure,HardwareMediaKeyHandling,RequestInitiatorSiteLockEnfocement,SameSiteByDefaultCookies,SpareRendererForSitePerProcess,WebRtcHideLocalIpsWithMdns --disable-gpu-compositing --lang=en-US --enable-crash-reporter=039d2733-6c1f-4d19-ac42-e7de98c44182,no_channel --global-crash-keys=039d2733-6c1f-4d19-ac42-e7de98c44182,no_channel,_productName=Slack,_version=4.14.0 --standard-schemes=app,slack-webapp-dev --secure-schemes=app,slack-webapp-dev --bypasscsp-schemes=slack-webapp-dev --cors-schemes=slack-webapp-dev --fetch-schemes=slack-webapp-dev --service-worker-schemes=slack-webapp-dev --streaming-schemes --app-path=/snap/slack/38/usr/lib/slack/resources/app.asar --enable-sandbox --enable-blink-features=EventTiming --num-raster-threads=1 --renderer-client-id=3073 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100 --window-type=main 
+2021/09/21 08:54:28 CMD: UID=1000 PID=26458  | /snap/slack/38/usr/lib/slack/slack --type=renderer --no-sandbox --autoplay-policy=no-user-gesture-required --force-color-profile=srgb --field-trial-handle=2594606880555550504,12748111210149817916,131072 --enable-features=WebComponentsV0Enabled --disable-features=CertVerifierService,CookiesWithoutSameSiteMustBeSecure,HardwareMediaKeyHandling,RequestInitiatorSiteLockEnfocement,SameSiteByDefaultCookies,SpareRendererForSitePerProcess,WebRtcHideLocalIpsWithMdns --disable-gpu-compositing --lang=en-US --enable-crash-reporter=039d2733-6c1f-4d19-ac42-e7de98c44182,no_channel --global-crash-keys=039d2733-6c1f-4d19-ac42-e7de98c44182,no_channel,_productName=Slack,_version=4.14.0 --standard-schemes=app,slack-webapp-dev --secure-schemes=app,slack-webapp-dev --bypasscsp-schemes=slack-webapp-dev --cors-schemes=slack-webapp-dev --fetch-schemes=slack-webapp-dev --service-worker-schemes=slack-webapp-dev --streaming-schemes --app-path=/snap/slack/38/usr/lib/slack/resources/app.asar --enable-sandbox --enable-blink-features=EventTiming --num-raster-threads=1 --renderer-client-id=3074 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100 --window-type=main 
+2021/09/21 08:54:43 CMD: UID=1000 PID=26464  | /snap/slack/38/usr/lib/slack/slack --type=renderer --no-sandbox --autoplay-policy=no-user-gesture-required --force-color-profile=srgb --field-trial-handle=2594606880555550504,12748111210149817916,131072 --enable-features=WebComponentsV0Enabled --disable-features=CertVerifierService,CookiesWithoutSameSiteMustBeSecure,HardwareMediaKeyHandling,RequestInitiatorSiteLockEnfocement,SameSiteByDefaultCookies,SpareRendererForSitePerProcess,WebRtcHideLocalIpsWithMdns --disable-gpu-compositing --lang=en-US --enable-crash-reporter=039d2733-6c1f-4d19-ac42-e7de98c44182,no_channel --global-crash-keys=039d2733-6c1f-4d19-ac42-e7de98c44182,no_channel,_productName=Slack,_version=4.14.0 --standard-schemes=app,slack-webapp-dev --secure-schemes=app,slack-webapp-dev --bypasscsp-schemes=slack-webapp-dev --cors-schemes=slack-webapp-dev --fetch-schemes=slack-webapp-dev --service-worker-schemes=slack-webapp-dev --streaming-schemes --app-path=/snap/slack/38/usr/lib/slack/resources/app.asar --enable-sandbox --enable-blink-features=EventTiming --num-raster-threads=1 --renderer-client-id=3075 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100 --window-type=main 
+2021/09/21 08:54:58 CMD: UID=1000 PID=26474  | /snap/slack/38/usr/lib/slack/slack --type=renderer --no-sandbox --autoplay-policy=no-user-gesture-required --force-color-profile=srgb --field-trial-handle=2594606880555550504,12748111210149817916,131072 --enable-features=WebComponentsV0Enabled --disable-features=CertVerifierService,CookiesWithoutSameSiteMustBeSecure,HardwareMediaKeyHandling,RequestInitiatorSiteLockEnfocement,SameSiteByDefaultCookies,SpareRendererForSitePerProcess,WebRtcHideLocalIpsWithMdns --disable-gpu-compositing --lang=en-US --enable-crash-reporter=039d2733-6c1f-4d19-ac42-e7de98c44182,no_channel --global-crash-keys=039d2733-6c1f-4d19-ac42-e7de98c44182,no_channel,_productName=Slack,_version=4.14.0 --standard-schemes=app,slack-webapp-dev --secure-schemes=app,slack-webapp-dev --bypasscsp-schemes=slack-webapp-dev --cors-schemes=slack-webapp-dev --fetch-schemes=slack-webapp-dev --service-worker-schemes=slack-webapp-dev --streaming-schemes --app-path=/snap/slack/38/usr/lib/slack/resources/app.asar --enable-sandbox --enable-blink-features=EventTiming --num-raster-threads=1 --renderer-client-id=3076 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100 --window-type=main 
+2021/09/21 08:55:01 CMD: UID=0    PID=26481  | /usr/sbin/CRON -f 
+2021/09/21 08:55:01 CMD: UID=0    PID=26480  | /usr/sbin/CRON -f 
+2021/09/21 08:55:01 CMD: UID=0    PID=26482  | python3 /home/frank/apache_restart.py 
+2021/09/21 08:55:02 CMD: UID=0    PID=26484  | sleep 1 
+2021/09/21 08:55:03 CMD: UID=0    PID=26486  | sleep 1 
+2021/09/21 08:55:13 CMD: UID=1000 PID=26488  |                                                               
+2021/09/21 08:55:28 CMD: UID=1000 PID=26493  | /snap/slack/38/usr/lib/slack/slack --type=renderer --no-sandbox --autoplay-policy=no-user-gesture-required --force-color-profile=srgb --field-trial-handle=2594606880555550504,12748111210149817916,131072 --enable-features=WebComponentsV0Enabled --disable-features=CertVerifierService,CookiesWithoutSameSiteMustBeSecure,HardwareMediaKeyHandling,RequestInitiatorSiteLockEnfocement,SameSiteByDefaultCookies,SpareRendererForSitePerProcess,WebRtcHideLocalIpsWithMdns --disable-gpu-compositing --lang=en-US --enable-crash-reporter=039d2733-6c1f-4d19-ac42-e7de98c44182,no_channel --global-crash-keys=039d2733-6c1f-4d19-ac42-e7de98c44182,no_channel,_productName=Slack,_version=4.14.0 --standard-schemes=app,slack-webapp-dev --secure-schemes=app,slack-webapp-dev --bypasscsp-schemes=slack-webapp-dev --cors-schemes=slack-webapp-dev --fetch-schemes=slack-webapp-dev --service-worker-schemes=slack-webapp-dev --streaming-schemes --app-path=/snap/slack/38/usr/lib/slack/resources/app.asar --enable-sandbox --enable-blink-features=EventTiming --num-raster-threads=1 --renderer-client-id=3078 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100 --window-type=main 
+2021/09/21 08:55:43 CMD: UID=1000 PID=26498  | /snap/slack/38/usr/lib/slack/slack --type=renderer --no-sandbox --autoplay-policy=no-user-gesture-required --force-color-profile=srgb --field-trial-handle=2594606880555550504,12748111210149817916,131072 --enable-features=WebComponentsV0Enabled --disable-features=CertVerifierService,CookiesWithoutSameSiteMustBeSecure,HardwareMediaKeyHandling,RequestInitiatorSiteLockEnfocement,SameSiteByDefaultCookies,SpareRendererForSitePerProcess,WebRtcHideLocalIpsWithMdns --disable-gpu-compositing --lang=en-US --enable-crash-reporter=039d2733-6c1f-4d19-ac42-e7de98c44182,no_channel --global-crash-keys=039d2733-6c1f-4d19-ac42-e7de98c44182,no_channel,_productName=Slack,_version=4.14.0 --standard-schemes=app,slack-webapp-dev --secure-schemes=app,slack-webapp-dev --bypasscsp-schemes=slack-webapp-dev --cors-schemes=slack-webapp-dev --fetch-schemes=slack-webapp-dev --service-worker-schemes=slack-webapp-dev --streaming-schemes --app-path=/snap/slack/38/usr/lib/slack/resources/app.asar --enable-sandbox --enable-blink-features=EventTiming --num-raster-threads=1 --renderer-client-id=3079 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100 --window-type=main 
+2021/09/21 08:55:59 CMD: UID=1000 PID=26504  | /snap/slack/38/usr/lib/slack/slack --type=renderer --no-sandbox --autoplay-policy=no-user-gesture-required --force-color-profile=srgb --field-trial-handle=2594606880555550504,12748111210149817916,131072 --enable-features=WebComponentsV0Enabled --disable-features=CertVerifierService,CookiesWithoutSameSiteMustBeSecure,HardwareMediaKeyHandling,RequestInitiatorSiteLockEnfocement,SameSiteByDefaultCookies,SpareRendererForSitePerProcess,WebRtcHideLocalIpsWithMdns --disable-gpu-compositing --lang=en-US --enable-crash-reporter=039d2733-6c1f-4d19-ac42-e7de98c44182,no_channel --global-crash-keys=039d2733-6c1f-4d19-ac42-e7de98c44182,no_channel,_productName=Slack,_version=4.14.0 --standard-schemes=app,slack-webapp-dev --secure-schemes=app,slack-webapp-dev --bypasscsp-schemes=slack-webapp-dev --cors-schemes=slack-webapp-dev --fetch-schemes=slack-webapp-dev --service-worker-schemes=slack-webapp-dev --streaming-schemes --app-path=/snap/slack/38/usr/lib/slack/resources/app.asar --enable-sandbox --enable-blink-features=EventTiming --num-raster-threads=1 --renderer-client-id=3080 --no-v8-untrusted-code-mitigations --shared-files=v8_context_snapshot_data:100 --window-type=main 
+2021/09/21 08:56:01 CMD: UID=0    PID=26510  | /usr/sbin/CRON -f 
+2021/09/21 08:56:01 CMD: UID=0    PID=26512  | python3 /home/frank/apache_restart.py 
+2021/09/21 08:56:01 CMD: UID=0    PID=26511  | /bin/sh -c python3 /home/frank/apache_restart.py; sleep 1; rm /home/frank/call.py; sleep 1; rm /home/frank/urllib.py 
+2021/09/21 08:56:01 CMD: UID=0    PID=26513  | sleep 1 
+2021/09/21 08:56:02 CMD: UID=0    PID=26514  | 
+2021/09/21 08:56:02 CMD: UID=0    PID=26515  | sleep 1 
+cat
+
+

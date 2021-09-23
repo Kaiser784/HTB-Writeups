@@ -1,0 +1,9 @@
+Dido,
+I've had to change your account password due to some security issues we have recently become aware of
+
+It's similar to your FTP password, but with a different number (ie. not 5!)
+
+Come and see me in person to retrieve your password.
+
+thanks,
+James
