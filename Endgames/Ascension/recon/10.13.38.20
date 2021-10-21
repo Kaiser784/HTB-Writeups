@@ -1,0 +1,54 @@
+Nmap scan report for 10.13.38.20
+Host is up (0.19s latency).
+Not shown: 995 filtered ports
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE       VERSION
+80/tcp   open  http          Microsoft IIS httpd 10.0
+| http-methods: 
+|_  Potentially risky methods: TRACE
+|_http-server-header: Microsoft-IIS/10.0
+|_http-title: Daedalus Airlines
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds  Windows Server 2019 Standard 17763 microsoft-ds
+3389/tcp open  ms-wbt-server Microsoft Terminal Services
+| rdp-ntlm-info: 
+|   Target_Name: DAEDALUS
+|   NetBIOS_Domain_Name: DAEDALUS
+|   NetBIOS_Computer_Name: WEB01
+|   DNS_Domain_Name: daedalus.local
+|   DNS_Computer_Name: WEB01.daedalus.local
+|   DNS_Tree_Name: daedalus.local
+|   Product_Version: 10.0.17763
+|_  System_Time: 2021-10-21T07:47:08+00:00
+| ssl-cert: Subject: commonName=WEB01.daedalus.local
+| Not valid before: 2021-10-14T18:54:18
+|_Not valid after:  2022-04-15T18:54:18
+|_ssl-date: 2021-10-21T07:47:48+00:00; +24m43s from scanner time.
+Warning: OSScan results may be unreliable because we could not find at least 1 open and 1 closed port
+OS fingerprint not ideal because: Missing a closed TCP port so results incomplete
+No OS matches for host
+Network Distance: 2 hops
+Service Info: OSs: Windows, Windows Server 2008 R2 - 2012; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 1h48m43s, deviation: 3h07m51s, median: 24m42s
+| smb-os-discovery: 
+|   OS: Windows Server 2019 Standard 17763 (Windows Server 2019 Standard 6.3)
+|   Computer name: WEB01
+|   NetBIOS computer name: WEB01\x00
+|   Domain name: daedalus.local
+|   Forest name: daedalus.local
+|   FQDN: WEB01.daedalus.local
+|_  System time: 2021-10-21T00:47:10-07:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2021-10-21T07:47:12
+|_  start_date: N/A

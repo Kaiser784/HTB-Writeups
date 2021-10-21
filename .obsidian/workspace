@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Pro-Labs/Dante/Dante.md",
+            "file": "Endgames/Ascension/Ascension.md",
             "mode": "source"
           }
         }
@@ -55,14 +55,6 @@
               "type": "starred",
               "state": {}
             }
-          },
-          {
-            "id": "98da92f9e8435edb",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
           }
         ]
       }
@@ -84,7 +76,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Pro-Labs/Dante/Dante.md",
+                "file": "Endgames/Ascension/Ascension.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -107,47 +99,15 @@
             }
           },
           {
-            "id": "5c53660ebad798fc",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
             "id": "ab09314e7438c6f3",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Pro-Labs/Dante/Dante.md",
+                "file": "Endgames/Ascension/Ascension.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
-            }
-          },
-          {
-            "id": "5353b420bc0bf361",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "d113551e7ba419a2",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
-            }
-          },
-          {
-            "id": "f8c9cbb307c7051c",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
             }
           },
           {
@@ -167,15 +127,15 @@
   },
   "active": "f9e40f5a70750399",
   "lastOpenFiles": [
+    "Endgames/Ascension/Ascension.md",
     "Pro-Labs/Dante/Dante.md",
-    "Machines/Spectra/Spectra.md",
-    "Machines/OpenAdmin/OpenAdmin.md",
-    "Machines/Heist/Heist.md",
     "Fortresses/Akerva/Akerva.md",
-    "Untitled.md",
+    "Pro-Labs/Dante/Windows+Privilege+Escalation.pdf",
+    "Machines/OpenAdmin/OpenAdmin.md",
+    "Machines/ScriptKiddie/ScriptKiddie.md",
+    "Machines/Spectra/Spectra.md",
+    "Machines/Heist/Heist.md",
     "Challenges/pwn/0xDiablos/0xDiablos.md",
-    "Challenges/Reversing/Bypass/Bypass.md",
-    "Challenges/Reversing/Impossible Password/Impossible Password.md",
-    "Challenges/OSINT/ID Exposed/ID Exposed.md"
+    "Challenges/Reversing/Bypass/Bypass.md"
   ]
 }

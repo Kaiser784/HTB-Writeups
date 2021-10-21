@@ -9,7 +9,7 @@
 ### Flags   : `8`
 ### Points : `95`
 ---
-## **Plain Sight**
+## Plain Sight
 
 You have to download a separate vpn pack to connect to the Fortress labs. You can get it from the access page.
 

